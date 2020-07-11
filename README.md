@@ -1,2 +1,3 @@
-# landing_page_001
+# Landing Page 001
 Landing Page Test
+intended for use on personal site
