@@ -1,0 +1,62 @@
+.main{
+  display: grid;
+  grid-template:
+    "a . ."
+    "b b c"
+    "b b c"
+    "b b d";
+}
+
+h1{
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+  text-decoration: underline;
+  grid-area: a;
+  margin: 10px;
+}
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
+  margin: 0;
+}
+.navbar{
+  color: black;
+  background-color: #FDFD96;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+  grid-area: c;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+}
+
+a{
+  color: black;
+  justify-content: right;
+}
+
+a:hover{
+  color: white;
+}
+
+.content{
+  height: 3000px;
+  grid-area: b;
+  margin: 15px;
+}
+
+.intro{
+  height: 100px;
+  width: 400px;
+  background-color: blue;
+  margin: 20px;
+}
+
+.container{
+  width: 400px;
+  height: 400px;
+  background-color: white;
+}
