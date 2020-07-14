@@ -7,7 +7,7 @@
     "b b d";
 }
 
-h1{
+.logo{
   color: white;
   font-family: 'VT323', monospace;
   font-size: 50px;
@@ -28,6 +28,7 @@ body{
   font-family: 'Inconsolata', monospace;
   font-weight: 300;
   grid-area: c;
+  margin: auto 0;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
@@ -58,5 +59,10 @@ a:hover{
 .container{
   width: 400px;
   height: 400px;
+  background-color: white;
+}
+
+.about-info{
+  color: black;
   background-color: white;
 }
