@@ -1,10 +1,10 @@
 .main{
   display: grid;
   grid-template:
-    "a . ."
-    "b b c"
-    "b b c"
-    "b b d";
+    "a . . ."
+    "b b b c"
+    "b b b c"
+    "d d d d";
 }
 
 .logo{
@@ -12,6 +12,7 @@
   font-family: 'VT323', monospace;
   font-size: 50px;
   text-decoration: underline;
+  display: grid;
   grid-area: a;
   margin: 10px;
 }
@@ -25,6 +26,8 @@ body{
 .navbar{
   color: black;
   background-color: #FDFD96;
+  border-color: white;
+  border-width: thick;
   font-family: 'Inconsolata', monospace;
   font-weight: 300;
   grid-area: c;
@@ -45,6 +48,7 @@ a:hover{
 
 .content{
   height: 3000px;
+  display: grid;
   grid-area: b;
   margin: 15px;
 }
@@ -62,7 +66,14 @@ a:hover{
   background-color: white;
 }
 
-.about-info{
+.about-info {
   color: black;
   background-color: white;
+}
+
+.footer{
+  height: 50px;
+  grid-area: d;
+  margin: 0;
+  background-color: green;
 }
