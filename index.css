@@ -43,7 +43,11 @@ a{
 }
 
 a:hover{
-  color: white;
+  color: rgb(20, 104, 107);
+}
+
+li{
+  list-style: none;
 }
 
 .content{
@@ -76,5 +80,5 @@ a:hover{
   height: 50px;
   grid-area: d;
   margin: 0;
-  background-color: green;
+  background-color: rgb(158, 255, 158);
 }
