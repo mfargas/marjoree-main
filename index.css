@@ -1,21 +1,13 @@
-.main{
+.container-fluid{
   display: grid;
   grid-template:
-    "a . . ."
-    "b b b c"
-    "b b b c"
-    "d d d d";
+    "a a a a"
+    "b b b b"
+    "b b b b"
+    "b b b b"
+    "c c c c";
 }
 
-.logo{
-  color: maroon;
-  font-family: 'VT323', monospace;
-  font-size: 50px;
-  text-decoration: underline;
-  display: grid;
-  grid-area: a;
-  margin: 10px;
-}
 body{
   background-color: whitesmoke;
   color: black;
@@ -23,18 +15,25 @@ body{
   font-weight: 600;
   margin: 0;
 }
+
 .navbar{
   color: black;
   background-color: #FDFD96;
   border-color: white;
   border-width: thick;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 25px;
   font-weight: 300;
-  grid-area: c;
   margin: auto 0;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-end;
+  display: grid;
+  grid-area: a;
+}
+
+.navbar-brand{
+  color: black;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 40px;
+  margin: 10px;
 }
 
 a{
@@ -55,6 +54,11 @@ li{
   display: grid;
   grid-area: b;
   margin: 15px;
+}
+
+#carousel-container{
+  display: grid;
+  grid-area: b;
 }
 
 .intro{
@@ -78,7 +82,7 @@ li{
 
 .footer{
   height: 50px;
-  grid-area: d;
+  grid-area: c;
   margin: 0;
   background-color: rgb(158, 255, 158);
 }
