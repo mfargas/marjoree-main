@@ -44,7 +44,13 @@ a:hover{
   color: rgb(20, 104, 107);
 }
 
-.nav-item{
+li{
+  list-style: none;
+  display: inline;
+}
+
+.navbar{
+  display: inline-flexbox;
   list-style: none;
 }
 
