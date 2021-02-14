@@ -1,3 +1,3 @@
-# Landing Page 001
-Landing Page Test
-intended for use on personal site
+# Portfolio Site hosted on cPanel
+
+Bootstrap + React
