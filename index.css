@@ -6,13 +6,12 @@
     "b b b b"
     "b b b b"
     "c c c c";
-  background-color: white;
-  border: violet;
-  border-width: 15px;
 }
 
 body{
-  background-color: rgb(247, 242, 242);
+  background-color: white;
+  border: violet;
+  border-width: 15px;
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
