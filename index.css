@@ -41,13 +41,10 @@ a:hover{
 }
 
 ul{
-  list-style-type: none;
   overflow: hidden;
 }
 
 li{
-  list-style-type: none;
-  list-style: none;
   display: inline;
 }
 
