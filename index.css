@@ -19,9 +19,7 @@ body{
 
 .navbar{
   color: black;
-  font-family: 'Quattrocento Sans', sans-serif;
   font-size: 25px;
-  font-weight: 300;
   margin: auto 0;
   grid-area: a;
   display: flex row;
@@ -29,7 +27,6 @@ body{
 
 .navbar-brand{
   color: black;
-  font-family: 'Quattrocento Sans', sans-serif;
   font-size: 40px;
   margin: 10px;
 }
@@ -40,7 +37,7 @@ a{
 }
 
 a:hover{
-  background-color: rgb(20, 104, 107);
+  background-color: violet;
 }
 
 ul{
