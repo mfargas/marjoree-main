@@ -85,7 +85,6 @@ li{
 }
 
 .footer{
-  height: 50px;
   grid-area: c;
   margin: 0;
   background-color: rgb(158, 255, 158);
