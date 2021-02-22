@@ -64,6 +64,18 @@ li{
   margin: 15px;
 }
 
+.carousel-img {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .intro{
   height: 200px;
   width: 400px;
