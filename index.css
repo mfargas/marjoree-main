@@ -22,13 +22,20 @@ body{
   font-size: 25px;
   margin: auto 0;
   grid-area: a;
-  display: flex row;
+  display: grid;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav-flex{
+  display: flex;
 }
 
 .navbar-brand{
   color: black;
   font-size: 40px;
   margin: 10px;
+  /* flex: 1; */
 }
 
 a{
@@ -40,22 +47,11 @@ a:hover{
   background-color: violet;
 }
 
-.navbar ul{
-  overflow: hidden;
-}
-
 li{
-  display: inline;
-}
-
-.navbar{
-  display: flex;
   list-style: none;
+  flex: 2;
 }
 
-.non-branding-navbar {
-    flex: 3;
-}
 
 /* .nav-item{
   float: right;
