@@ -30,12 +30,14 @@ body{
 
 .nav-flex{
   display: flex;
+  flex-direction: row;
 }
 
 .navbar-brand{
   color: black;
   font-size: 40px;
   margin: 10px;
+  justify-self: flex-start;
   /* flex: 1; */
 }
 
@@ -54,9 +56,9 @@ li{
 }
 
 
-/* .nav-item{
-  float: right;
-} */
+.navbar-right{
+  justify-self: flex-end;
+}
 
 .content{
   /* height: 3000px; */
