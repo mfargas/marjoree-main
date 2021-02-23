@@ -40,7 +40,7 @@ a:hover{
   background-color: violet;
 }
 
-ul{
+.navbar ul{
   overflow: hidden;
 }
 
@@ -49,13 +49,17 @@ li{
 }
 
 .navbar{
-  display: inline;
+  display: flex;
   list-style: none;
 }
 
-.nav-item{
-  float: right;
+.non-branding-navbar {
+    flex: 3;
 }
+
+/* .nav-item{
+  float: right;
+} */
 
 .content{
   /* height: 3000px; */
