@@ -5,6 +5,12 @@
     "b b b b"
     "b b b b"
     "b b b b"
+    "b b b b"
+    "b b b b"
+    "b b b b"
+    "b b b b"
+    "b b b b"
+    "b b b b"
     "c c c c";
 }
 
@@ -31,6 +37,7 @@ body{
 .nav-flex{
   display: flex;
   flex-direction: row;
+  flex: 6;
 }
 
 .navbar-brand{
@@ -52,12 +59,22 @@ a:hover{
 
 li{
   list-style: none;
-  flex: 2;
+  padding: 10px;
 }
 
+.navbar-right-flex{
+  justify: flex-end;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+}
 
-.navbar-right{
-  justify-self: flex-end;
+.navbar-right-flex li{
+  list-style: none;
+}
+
+.social-link-flex{
+  text-decoration: none;
 }
 
 .content{
@@ -121,11 +138,22 @@ li{
 .container-content{
   width: 100%;
   height: 100%;
-  justify-content: space-evenly;
+  margin: auto;
+  align-items: center;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
 }
 
 .footer{
+  display: grid;
   grid-area: c;
-  margin: 0;
+  margin: auto;
+  width: 100%;
+  position: sticky;
   background-color: rgb(158, 255, 158);
 }
