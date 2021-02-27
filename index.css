@@ -31,20 +31,25 @@ body{
   grid-area: a;
   display: grid;
   list-style: none;
+  justify-content:left;
   overflow: hidden;
 }
 
 .nav-flex{
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex: 6;
 }
+
+/* .navigation-list{
+  direction: ltr;
+} */
 
 .navbar-brand{
   color: black;
   font-size: 40px;
   margin: 10px;
-  justify-self: flex-start;
+  justify: flex-start;
   /* flex: 1; */
 }
 
@@ -62,14 +67,15 @@ li{
   padding: 10px;
 }
 
-.navbar-right-flex{
+.navbar-right{
   justify: flex-end;
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
+  list-style: none;
 }
 
-.navbar-right-flex li{
+.navbar-right li{
   list-style: none;
 }
 
