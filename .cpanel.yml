@@ -4,3 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/marjor12/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp index.css $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
