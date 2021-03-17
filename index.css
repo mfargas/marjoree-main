@@ -1,13 +1,3 @@
-.container-fluid{
-  display: grid;
-  grid-template:
-    "a a a a"
-    "b b b b"
-    "b b b b"
-    "b b b b"
-    "c c c c";
-}
-
 body{
   background-color:white;
   box-shadow: inset 0 0 0 15px violet;
@@ -42,6 +32,7 @@ a:hover{
 
 li{
   list-style: none;
+  text-decoration: none;
   padding: 10px;
 }
 
@@ -68,11 +59,11 @@ li{
   overflow: hidden;
 }
 
-.carousel-img img {
+/* .carousel-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .intro{
   height: 200px;
@@ -122,8 +113,6 @@ iframe{
 }
 
 .footer{
-  display: grid;
-  grid-area: c;
   margin: auto;
   width: 100%;
   position: sticky;
