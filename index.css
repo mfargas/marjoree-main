@@ -14,12 +14,14 @@ body{
   height: 25vh;
 }
 
+.navbar-nav{
+  
+}
+
 .navbar-brand{
   color: rgb(0, 0, 100);
   font-size: 30px;
   margin: 10px;
-  justify: flex-start;
-  /* flex: 1; */
 }
 
 a{
@@ -47,8 +49,6 @@ li{
 
 .content{
   height: 180vh;
-  display: grid;
-  grid-area: b;
   margin: 15px;
 }
 
@@ -64,11 +64,11 @@ li{
   overflow: hidden;
 }
 
-/* .carousel-img img {
+.carousel-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-} */
+}
 
 .intro{
   height: 30vh;

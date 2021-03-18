@@ -18,8 +18,6 @@ body{
   color: rgb(0, 0, 100);
   font-size: 30px;
   margin: 10px;
-  justify: flex-start;
-  /* flex: 1; */
 }
 
 a{
@@ -43,4 +41,8 @@ li{
 
 .social-link-flex{
   text-decoration: none;
+}
+
+.jumbotron{
+  width: 85%;
 }
