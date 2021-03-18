@@ -1,0 +1,45 @@
+body{
+  background-color:white;
+  box-shadow: inset 0 0 0 15px violet;
+  color: black;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.navbar{
+  color: black;
+  font-size: 25px;
+  height: 25vh;
+}
+
+.navbar-brand{
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+  justify: flex-start;
+  /* flex: 1; */
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: violet;
+}
+
+ul{
+  width: 100%;
+}
+
+li{
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.social-link-flex{
+  text-decoration: none;
+}
