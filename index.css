@@ -1,20 +1,21 @@
 body{
   background-color:white;
   box-shadow: inset 0 0 0 15px violet;
-  color: black;
+  color: rgb(0, 0, 100);
+  height: 300vh;
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
   margin: 0;
 }
 
 .navbar{
-  color: black;
+  color: rgb(0, 0, 100);
   font-size: 25px;
   height: 25vh;
 }
 
 .navbar-brand{
-  color: black;
+  color: rgb(0, 0, 100);
   font-size: 30px;
   margin: 10px;
   justify: flex-start;
@@ -22,7 +23,7 @@ body{
 }
 
 a{
-  color: black;
+  color: rgb(0, 0, 100);
   text-decoration: none;
 }
 
@@ -70,8 +71,8 @@ li{
 } */
 
 .intro{
-  height: 200px;
-  width: 400px;
+  height: 30vh;
+  width: 75vw;
   background-color: blue;
   color: aliceblue;
   margin: 20px;
@@ -119,6 +120,7 @@ iframe{
 .footer{
   margin: auto;
   width: 100%;
+  height: 10vh;
   position: sticky;
   background-color: rgb(158, 255, 158);
 }
