@@ -20,7 +20,7 @@ body{
   margin: auto;
 }
 
-.mr-auto{
+.menu-right{
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: flex-end;
