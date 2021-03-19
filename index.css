@@ -16,6 +16,10 @@ body{
   color: rgb(0, 0, 100);
   font-size: 25px;
   height: 25vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: right;
 }
 
 
@@ -34,15 +38,6 @@ a:hover{
   background-color: violet;
 }
 
-ul{
-  width: 100%;
-}
-
-li{
-  list-style: none;
-  text-decoration: none;
-  padding: 10px;
-}
 
 .social-link-flex{
   text-decoration: none;
