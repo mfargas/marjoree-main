@@ -43,12 +43,16 @@ li{
   text-decoration: none;
 }
 
-.content{
+.jumbotron{
+  width: 85vw;
   margin: auto;
 }
 
-.jumbotron{
-  width: 85vw;
+.display-4{
+  width: 90vw;
+}
+
+.content{
   margin: auto;
 }
 

@@ -45,4 +45,19 @@ li{
 
 .jumbotron{
   width: 85vw;
+  margin: auto;
+}
+.display-4{
+  width: 90vw;
+}
+
+.lead{
+  width: 80vw;
+  margin: auto;
+}
+
+.content{
+  width: 85vw;
+  margin: auto;
+  
 }
