@@ -8,15 +8,16 @@ body{
   margin: 0;
 }
 
+.container-fluid{
+  height: 100%;
+}
+
 .navbar{
   color: rgb(0, 0, 100);
   font-size: 25px;
   height: 25vh;
 }
 
-.navbar-nav{
-  
-}
 
 .navbar-brand{
   color: rgb(0, 0, 100);
@@ -118,7 +119,7 @@ iframe{
 }
 
 .footer{
-  margin: auto;
+  margin-bottom: auto;
   width: 100%;
   height: 10vh;
   position: sticky;
