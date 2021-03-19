@@ -43,8 +43,17 @@ li{
   text-decoration: none;
 }
 
+.content{
+  margin: auto;
+}
+
 .jumbotron{
   width: 85vw;
+  margin: auto;
+}
+
+.content-header{
+  width: 80vw;
 }
 
 .about-p{
