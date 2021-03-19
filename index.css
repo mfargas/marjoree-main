@@ -17,15 +17,14 @@ body{
   font-size: 25px;
   height: 20vh;
   margin: auto;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  align-content: right;
 }
 
 .mr-auto{
   display: inline-flex;
   flex-wrap: wrap;
-  margin-left: auto;
+  margin-right: 1vw;
 }
 
 
