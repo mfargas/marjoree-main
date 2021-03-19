@@ -42,3 +42,17 @@ li{
 .social-link-flex{
   text-decoration: none;
 }
+
+.jumbotron{
+  width: 85vw;
+}
+
+.about-p{
+  width: 75vw;
+  margin: auto;
+}
+
+.lead{
+  width: 80vw;
+  margin: auto;
+}
