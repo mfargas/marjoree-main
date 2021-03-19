@@ -11,8 +11,18 @@ body{
 .navbar{
   color: rgb(0, 0, 100);
   font-size: 25px;
-  height: 25vh;
+  height: 20vh;
+  width: 100%;
+  margin: auto;
 }
+
+.menu-right{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
 
 .navbar-brand{
   color: rgb(0, 0, 100);
@@ -27,16 +37,6 @@ a{
 
 a:hover{
   background-color: violet;
-}
-
-ul{
-  width: 100%;
-}
-
-li{
-  list-style: none;
-  text-decoration: none;
-  padding: 10px;
 }
 
 .social-link-flex{
@@ -59,5 +59,5 @@ li{
 .content{
   width: 85vw;
   margin: auto;
-  
+
 }
