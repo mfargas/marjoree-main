@@ -16,15 +16,14 @@ body{
   color: rgb(0, 0, 100);
   font-size: 25px;
   height: 20vh;
+  width: 100%;
   margin: auto;
-  display: inline-flex;
-  flex-wrap: wrap;
 }
 
 .mr-auto{
   display: inline-flex;
   flex-wrap: wrap;
-  margin-right: 1vw;
+  justify-content: flex-end;
 }
 
 
