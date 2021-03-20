@@ -57,7 +57,14 @@ a:hover{
 }
 
 .content{
+  height: 100%;
   width: 85vw;
   margin: auto;
 
+}
+
+.container{
+  height: 50vh;
+  width: 80vw;
+  margin: auto;
 }
