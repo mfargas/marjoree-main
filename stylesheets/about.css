@@ -52,7 +52,14 @@ a:hover{
   width: 90vw;
 }
 
+.lead{
+  width: 80vw;
+  margin: auto;
+}
+
 .content{
+  height: 100%;
+  width: 85vw;
   margin: auto;
 }
 
@@ -62,11 +69,6 @@ a:hover{
 
 .about-p{
   width: 75vw;
-  margin: auto;
-}
-
-.lead{
-  width: 80vw;
   margin: auto;
 }
 
