@@ -72,18 +72,23 @@ a:hover{
   overflow: hidden;
 }
 
-.carousel-img img {
+/* .carousel-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .intro{
   height: 30vh;
-  width: 75vw;
+  width: 60vw;
   background-color: blue;
   color: rgb(240, 248, 255);
   margin: 20px;
+}
+
+.intro p{
+  padding: 15px;
+  align-content: center;
 }
 
 .container-row{
