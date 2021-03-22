@@ -113,8 +113,9 @@ iframe{
 }
 
 .footer{
-  position: static;
-  margin-bottom: 0;
   width: 100%;
+  margin-top: 15vh;
+  position: relative;
+  clear: both;
   background-color: rgb(158, 255, 158);
 }
