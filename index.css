@@ -55,7 +55,6 @@ a:hover{
 
 .content-wrapper{
   padding: 10px;
-  height: 300vh;
   background-color: white;
   grid-area: article;
 }
