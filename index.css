@@ -65,18 +65,16 @@ a:hover{
 }
 
 .carousel-img {
-  height: 400px;
-  width: 90%;
   margin: auto;
   border-radius: 25px;
   overflow: hidden;
 }
 
-/* .carousel-img img {
+.carousel-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-} */
+}
 
 .intro{
   height: 30vh;
