@@ -3,7 +3,6 @@ body{
   color: rgb(0, 0, 100);
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
-  margin: 0;
 }
 
 .container-fluid{
@@ -47,6 +46,11 @@ a:hover{
   text-decoration: none;
 }
 
+.content-wrapper{
+  padding: 10px;
+  background-color: white;
+}
+
 #carousel-container{
   margin: auto;
 }
@@ -63,12 +67,6 @@ a:hover{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.content-wrapper{
-  height: 100%;
-  padding: 25px;
-  background-color: white;
 }
 
 .intro{
@@ -109,8 +107,7 @@ iframe{
 
 .footer{
   width: 100%;
-  margin-top: 15vh;
+  margin-bottom: 0;
   position: relative;
-  clear: both;
   background-color: rgb(158, 255, 158);
 }
