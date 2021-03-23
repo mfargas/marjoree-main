@@ -67,6 +67,12 @@ a:hover{
   display: inline-flex;
   width: 100%;
   padding: 30px;
+  margin: auto;
+  justify-content: left;
+}
+
+.left-column-jumbo{
+  width: 70%;
 }
 
 /* .about-me-img{
