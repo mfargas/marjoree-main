@@ -20,7 +20,7 @@ body{
 .navbar{
   color: rgb(0, 0, 100);
   font-size: 25px;
-  height: 20vh;
+  grid-area: head;
   width: 100%;
   margin: auto;
 }
@@ -52,10 +52,14 @@ a:hover{
   text-decoration: none;
 }
 
-.jumbotron{
+.jumbo{
   grid-area: jumbo;
-  width: 85vw;
+  width: 100vw;
   margin: auto;
+}
+
+.jumbotron{
+  width: 85vw;
 }
 
 .about-me-img{
