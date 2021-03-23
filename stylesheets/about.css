@@ -63,6 +63,10 @@ a:hover{
   margin: auto;
 }
 
+.jumbo-top-row{
+  display: inline-flex;
+}
+
 .about-me-img{
   image: orientation 9px;
 }
