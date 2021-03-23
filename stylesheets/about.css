@@ -75,9 +75,9 @@ a:hover{
   width: 70%;
 }
 
-/* .about-me-img{
-  transform: rotate(90deg);
-} */
+.about-me-img{
+  height: 40vh;
+}
 
 .display-4{
   width: 90vw;
