@@ -65,10 +65,12 @@ a:hover{
 
 .jumbo-top-row{
   display: inline-flex;
+  width: 100%;
+  padding: 30px;
 }
 
 .about-me-img{
-  image: orientation 9px;
+  transform: rotate(90deg);
 }
 
 .display-4{
