@@ -62,6 +62,9 @@ a:hover{
 #carousel-container{
   margin: auto;
   grid-area: carousel;
+  border-radius: 25px;
+  width: 80vw;
+  align-self: center;
 }
 
 .carousel-img {
