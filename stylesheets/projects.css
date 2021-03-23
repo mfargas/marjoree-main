@@ -1,5 +1,5 @@
 body{
-  background-color:white;
+  background-color:rgb(240, 248, 255);
   color: rgb(0, 0, 100);
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
@@ -20,7 +20,7 @@ body{
 .navbar{
   color: rgb(0, 0, 100);
   font-size: 25px;
-  height: 20vh;
+  grid-area: head;
   width: 100%;
   margin: auto;
 }
@@ -60,6 +60,7 @@ a:hover{
 
 .jumbotron{
   width: 85vw;
+  margin: auto;
 }
 
 .display-4{
@@ -84,7 +85,7 @@ a:hover{
 }
 
 .footer{
-  margin: 15px;
+  margin: 15px auto;
   width: 100%;
   grid-area: footer;
   background-color: rgb(158, 255, 158);

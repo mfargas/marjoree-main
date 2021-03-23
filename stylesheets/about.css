@@ -60,10 +60,11 @@ a:hover{
 
 .jumbotron{
   width: 85vw;
+  margin: auto;
 }
 
 .about-me-img{
-  rotate: 90deg;
+  image: orientation 9px;
 }
 
 .display-4{
@@ -92,7 +93,7 @@ a:hover{
 
 .footer{
   grid-area: footer;
-  margin: 15px;;
+  margin: 15px auto;
   width: 100%;
   background-color: rgb(158, 255, 158);
 }
