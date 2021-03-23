@@ -67,8 +67,14 @@ a:hover{
   align-self: center;
 }
 
-.carousel-control-prev .carousel-control-next{
+.carousel-control-prev{
   border-radius: 25px;
+  height: 100%;
+}
+
+.carousel-control-next{
+  border-radius: 25px;
+  height: 100%;
 }
 
 .carousel-inner{
