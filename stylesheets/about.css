@@ -1,11 +1,20 @@
 body{
-  background-color:white;
-  box-shadow: inset 0 0 0 15px violet;
+  background-color: rgb(240, 248, 255);
   color: rgb(9, 6, 170);
-  height: 300vh;
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
-  margin: 0;
+}
+
+.container-fluid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh 80vh 255vh 20vh;
+  grid-template-areas:
+        "head head head"
+        "jumbo jumbo jumbo"
+        "article article article"
+        "footer footer footer";
+  box-shadow: inset 0 0 0 15px violet;
 }
 
 .navbar{
@@ -44,8 +53,13 @@ a:hover{
 }
 
 .jumbotron{
+  grid-area: jumbo;
   width: 85vw;
   margin: auto;
+}
+
+.about-me-img{
+  rotate: 90deg;
 }
 
 .display-4{
@@ -58,7 +72,7 @@ a:hover{
 }
 
 .content{
-  height: 100%;
+  grid-area: article;
   width: 85vw;
   margin: auto;
 }
@@ -73,8 +87,8 @@ a:hover{
 }
 
 .footer{
-  margin-bottom: auto;
+  grid-area: footer;
+  margin: 15px;;
   width: 100%;
-  height: 10vh;
   background-color: rgb(158, 255, 158);
 }
