@@ -67,16 +67,24 @@ a:hover{
   align-self: center;
 }
 
+.carousel-control-prev .carousel-control-next{
+  border-radius: 25px;
+}
+
+.carousel-inner{
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
 .carousel-img {
   margin: auto;
-  border-radius: 25px;
   overflow: hidden;
 }
 
 .carousel-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .intro{
