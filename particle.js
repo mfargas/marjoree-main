@@ -12,7 +12,7 @@ function setup() {
   var b = 1.25;
 
   for (var i = 0; i < 100; i++) {
-    particles.push(new Particle((windowWidth / 4), (windowHeight * 1 / 4)));
+    particles.push(new Particle((windowWidth), (windowHeight)));
   }
   attractor = createVector(((a) * 300), ((b) * 300));
   background(10, 10, 10);

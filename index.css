@@ -53,6 +53,10 @@ a:hover{
   text-decoration: none;
 }
 
+.particle-dandelion{
+  grid-area: head;
+}
+
 .content-wrapper{
   padding: 10px;
   background-color: white;
