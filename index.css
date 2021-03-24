@@ -69,19 +69,20 @@ a:hover{
 }
 
 .intro{
-  height: 30vh;
-  width: 60vw;
+  height: 80%;
+  width: 50vw;
   background-color: blue;
   color: rgb(240, 248, 255);
-  margin: 20px;
+  margin: 25px;
 }
 
 .intro p{
-  padding: 15px;
-  align-content: center;
+  padding: 10px;
+  text-align: justify;
 }
 
 .container-row{
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
