@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(240, 248, 255);
+  background-color: white;
   color: rgb(0, 0, 100);
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
@@ -13,7 +13,7 @@ body{
         "head head head"
         "article article article"
         "footer footer footer";
-  box-shadow: inset 0 0 0 15px violet;
+  box-shadow: inset 0 0 0 10px violet;
 }
 
 .navbar{
@@ -21,8 +21,9 @@ body{
   font-size: 25px;
   grid-area: head;
   width: 100%;
+  height: 20vh;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .menu-right{
@@ -66,8 +67,6 @@ a:hover{
   background-color: white;
   grid-area: article;
 }
-
-
 
 .intro{
   height: 30vh;
