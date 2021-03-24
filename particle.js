@@ -4,12 +4,13 @@ var started = false;
 var attractor;
 var particles = [];
 
-function windowResized(){
+function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
 
+  createCanvas(windowWidth, windowHeight);
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
@@ -18,23 +19,23 @@ function setup() {
 
   var b = 1.25;
 
-  for (var i = 0; i < 100; i++) {
-    particles.push(new Particle((windowWidth * 0.75)), ((windowHeight * 0.75)));
+  for (var i = 0; i < 40; i++) {
+    particles.push(new Particle((windowWidth / 4), (windowHeight * 1 / 4)));
   }
-  attractor = createVector(((a) * 600), ((b) * 500));
+  attractor = createVector(((a) * 400), ((b) * 400));
   background(300, 300, 300);
 }
 
 
 function draw() {
-  stroke(300);
+  stroke(20);
   strokeWeight(0);
   point(attractor.x, attractor.y);
 
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 40; i++) {
 
-  var particle = particles[i];
-    // particle.attracted(attractor);
+    var particle = particles[i];
+    particle.attracted(attractor);
     particle.update();
     particle.show();
   }
@@ -48,22 +49,24 @@ function Particle(x, y) {
   this.acc = createVector();
   this.lifespan = 2250.0;
 
-  this.update = function() {
+  this.update = function () {
     this.vel.add(this.acc);
     this.pos.add(this.vel);
     this.lifespan--;
   }
 
-  this.show = function() {
+  this.show = function () {
     stroke(200, this.lifespan);
-    strokeWeight(3);
+    strokeWeight(1);
     point(this.pos.x, this.pos.y);
   }
-  this.attracted = function(target) {
+
+  this.attracted = function (target) {
     var force = p5.Vector.sub(target, this.pos);
     var dsquared = force.magSq();
+
     dsquared = constrain(dsquared, 50, 400);
-    var G = 50;
+    var G = 30;
     var strength = G / dsquared;
     force.setMag(strength);
     this.acc = force;
