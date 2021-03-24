@@ -72,21 +72,21 @@ a:hover{
 }
 
 .left-column-jumbo{
-  width: 60%;
-  margin-top: 20vh;
+  width: 50%;
+  margin-top: 5vh;
 }
 
 .left-column-jumbo p{
   text-align: right;
   padding: 4px;
-  margin-right: 10px;
+  margin-right: 5vw;
 }
 
 .about-me-img{
   height: 40vh;
   border-radius: 25px;
   border-color: yellowgreen;
-  border-width: 3px;
+  border-width: 5px;
 }
 
 .display-4{
