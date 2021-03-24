@@ -1,11 +1,18 @@
+var canvas;
 var started = false;
 
 var attractor;
 var particles = [];
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
 
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+  canvas.style('z-index', '-1');
 
   var a = 1.25;
 
