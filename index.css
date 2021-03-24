@@ -49,6 +49,10 @@ a:hover{
   background-color: violet;
 }
 
+.opening-statement{
+  margin-left: 25vw;
+  margin-top: 50vh;
+}
 
 .social-link-flex{
   text-decoration: none;
