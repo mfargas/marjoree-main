@@ -8,7 +8,7 @@ body{
 .container-fluid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vh 80vh 255vh 20vh;
+  grid-template-rows: 100vh 80vh 255vh 20vh;
   grid-template-areas:
         "head head head"
         "carousel carousel carousel"
