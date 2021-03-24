@@ -111,7 +111,7 @@ iframe{
 
 .footer{
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   grid-area: footer;
   background-color: rgb(158, 255, 158);
 }

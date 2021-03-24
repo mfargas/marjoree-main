@@ -94,13 +94,12 @@ a:hover{
 }
 
 .container{
-  height: 50vh;
   width: 80vw;
   margin: auto;
 }
 
 .footer{
-  margin: 15px auto;
+  margin: 10px auto;
   width: 100%;
   grid-area: footer;
   background-color: rgb(158, 255, 158);
