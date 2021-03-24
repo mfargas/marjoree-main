@@ -1,5 +1,5 @@
 body{
-  background-color:rgb(240, 248, 255);
+  background-color:white;
   color: rgb(0, 0, 100);
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
@@ -8,7 +8,7 @@ body{
 .container-fluid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vh 80vh 255vh 20vh;
+  grid-template-rows: 20vh 80vh 400vh 20vh;
   grid-template-areas:
         "head head head"
         "carousel carousel carousel"
