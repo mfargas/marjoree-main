@@ -55,9 +55,8 @@ a:hover{
 }
 
 .opening-statement-2{
-  margin-top: 60vh;
-  margin-right: 25vw;
-  text-align: right;
+  margin-left: 25vw;
+  text-align: center;
 }
 
 .h2-top{
@@ -80,6 +79,11 @@ a:hover{
 
 #intro-container{
   text-align: right;
+  display: grid;
+}
+
+#intro-container h1{
+  text-align: center;
 }
 
 .intro{
