@@ -34,7 +34,7 @@ function draw() {
   for (var i = 0; i < 50; i++) {
 
   var particle = particles[i];
-    particle.attracted(attractor);
+    // particle.attracted(attractor);
     particle.update();
     particle.show();
   }
