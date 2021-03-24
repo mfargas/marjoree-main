@@ -21,7 +21,7 @@ function setup() {
   for (var i = 0; i < 100; i++) {
     particles.push(new Particle((windowWidth * 0.75)), ((windowHeight * 0.75)));
   }
-  attractor = createVector(((a) * (windowWidth / 2)), ((b) * (windowHeight / 2)));
+  attractor = createVector(((a) * 600), ((b) * 500));
   background(300, 300, 300);
 }
 
