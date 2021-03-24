@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(240, 248, 255);
+  background-color: white;
   color: rgb(9, 6, 170);
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
@@ -8,7 +8,7 @@ body{
 .container-fluid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vh 80vh 255vh 20vh;
+  grid-template-rows: 20vh 80vh 155vh 20vh;
   grid-template-areas:
         "head head head"
         "jumbo jumbo jumbo"
@@ -68,11 +68,16 @@ a:hover{
   width: 100%;
   padding: 30px;
   margin: auto;
-  justify-content: left;
+  justify-content: center;
 }
 
 .left-column-jumbo{
-  width: 70%;
+  width: 60%;
+}
+
+.left-column-jumbo p{
+  text-align: right;
+  padding: 10px;
 }
 
 .about-me-img{
