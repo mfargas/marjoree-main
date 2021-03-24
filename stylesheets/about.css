@@ -116,17 +116,13 @@ a:hover{
 
 .footer{
   grid-area: footer;
+  display: flex;
+  justify-content: space-between;
   margin: 10px auto;
   width: 100%;
   background-color: rgb(158, 255, 158);
 }
 
-.bottom-left {
-  bottom: 0px;
-  left: 0px;
-}
-
-.bottom-right{
-  bottom: 0px;
-  right: 0px;
+.bottom-left .bottom-right{
+  margin-top: 5vh;
 }
