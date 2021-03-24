@@ -11,7 +11,7 @@ body{
   grid-template-rows: 20vh 80vh 255vh 20vh;
   grid-template-areas:
         "head head head"
-        "jumbo jumbo jumbo"
+        "carousel carousel carousel"
         "article article article"
         "footer footer footer";
   box-shadow: inset 0 0 0 15px violet;
@@ -52,24 +52,40 @@ a:hover{
   text-decoration: none;
 }
 
-.jumbo{
-  grid-area: jumbo;
-  width: 100vw;
+
+#carousel-container{
   margin: auto;
+  grid-area: carousel;
+  border-radius: 25px;
+  width: 75vw;
+  align-self: center;
 }
 
-.jumbotron{
-  width: 85vw;
-  margin: auto;
+.carousel-control-prev{
+  border-radius: 25px;
+  height: 100%;
 }
 
-.display-4{
-  width: 90vw;
+.carousel-control-next{
+  border-radius: 25px;
+  height: 100%;
 }
 
-.lead{
-  width: 80vw;
+.carousel-inner{
+  width: 100%;
+  height: 65vh;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-img {
   margin: auto;
+  overflow: hidden;
+}
+
+.carousel-img img {
+  object-fit: cover;
 }
 
 .content{
