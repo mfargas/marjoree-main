@@ -23,6 +23,7 @@ body{
   grid-area: head;
   width: 100%;
   margin: auto;
+  margin-top: 5px;
 }
 
 .menu-right{
