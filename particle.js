@@ -31,7 +31,7 @@ function draw() {
   strokeWeight(0);
   point(attractor.x, attractor.y);
 
-  for (var i = 0; i < 50; i++) {
+  for (var i = 0; i < 100; i++) {
 
   var particle = particles[i];
     // particle.attracted(attractor);
@@ -56,7 +56,7 @@ function Particle(x, y) {
 
   this.show = function() {
     stroke(200, this.lifespan);
-    strokeWeight(1);
+    strokeWeight(3);
     point(this.pos.x, this.pos.y);
   }
   this.attracted = function(target) {
