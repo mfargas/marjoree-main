@@ -77,6 +77,8 @@ a:hover{
 
 .about-me-img{
   height: 40vh;
+  border-radius: 25px;
+  border-color: yellowgreen;
 }
 
 .display-4{
