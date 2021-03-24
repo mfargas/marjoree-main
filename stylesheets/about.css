@@ -79,6 +79,7 @@ a:hover{
   height: 40vh;
   border-radius: 25px;
   border-color: yellowgreen;
+  border-width: 3px;
 }
 
 .display-4{
@@ -94,6 +95,7 @@ a:hover{
   grid-area: article;
   width: 85vw;
   margin: auto;
+  align-content: flex-start;
 }
 
 .content-header{
