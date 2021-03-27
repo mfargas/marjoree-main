@@ -140,6 +140,8 @@ iframe{
 }
 
 .footer{
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
   margin-bottom: 10px;
   grid-area: footer;
@@ -147,11 +149,12 @@ iframe{
 }
 
 footer.bottom-left{
-  margin-left: 20px
+  text-align: center;
 }
 
 footer.bottom-right{
   margin-right: 20px;
+  align-self: center;
 }
 
 /* iphones */
