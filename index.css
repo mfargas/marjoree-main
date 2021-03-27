@@ -110,11 +110,16 @@ a:hover{
   justify-content: space-evenly;
 }
 
+.container-featured-header{
+  height: auto;
+  margin: auto;
+}
+
 .cont-container{
   width: 300px;
   height: 300px;
   margin: 25px;
-  box-shadow: inset 0 0 0 3px turquoise;
+  box-shadow: inset 0 0 0 3px pink;
 }
 
 .container-content{
@@ -137,17 +142,15 @@ iframe{
   margin-bottom: 10px;
   grid-area: footer;
   /* background-color: rgb(158, 255, 158); */
-  display: flex;
-  justify-content: space-between;
 }
 
-/* footer.bottom-left{
-  
+footer.bottom-left{
+  margin-left: 20px
 }
 
 footer.bottom-right{
-
-} */
+  margin-right: 20px;
+}
 
 /* iphones */
 
