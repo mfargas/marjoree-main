@@ -64,7 +64,7 @@ a:hover{
 }
 
 .h2-top{
-  margin-right: 28vw;
+  margin-right: 20vw;
 }
 
 .social-link-flex{
@@ -136,8 +136,18 @@ iframe{
   width: 100%;
   margin-bottom: 10px;
   grid-area: footer;
-  background-color: rgb(158, 255, 158);
+  /* background-color: rgb(158, 255, 158); */
+  display: flex;
+  justify-content: space-between;
 }
+
+/* footer.bottom-left{
+  
+}
+
+footer.bottom-right{
+
+} */
 
 /* iphones */
 
