@@ -64,7 +64,7 @@ a:hover{
 }
 
 .h2-top{
-  margin-right: 30vw;
+  margin-right: 28vw;
 }
 
 .social-link-flex{
@@ -139,6 +139,8 @@ iframe{
   background-color: rgb(158, 255, 158);
 }
 
+/* iphones */
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -159,5 +161,47 @@ iframe{
     width: 65vw;
     margin: auto;
   }
+
+  .opening-statement{
+    margin-left: 25vw;
+    margin-top: 35vh;
+  }
+
+  .opening-statement-2{
+    margin-left: 20vw;
+    text-align: center;
+  }
+
+  .h2-top{
+    margin-right: 20vw;
+  }
 }
 
+/* ipad minis and airs */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+/* ipad 12 in */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
