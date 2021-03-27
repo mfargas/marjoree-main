@@ -25,6 +25,10 @@ body{
   margin: auto;
 }
 
+.logo-image{
+  width: 25vw;
+}
+
 .menu-right{
   display: inline-flex;
   flex-wrap: wrap;
@@ -101,8 +105,8 @@ a:hover{
 .content{
   grid-area: article;
   width: 85vw;
-  margin: auto;
-  align-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-header{
