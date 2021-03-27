@@ -59,12 +59,12 @@ a:hover{
 }
 
 .opening-statement-2{
-  margin-left: 25vw;
+  margin-left: 20vw;
   text-align: center;
 }
 
 .h2-top{
-  margin-right: 20vw;
+  margin-right: 18vw;
 }
 
 .social-link-flex{
@@ -96,6 +96,7 @@ a:hover{
   background-color: rgb(0, 0, 100);
   color: rgb(240, 248, 255);
   margin: 25px;
+  align-self: center;
 }
 
 .intro p{
@@ -113,6 +114,7 @@ a:hover{
 .container-featured-header{
   height: auto;
   margin: auto;
+  text-align: center;
 }
 
 .cont-container{
