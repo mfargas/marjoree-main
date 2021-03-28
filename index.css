@@ -56,11 +56,20 @@ a:hover{
 .opening-statement{
   margin-left: 25vw;
   margin-top: 50vh;
+  animation: normal;
+  animation-play-state: running;
+  animation-duration: 1s;
+  animation-name: drop-down;
 }
 
 .opening-statement-2{
   margin-left: 20vw;
   text-align: center;
+  animation: normal;
+  animation-play-state: running;
+  animation-duration: 1s;
+  animation-delay: 250ms;;
+  animation-name: drop-down;
 }
 
 .h2-top{
@@ -155,6 +164,17 @@ footer.bottom-left{
 footer.bottom-right{
   margin-right: 20px;
   align-self: center;
+}
+
+@keyframes drop-down{
+  from{
+    opacity: 0.5;
+    transform: translateY(-100px);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(0);
+  }
 }
 
 /* iphones */
