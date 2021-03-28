@@ -119,14 +119,20 @@ a:hover{
 }
 
 .footer{
-  grid-area: footer;
   display: flex;
-  justify-content: space-between;
-  margin: 10px auto;
+  justify-content: space-evenly;
   width: 100%;
-  background-color: rgb(158, 255, 158);
+  margin-bottom: 10px;
+  grid-area: footer;
+  text-align: center;
+  /* background-color: rgb(158, 255, 158); */
 }
 
-.bottom-left .bottom-right{
-  margin-top: 5vh;
+footer.bottom-left{
+  text-align: center;
+}
+
+footer.bottom-right{
+  margin-right: 20px;
+  align-self: center;
 }

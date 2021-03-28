@@ -103,8 +103,20 @@ a:hover{
 }
 
 .footer{
-  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 10px;
   grid-area: footer;
-  background-color: rgb(158, 255, 158);
+  text-align: center;
+  /* background-color: rgb(158, 255, 158); */
+}
+
+footer.bottom-left{
+  text-align: center;
+}
+
+footer.bottom-right{
+  margin-right: 20px;
+  align-self: center;
 }
