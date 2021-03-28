@@ -156,6 +156,7 @@ iframe{
   width: 100%;
   margin-bottom: 10px;
   grid-area: footer;
+  text-align: center;
   /* background-color: rgb(158, 255, 158); */
 }
 
