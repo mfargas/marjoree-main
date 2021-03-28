@@ -58,7 +58,8 @@ a:hover{
   margin-top: 50vh;
   animation: normal;
   animation-play-state: running;
-  animation-duration: 1s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   animation-name: drop-down;
 }
 
@@ -67,8 +68,9 @@ a:hover{
   text-align: center;
   animation: normal;
   animation-play-state: running;
-  animation-duration: 1s;
-  animation-delay: 250ms;;
+  animation-duration: 2s;
+  animation-delay: 250ms;
+  animation-timing-function: ease-in-out;
   animation-name: drop-down;
 }
 
@@ -168,11 +170,11 @@ footer.bottom-right{
 
 @keyframes drop-down{
   from{
-    opacity: 0.5;
-    transform: translateY(-100px);
+    opacity: 0.25;
+    transform: translateY(-200px);
   }
   to{
-    opacity: 0;
+    opacity: 1;
     transform: translateY(0);
   }
 }
