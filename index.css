@@ -3,9 +3,14 @@ body{
   color: rgb(0, 0, 100);
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
+  padding: 0%;
+  margin: 0;
+
 }
 
 .container-fluid{
+  top: 0;
+  left: 0;
   width: 100%;
   box-shadow: inset 0 0 0 10px violet;
 }
@@ -14,9 +19,10 @@ body{
   color: rgb(0, 0, 100);
   font-size: 2em;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
+  left: 0;
   margin: auto;
-  margin-top: 0px;
+  position: fixed;
 }
 
 .logo-image{
@@ -30,11 +36,18 @@ body{
   margin-left: auto;
 }
 
+.menu-right ul{
+  display: flex;
+  list-style-type: none;
+  margin-right: auto;
+}
+
 
 .navbar-brand{
   color: rgb(0, 0, 100);
-  font-size: 3em;
+  font-size: 2em;
   margin: 1rem;
+  height: max-content;
 }
 
 a{
@@ -48,7 +61,6 @@ a:hover{
 
 .opening-statement{
   margin-left: 25vw;
-  margin-top: 50vh;
   animation: normal;
   animation-play-state: running;
   animation-duration: 2s;
@@ -81,13 +93,12 @@ a:hover{
 }
 
 .content-wrapper{
-  padding: 10px;
+  padding: 0px;
   background-color: white;
 }
 
 #intro-container{
   text-align: right;
-  display: grid;
 }
 
 #intro-container h1{
@@ -102,6 +113,7 @@ a:hover{
   margin: 25px;
   align-self: center;
 }
+
 
 .intro p{
   margin: 20px;
@@ -125,7 +137,7 @@ a:hover{
   width: 300px;
   height: 300px;
   margin: 25px;
-  box-shadow: inset 0 0 0 3px pink;
+  box-shadow: inset 0 0 0 3px blue;
 }
 
 .container-content{
