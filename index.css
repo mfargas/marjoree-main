@@ -16,28 +16,28 @@ body{
   color: #0d0d0d;
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
-}
-
-.container-fluid{
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: inset 0 0 0 10px #CAC9F2;
   width: 100%;
   height: 100%;
+  box-shadow: inset 0 0 0 10px #CAC9F2;
 }
+
+/* .container-fluid{
+  top: 0;
+  left: 0;
+  
+} */
 
 .navbar{
   color: #0d0d0d;
   font-size: 2em;
-  width: 100%;
+  width: 90vw;
   height: 15vh;
   left: 0;
-  margin: auto;
+  margin: 1em;
+  justify-self: center;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  margin: 1em;
 }
 
 /* branding */
@@ -99,15 +99,23 @@ body{
 /* intro */
 
 .particle-dandelion{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex-inline;
+}
+
+.particle-dandelion script{
+  width: 100%;
+  height: 100%;
+  z-index: -5px;
+  margin: auto;
 }
 
 .intro-statement{
   display: flex;
   flex-direction: column;
   margin: auto;
+  z-index: 5px;
 }
 
 .opening-statement{
@@ -151,12 +159,13 @@ body{
 }
 
 .intro{
-  height: 60%;
-  width: 90vw;
-  background-image: linear-gradient(to bottom right,#88A2F2, white);
-  color: rgb(240, 248, 255);
+  height: 100%;
+  width: 100%;
+  z-index: -3;
   margin: auto;
   align-self: center;
+  background-image: linear-gradient(to top,#88A2F2, white);
+  color: rgb(240, 248, 255);
   border-radius: 0 25px 0 25px;
 }
 
