@@ -1,11 +1,19 @@
+/* Color Theme Swatches in Hex 
+.marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light perriwinkle from logo
+.marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
+.marjoree-site-theme-march21-3-hex { color: #88A2F2; }    perriwinkle from logo
+.marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
+.marjoree-site-theme-march21-5-hex { color: #0D0D0D; }    neutral black    */
+
+
 *{
   padding: 0;
   margin: 0;
 }
 
 body{
-  background-color: white;
-  color: rgb(0, 0, 100);
+  background-color: #F2F2F2;
+  color: #0d0d0d;
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 600;
 }
@@ -14,13 +22,13 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  /* box-shadow: inset 0 0 0 10px violet; */
+  box-shadow: inset 0 0 0 10px #CAC9F2;
   width: 100%;
   height: 100%;
 }
 
 .navbar{
-  color: rgb(0, 0, 100);
+  color: #0d0d0d;
   font-size: 2em;
   width: 100%;
   height: 15vh;
@@ -29,18 +37,18 @@ body{
   display: flex;
   flex-wrap: wrap;
   position: fixed;
+  margin: 1em;
 }
 
 /* branding */
 
 .navbar-brand{
-  color: rgb(0, 0, 100);
+  color: #0d0d0d;
   height: max-content;
-  margin: 1em;
 }
 
 .navbar-brand img{
-  color: rgb(0, 0, 100);
+  color: #0d0d0d;
   width: 12em;
   margin: auto;
 }
@@ -56,7 +64,7 @@ body{
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-  display: flexbox;
+  display: flex;
 }
 
 .menu-right ul{
@@ -71,13 +79,14 @@ body{
 }
 
 .menu-right a{
-  color: rgb(0, 0, 100);
+  color: #0d0d0d;
   text-decoration: none;
   margin: auto;
 }
 
 .menu-right a:hover{
-  background-color: #CAC9F2;
+  background-color: #88A2F2;
+  color: #CAC9F2;
 }
 
 .nav-link{
@@ -144,10 +153,11 @@ body{
 .intro{
   height: 60%;
   width: 90vw;
-  background-color: #88A2F2;
+  background-image: linear-gradient(to bottom right,#88A2F2, white);
   color: rgb(240, 248, 255);
   margin: auto;
   align-self: center;
+  border-radius: 0 25px 0 25px;
 }
 
 
