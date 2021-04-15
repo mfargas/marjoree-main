@@ -14,7 +14,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: inset 0 0 0 10px violet;
+  /* box-shadow: inset 0 0 0 10px violet; */
   width: 100%;
   height: 100%;
 }
@@ -49,6 +49,8 @@ body{
 .menu-right{
   place-content: flex-end;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .menu-right ul{
@@ -58,12 +60,14 @@ body{
 
 .menu-right ul li{
   margin: auto;
+  padding-right: 1em;
   vertical-align: middle;
 }
 
-.menu-right ul li a{
+.menu-right a{
   color: rgb(0, 0, 100);
   text-decoration: none;
+  margin: auto;
 }
 
 .menu-right ul a:hover{
@@ -74,10 +78,20 @@ body{
   text-decoration: none;
 }
 
+/* end of navbar */
+
+/* intro */
+
 .particle-dandelion{
   width: 100vw;
   height: 100vh;
   display: flex;
+}
+
+.intro-statement{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .opening-statement{
@@ -101,12 +115,15 @@ body{
 }
 
 .h2-top{
-  margin-right: 18vw;
-}
+  margin-left: 5vw;
+} 
+
+/* article */
 
 .content-wrapper{
-  padding: 0px;
-  background-color: white;
+  padding: 0;
+  display: flexbox;
+  flex-direction: column;
 }
 
 #intro-container{
