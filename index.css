@@ -5,6 +5,7 @@
 .marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
 .marjoree-site-theme-march21-5-hex { color: #0D0D0D; }    neutral black    */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
 
 *{
   padding: 0;
@@ -14,8 +15,8 @@
 body{
   background-color: #F2F2F2;
   color: #0d0d0d;
-  font-family: 'Quattrocento Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 0 10px #CAC9F2;
@@ -100,8 +101,8 @@ body{
 
 .particle-dandelion{
   width: 100%;
-  height: 100%;
-  display: flex-inline;
+  height: 100vh;
+  display: flex;
 }
 
 .particle-dandelion script{
@@ -116,6 +117,7 @@ body{
   flex-direction: column;
   margin: auto;
   z-index: 5px;
+  color: #0511F2;
 }
 
 .opening-statement{
@@ -165,14 +167,18 @@ body{
   margin: auto;
   align-self: center;
   background-image: linear-gradient(to top,#88A2F2, white);
-  color: rgb(240, 248, 255);
+  color: #0D0D0D;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
   border-radius: 0 25px 0 25px;
+  line-height: 1px;
 }
 
 
 .intro p{
-  margin: 20px;
-  text-align: justify;
+  margin: auto;
+  line-height: 10px;
 }
 
 .container-row{
@@ -210,22 +216,28 @@ iframe{
   margin: auto;
 }
 
+/* footer */
+
 .footer{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   height: 10vh;
+  z-index: -3px;
   text-align: center;
+  color: #0511F2;
   background-color: #CAC9F2;
 }
 
 footer.bottom-left{
-  text-align: center;
+  /* text-align: center; */
+  margin: auto;
+  vertical-align: middle;
 }
 
 footer.bottom-right{
-  margin-right: 20px;
-  align-self: center;
+  margin: auto;
+  vertical-align: middle;
 }
 
 @keyframes drop-down{
@@ -246,9 +258,14 @@ footer.bottom-right{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-  .container-fluid{
-    display: flex;
-    box-shadow: inset 0 0 0 10px violet;
+  body{
+    background-color: #F2F2F2;
+    color: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 10px #CAC9F2;
   }
 
   .menu-right{
@@ -278,6 +295,13 @@ footer.bottom-right{
   .h2-top{
     margin-right: 20vw;
   }
+
+  .container-row{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 }
 
 /* ipad minis and airs */
