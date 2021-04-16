@@ -5,13 +5,13 @@ var attractor;
 var particles = [];
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas((windowWidth-20px), (windowHeight-20px));
 }
 
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth-20px, windowHeight-20px);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
 
@@ -23,7 +23,7 @@ function setup() {
     particles.push(new Particle((windowWidth / 4), (windowHeight * 1 / 4)));
   }
   attractor = createVector(((a) * 400), ((b) * 400));
-  background(300, 300, 300);
+  background(242, 242, 242);
 }
 
 
