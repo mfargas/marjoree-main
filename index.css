@@ -338,7 +338,7 @@ body{
   }
 
   .logo-image img{
-    width: 10em;
+    width: 60vw;
     margin: auto;
   }
 
@@ -510,7 +510,7 @@ body{
   }
   
   .logo-image img{
-    width: 10em;
+    width: 60vw;
     margin: auto;
   }
 
@@ -618,7 +618,7 @@ body{
     visibility: hidden;
   }
   
-  .logo-image{
+  .logo-image img{
     width: 65vw;
     margin: auto;
   }
@@ -689,7 +689,7 @@ body{
   }
 
   
-  .logo-image{
+  .logo-image img{
     width: 65vw;
     margin: auto;
   }
