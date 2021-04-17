@@ -254,7 +254,7 @@ body{
   font-weight: 500;
 }
 
-footer.bottom-left{
+.bottom-left{
   text-align: center;
   margin: auto;
   display: flex;
@@ -262,11 +262,11 @@ footer.bottom-left{
   align-content: center;
 }
 
-footer.bottom-left p{
+.bottom-left p{
   margin: auto;
 }
 
-footer.bottom-right{
+.bottom-right{
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -274,7 +274,7 @@ footer.bottom-right{
   text-align: center;
 }
 
-footer.bottom-right p{
+.bottom-right p{
   margin: auto;
 }
 
@@ -319,17 +319,20 @@ footer.bottom-right p{
     margin: 1em;
     justify-self: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     position: fixed;
   }
 
   .navbar-brand{
     width: max-content;
+    margin: 5px;
+    top: 0;
+    left: 0;
   }
 
-  .logo-image{
-    width: 50vw;
+  .logo-image img{
+    width: 25%;
     margin: auto;
   }
 
@@ -425,11 +428,11 @@ footer.bottom-right p{
     font-weight: 500;
   }
 
-  footer.bottom-left p{
+  .bottom-left{
     text-align: center;
   }
 
-  footer.bottom-right p{
+  .bottom-right{
     text-align: center;
   }
 }
@@ -710,4 +713,5 @@ footer.bottom-right p{
     color: #060663;
     font-weight: 500;
   }
+  
 }

@@ -4,8 +4,16 @@ let bars = document.querySelector(".bars");
 let xSymbol = document.querySelector(".xSymbol");
 const menuItems = document.querySelector(".nav-link");
 
-function toggleMenu(){
-    menuItems.forEach(nav => nav.classList.toggle('nav-toggle-showing'));
+function toggleMenu() {
+    (menu.classList.contains('active')) ? menu.classList.remove('active') : menu.classLIst.add('active');
 }
 
-ham.addEventListener('click', toggleMenu);
+ham.addEventListener('click', function (e) {
+    e.preventDefault();
+});
+
+for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', function () {
+        toggleMenu();
+    });
+}
