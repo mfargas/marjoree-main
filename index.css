@@ -10,7 +10,6 @@
 *{
   padding: 0px;
   margin: 0px;
-  overflow: hidden;
 }
 
 body{
@@ -100,6 +99,7 @@ body{
   width: calc(100%-2em);
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 .particle-dandelion script{
@@ -113,7 +113,7 @@ body{
   display: flex;
   flex-direction: column;
   margin: auto;
-  z-index: 5px;
+  z-index: 5;
   color: #0511F2;
 }
 
@@ -201,7 +201,7 @@ body{
   width: 300px;
   height: 300px;
   margin: 25px;
-  box-shadow: inset 0 0 0 3px #0511F2;
+  box-shadow: outset 0 0 0 2em #0511F2;
 }
 
 .container-content{
@@ -226,8 +226,7 @@ body{
   align-items: center;
   width: 100%;
   height: 30vh;
-  z-index: -5;
-  text-align: center;
+  z-index: -7;
   color: #060663;
   font-weight: 500;
   background-image: linear-gradient(to bottom,#88A2F2, #F2F2F2);
@@ -250,6 +249,7 @@ footer.bottom-right{
   display: flex;
   flex-direction: column;
   align-content: center;
+  text-align: center;
 }
 
 footer.bottom-right p{

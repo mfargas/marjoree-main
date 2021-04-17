@@ -13,7 +13,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
-  canvas.style('z-index', '-6');
+  canvas.style('z-index', '-7');
 
   var a = 1.25;
 
