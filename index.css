@@ -1,7 +1,7 @@
 /* Color Theme Swatches in Hex 
-.marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light perriwinkle from logo
+.marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light periwinkle from logo
 .marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
-.marjoree-site-theme-march21-3-hex { color: #88A2F2; }    perriwinkle from logo
+.marjoree-site-theme-march21-3-hex { color: #88A2F2; }    periwinkle from logo
 .marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
 .marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
 
@@ -67,7 +67,7 @@ body{
 }
 
 .menu-button{
-  display: none;
+  display: initial;
   border-color: #88A2F2;
   border-radius: 50%;
   border-width: 1px;
@@ -313,13 +313,13 @@ footer.bottom-right p{
 
   .navbar{
     font-size: 1.5em;
-    width: 95vw;
-    height: 10vh;
+    width: 85vw;
+    height: 100vh;
     left: 0;
     margin: 1em;
     justify-self: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     position: fixed;
   }
@@ -333,20 +333,35 @@ footer.bottom-right p{
     margin: auto;
   }
 
-  .menu-button{
-    display: block;
+  .nav-toggle-showing{
+    display: flex;
   }
 
-  .menu{
-    display: none;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+  .menu-button{
+    display: initial;
+    cursor: pointer;
+    position: absolute;
   }
 
   .menu-right{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: tomato;
+  }
+
+  .menu-right{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: tomato;
+    border-color: turquoise;
+  }
+
+  .nav-link{
+    display: none;
   }
 
   .opening-statement{
