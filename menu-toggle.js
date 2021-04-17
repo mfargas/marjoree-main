@@ -1,4 +1,4 @@
-let menu = document.querySelector(".menu");
+let menu = document.querySelector(".menu-right");
 let ham = document.querySelector(".menu-button");
 let bars = document.querySelector(".bars");
 let xSymbol = document.querySelector(".xSymbol");

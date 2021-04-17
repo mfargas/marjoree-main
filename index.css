@@ -64,6 +64,7 @@ body{
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
+  visibility: visible;
 }
 
 .menu-button{
@@ -332,12 +333,8 @@ body{
   }
 
   .logo-image img{
-    width: 25%;
+    width: 10em;
     margin: auto;
-  }
-
-  .nav-toggle-showing{
-    display: flex;
   }
 
   .menu-button{
@@ -349,22 +346,15 @@ body{
   .menu-right{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: tomato;
-  }
-
-  .menu-right{
-    display: flex;
-    flex-direction: column;
     margin: auto;
+    visibility: hidden;
     text-align: center;
     background-color: tomato;
     border-color: turquoise;
   }
 
-  .nav-link{
-    display: none;
+  .menu-right.showing{
+    visibility: hidden;
   }
 
   .opening-statement{
@@ -383,6 +373,10 @@ body{
 
   .h2-bottom{
     width: 40vw;
+  }
+
+  .intro{
+    height: max-content;
   }
 
   .featured-projects{
@@ -473,18 +467,27 @@ body{
   }
 
   .menu-button{
-    display: block;
+    display: initial;
+    cursor: pointer;
+    position: absolute;
   }
 
-  .menu{
-    display: none;
+  .menu-right{
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: auto;
+    visibility: hidden;
+    text-align: center;
+    background-color: tomato;
+    border-color: turquoise;
+  }
+
+  .menu-right.showing{
+    visibility: hidden;
   }
   
-  .logo-image{
-    width: 65vw;
+  .logo-image img{
+    width: 10em;
     margin: auto;
   }
 
@@ -500,6 +503,10 @@ body{
 
   .h2-top{
     margin-right: 20vw;
+  }
+
+  .intro{
+    height: max-content;
   }
 
   .featured-projects{
@@ -569,16 +576,23 @@ body{
   }
 
   .menu-button{
-    display: block;
-    top: 0;
-    right: 0;
+    display: initial;
+    cursor: pointer;
+    position: absolute;
   }
 
-  .menu{
-    display: none;
-    /* flex-direction: column;
-    flex-wrap: wrap; */
-    justify-content: center;
+  .menu-right{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    visibility: hidden;
+    text-align: center;
+    background-color: tomato;
+    border-color: turquoise;
+  }
+
+  .menu-right.showing{
+    visibility: hidden;
   }
   
   .logo-image{
