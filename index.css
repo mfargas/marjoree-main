@@ -390,8 +390,8 @@ body{
 
   .container-row{
     height: max-content;
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
   }
 
@@ -520,8 +520,8 @@ body{
 
   .container-row{
     height: max-content;
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
   }
 
