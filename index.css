@@ -11,6 +11,7 @@
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 body{
@@ -68,14 +69,14 @@ body{
 }
 
 .menu-button{
-  display: initial;
+  display: none;
   border-color: #88a2f2;
   border-radius: 50%;
   border-width: 1px;
   padding: 1em;
   top: 1rem;
   right: 1rem;
-  position: fixed;
+  position: absolute;
   z-index: 20;
 }
 
@@ -342,7 +343,7 @@ body{
   }
 
   .menu-button{
-    display: initial;
+    display: flex;
     cursor: pointer;
     position: absolute;
   }
@@ -353,12 +354,26 @@ body{
     margin: auto;
     visibility: hidden;
     text-align: center;
+    width: 100%;
     background-color: tomato;
     border-color: turquoise;
   }
 
-  .menu-right.showing{
-    visibility: hidden;
+  .menu-right ul{
+    flex-direction: column;
+    width: 100%;
+  }
+
+.menu-right li{
+    text-align: center;
+  }
+
+  .nav-link{
+    width: 100%;
+  }
+
+  .menu-right.active{
+    display: flex;
   }
 
   .opening-statement{

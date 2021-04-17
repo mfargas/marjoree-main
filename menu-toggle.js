@@ -1,8 +1,8 @@
-let menu = document.querySelector(".menu-right");
-let ham = document.querySelector(".menu-button");
-let bars = document.querySelector(".bars");
-let xSymbol = document.querySelector(".xSymbol");
-const menuItems = document.querySelector(".nav-link");
+let menu = document.getElementsByClassName("menu-right");
+let ham = document.getElementsByClassName("menu-button");
+let bars = document.getElementsByClassName("bars");
+let xSymbol = document.getElementsByClassName("xSymbol");
+const menuItems = document.getElementsByClassName("nav-link");
 
 function toggleMenu() {
     (menu.classList.contains('active')) ? menu.classList.remove('active') : menu.classLIst.add('active');
