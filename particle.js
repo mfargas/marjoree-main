@@ -5,15 +5,15 @@ var attractor;
 var particles = [];
 
 function windowResized() {
-  resizeCanvas((windowWidth-20px), (windowHeight-20px));
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-  canvas = createCanvas(windowWidth-20px, windowHeight-20px);
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
-  canvas.style('z-index', '-1');
+  canvas.style('z-index', '-6');
 
   var a = 1.25;
 
