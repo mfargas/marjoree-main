@@ -25,17 +25,13 @@
   <body>
     <!-- navigation -->
       <nav class="navbar">
-        <a class="navbar-brand" id="logo" href="/"> <img class="logo-image" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/perriwinkle-logo.png" alt="Marjoree.e.f"></a>
-          <button role="button" class="menu-button">
-            <span class="bars">
-              <i class="fal fa-bars"></i>
-            </span>
-            <!-- <a><span class="xSymbol">
-              <i class="far fa-times-circle" onclick="toggleMenu()">x</i>
-            </span></a> -->
-          </button>
-          <div class="menu-right">
-          <ul class="menu">
+        <a class="navbar-brand" id="logo" href="/"> <img class="logo-image" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/perriwinkle-logo.png" alt="Marjoree.e.f"><img class="small-logo" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/small-perriwinkle-logo.png" alt="M"></a>
+          
+            <div class="menu-right">
+              <ul class="menu">
+              <input type="checkbox" id="collapse" />
+              <label for="collapse"></label>
+
             <li><a class="nav-link" href="/html/projects.html">Projects</a></li>
             <li><a class="nav-link" href="/html/about.html">About</a></li>
           
@@ -52,6 +48,7 @@
             <li><a class="nav-link" href="https://www.linkedin.com/in/marjoree-fargas" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-linkedin"></i>
             </a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
           </ul>
         </div>
       </nav>

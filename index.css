@@ -44,31 +44,64 @@ body{
 .navbar-brand{
   color: #060663;
   height: max-content;
+  width: max-content;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.navbar-brand img{
-  color: #060663;
-  width: 16em;
-  margin: auto;
 }
 
 .navbar-brand:hover{
   background-color: #88A2F2;
 }
 
+.logo-image{
+  color: #060663;
+  width: 15em;
+  margin: auto;
+}
+
+.small-logo{
+  display: none;
+}
+
 /* menu and social links */
 
-.menu-button{
+label:before{
+  height: 2px;
+  width: 22px;
+  background:#CAC9F2;
+  display: inline-block;
+  content: "";
+  box-shadow:
+    0px -5px 0px 0px   #0511F2,
+    0px -10px 0px 0px #0511F2,
+    0px -15px 0px 0px #0511F2;
+  margin: auto;
+  transition: all .5s;
+  position: relative;
+  opacity: 0.5;
+}
+
+label{
   display: none;
-  border-color: #88a2f2;
-  border-radius: 50%;
-  border-width: 1px;
-  top: 1rem;
-  right: 1rem;
+  background:#CAC9F2;
+  padding: 10px;
+  color: #0511F2;  
+  cursor: pointer; 
+}
+
+input[type="checkbox"]{
+  visibility: hidden;
   position: absolute;
-  z-index: 20;
+}
+
+#collapse:checked ~ li{
+  display: none;
+  margin-top: 0; 
+}
+#collapse:checked + label:before{
+  position: relative;
+  right: calc(-160px);
+  opacity: 1;
 }
 
 span i{
@@ -340,20 +373,17 @@ span {
 
   .navbar-brand{
     width: max-content;
-    margin: 5px;
     top: 0;
     left: 0;
   }
 
-  .logo-image img{
-    width: 60vw;
-    margin: auto;
+  .logo-image{
+    display: none;
+    visibility: hidden;
   }
 
-  .menu-button{
-    display: flex;
-    cursor: pointer;
-    position: absolute;
+  .small-logo{
+    display: block;
   }
 
   .menu-right{
@@ -370,9 +400,15 @@ span {
   .menu-right ul{
     flex-direction: column;
     width: 100%;
+    height: 90%;
   }
 
-.menu-right li{
+  label{
+    display: block;
+  }
+
+  .menu-right li{
+    display: block;
     text-align: center;
   }
 
@@ -514,9 +550,29 @@ span {
     background-color: tomato;
     border-color: turquoise;
   }
+  
 
   .menu-right.showing{
     visibility: hidden;
+  }
+
+  label:before{
+  height:2px;
+  width:20px;
+  background:white;
+  display:inline-block;
+  content:"";
+  box-shadow:
+      0px -5px 0px 0px  white,
+      0px -10px 0px 0px white;
+  margin-right:10px;
+  transition:all .5s;
+  position:relative;
+  opacity:0.5;
+}
+
+  label{
+    display: block;
   }
   
   .logo-image img{
@@ -628,6 +684,10 @@ span {
 
   .menu-right.showing{
     visibility: hidden;
+  }
+
+    abel{
+    display: block;
   }
   
   .logo-image img{
