@@ -63,9 +63,13 @@ body{
   display: none;
 }
 
+.icon{
+  visibility: visible;
+}
+
 /* menu and social links */
 
-label:before{
+/* label:before{
   height: 2px;
   width: 22px;
   background:#CAC9F2;
@@ -92,9 +96,9 @@ label{
 input[type="checkbox"]{
   visibility: hidden;
   position: absolute;
-}
+} */
 
-#collapse:checked ~ li{
+/* #collapse:checked ~ li{
   display: none;
   margin-top: 0; 
 }
@@ -102,16 +106,16 @@ input[type="checkbox"]{
   position: relative;
   right: calc(-160px);
   opacity: 1;
-}
+} */
 
-span i{
+/* span i{
   font-size: 2em;
 }
 
 span {
   width: max-content;
   height: min-content;
-}
+} */
 
 .menu-right{
   margin-left: auto;
