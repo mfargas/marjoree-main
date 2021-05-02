@@ -369,6 +369,7 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     position: fixed;
+    overflow: visible;
   }
 
   .navbar-brand{
@@ -541,6 +542,16 @@ span {
     flex-wrap: wrap;
     position: fixed;
   }
+  
+  .logo-image{
+    display: none;
+    visibility: hidden;
+  }
+
+  .small-logo{
+    display: block;
+    width: 4em;
+  }
 
   .menu-button{
     display: initial;
@@ -580,6 +591,10 @@ span {
 
   label{
     display: block;
+  }
+
+  .icon{
+    visibility: visible;
   }
   
   .logo-image img{
@@ -677,6 +692,10 @@ span {
     display: initial;
     cursor: pointer;
     position: absolute;
+  }
+
+  .icon{
+    visibility: visible;
   }
 
   .menu-right{
