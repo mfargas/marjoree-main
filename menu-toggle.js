@@ -1,3 +1,3 @@
 $(".icon").click(function () {
-    $(".menu-right").toggle();
+    $(".menu-right").toggle(showing);
 });

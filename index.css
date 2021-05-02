@@ -64,58 +64,10 @@ body{
 }
 
 .icon{
-  visibility: visible;
+  visibility: hidden;
 }
 
 /* menu and social links */
-
-/* label:before{
-  height: 2px;
-  width: 22px;
-  background:#CAC9F2;
-  display: inline-block;
-  content: "";
-  box-shadow:
-    0px -5px 0px 0px   #0511F2,
-    0px -10px 0px 0px #0511F2,
-    0px -15px 0px 0px #0511F2;
-  margin: auto;
-  transition: all .5s;
-  position: relative;
-  opacity: 0.5;
-}
-
-label{
-  display: none;
-  background:#CAC9F2;
-  padding: 10px;
-  color: #0511F2;  
-  cursor: pointer; 
-}
-
-input[type="checkbox"]{
-  visibility: hidden;
-  position: absolute;
-} */
-
-/* #collapse:checked ~ li{
-  display: none;
-  margin-top: 0; 
-}
-#collapse:checked + label:before{
-  position: relative;
-  right: calc(-160px);
-  opacity: 1;
-} */
-
-/* span i{
-  font-size: 2em;
-}
-
-span {
-  width: max-content;
-  height: min-content;
-} */
 
 .menu-right{
   margin-left: auto;
@@ -400,8 +352,7 @@ span {
     visibility: hidden;
     text-align: center;
     width: 100%;
-    background-color: tomato;
-    border-color: turquoise;
+    background-color: #CAC9F2;
   }
 
   .icon{
@@ -415,16 +366,14 @@ span {
   .menu-right ul{
     flex-direction: column;
     width: 100%;
-    height: 90%;
+    height: 100%;
+    padding: 0.5em;
   }
 
-  label{
-    display: block;
-  }
-
-  .menu-right li{
+  .menu-right ul li{
     display: block;
     text-align: center;
+    padding: 1em;
   }
 
   .nav-link{
@@ -581,25 +530,6 @@ span {
     visibility: hidden;
   }
 
-  label:before{
-  height:2px;
-  width:20px;
-  background:white;
-  display:inline-block;
-  content:"";
-  box-shadow:
-      0px -5px 0px 0px  white,
-      0px -10px 0px 0px white;
-  margin-right:10px;
-  transition:all .5s;
-  position:relative;
-  opacity:0.5;
-}
-
-  label{
-    display: block;
-  }
-
   .icon{
     visibility: visible;
     top: 0;
@@ -745,9 +675,6 @@ span {
     visibility: hidden;
   }
 
-  label{
-    display: block;
-  }
   
 
   .opening-statement{
