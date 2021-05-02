@@ -361,7 +361,7 @@ span {
   .navbar{
     font-size: 1.5em;
     width: 85vw;
-    height: 100vh;
+    height: max-content;
     left: 0;
     margin: 1em;
     justify-self: center;
@@ -373,6 +373,8 @@ span {
 
   .navbar-brand{
     width: max-content;
+    height: max-content;
+    margin: 0;
     top: 0;
     left: 0;
   }
@@ -384,6 +386,7 @@ span {
 
   .small-logo{
     display: block;
+    width: 4em;
   }
 
   .menu-right{
@@ -395,6 +398,10 @@ span {
     width: 100%;
     background-color: tomato;
     border-color: turquoise;
+  }
+
+  .icon{
+    visibility: visible;
   }
 
   .menu-right ul{
