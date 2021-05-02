@@ -811,10 +811,8 @@ span {
     margin-left: auto;
   }
 
-  
-  .logo-image img{
-    width: 65vw;
-    margin: auto;
+  .icon{
+    visibility: hidden;
   }
 
   .opening-statement{
