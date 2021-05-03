@@ -1,5 +1,4 @@
-$(document).ready(function() {
-    (".icon").click(function () {
-    $(".menu-right").toggle(300);
-});
-});
+function toggleMenu() {
+    var element = document.querySelector(".menu");
+    element.classList.toggle("menuToggle");
+}

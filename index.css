@@ -360,7 +360,6 @@ body{
 
   .menu-right{
     display: initial;
-    /* flex-direction: column; */
     margin: auto;
     text-align: center;
     width: 100%;
@@ -376,8 +375,7 @@ body{
   }
 
   .menu{
-    display: flex;
-    flex-direction: column;
+    display: none;
     width: 100%;
     height: 100%;
     padding: 0.5em;
@@ -391,6 +389,11 @@ body{
 
   .nav-link{
     width: 100%;
+  }
+
+  .menuToggle{
+    display: flex;
+    flex-direction: column;
   }
 
   .opening-statement{
@@ -532,6 +535,13 @@ body{
     background-color: #CAC9F2;
   }
 
+  .menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+  }
+
   .icon{
     display: block;
     top: 0;
@@ -540,6 +550,10 @@ body{
     position: absolute;
   }
   
+  .menuToggle{
+    display: flex;
+    flex-direction: column;
+  }
 
   .opening-statement{
     margin-left: 25vw;
