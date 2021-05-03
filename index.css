@@ -26,17 +26,22 @@ body{
   box-shadow: inset 0 0 0 1em #CAC9F2;
 }
 
+/*          */
+/* Nav  Bar */
+/*          */
+
 .navbar{
   color: #060663;
   font-size: 1.5em;
   width: 95vw;
-  height: 10vh;
+  height: max-content;
   left: 0;
   margin: 1em;
   justify-self: center;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
+  z-index: 10;
 }
 
 /* branding */
@@ -62,10 +67,13 @@ body{
 .small-logo{
   display: none;
 }
+/*               */
+/* toggle button */
+/*               */
 
 .icon{
-  visibility: hidden;
-}
+    display: none;
+  }
 
 /* menu and social links */
 
@@ -74,7 +82,6 @@ body{
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
-  visibility: visible;
 }
 
 .menu-right ul{
@@ -86,12 +93,16 @@ body{
   margin: auto;
   padding-right: 0.5em;
   vertical-align: middle;
+  overflow: hidden;
 }
 
 .menu-right a{
+  height: max-content;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #060663;
   text-decoration: none;
-  margin: auto;
+  vertical-align: middle;
 }
 
 .menu-right a:hover{
@@ -102,10 +113,12 @@ body{
 .nav-link{
   text-decoration: none;
   padding: 0.5em;
+  height: max-content;
+  vertical-align: middle;
 }
 
 /* end of navbar */
-
+/*            */
 /* intro */
 
 .particle-dandelion{
@@ -346,31 +359,31 @@ body{
   }
 
   .menu-right{
-    display: flex;
-    flex-direction: column;
+    display: initial;
+    /* flex-direction: column; */
     margin: auto;
-    visibility: hidden;
     text-align: center;
     width: 100%;
     background-color: #CAC9F2;
   }
 
   .icon{
-    visibility: visible;
+    display: block;
     top: 0;
     right: 0;
     z-index: 1;
     position: absolute;
   }
 
-  .menu-right ul{
+  .menu{
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 0.5em;
   }
 
-  .menu-right ul li{
+  .menu li{
     display: block;
     text-align: center;
     padding: 1em;
@@ -378,10 +391,6 @@ body{
 
   .nav-link{
     width: 100%;
-  }
-
-  .menu-right.active{
-    display: flex;
   }
 
   .opening-statement{
@@ -467,7 +476,7 @@ body{
 /* ipad minis and airs */
 
 @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 481px) 
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -495,13 +504,13 @@ body{
     margin: 1em;
     justify-self: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: initial;
     position: fixed;
   }
   
   .logo-image{
     display: none;
-    visibility: hidden;
   }
 
   .small-logo{
@@ -509,29 +518,22 @@ body{
     width: 4em;
   }
 
-  .menu-button{
+  /* .menu-button{
     display: initial;
     cursor: pointer;
     position: absolute;
-  }
+  } */
 
   .menu-right{
     display: flex;
     flex-direction: column;
     margin: auto;
-    visibility: hidden;
     text-align: center;
-    background-color: tomato;
-    border-color: turquoise;
-  }
-  
-
-  .menu-right.showing{
-    visibility: hidden;
+    background-color: #CAC9F2;
   }
 
   .icon{
-    visibility: visible;
+    display: block;
     top: 0;
     right: 0;
     z-index: 1;
@@ -646,15 +648,15 @@ body{
     display: block;
     width: 4em;
   }
-
+/* 
   .menu-button{
     display: initial;
     cursor: pointer;
     position: absolute;
-  }
+  } */
 
   .icon{
-    visibility: visible;
+    display: block;
     position: relative;
     top: 0;
     right: 0;
@@ -670,12 +672,6 @@ body{
     background-color: tomato;
     border-color: turquoise;
   }
-
-  .menu-right.showing{
-    visibility: hidden;
-  }
-
-  
 
   .opening-statement{
     margin-left: 25vw;
@@ -743,7 +739,7 @@ body{
   }
 
   .icon{
-    visibility: hidden;
+    display: none;
   }
 
   .opening-statement{
