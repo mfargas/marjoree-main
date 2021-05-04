@@ -366,8 +366,8 @@ body{
   }
 
   .about-intro{
-      margin-top: 15%;
-    }
+    margin-top: 15%;
+  }
 
   .intro{
     height: max-content;
@@ -428,6 +428,10 @@ body{
   .menuToggle{
     display: flex;
     flex-direction: column;
+  }
+
+  .about-intro{
+    margin-top: 15%;
   }
 
   .footer{
