@@ -9,98 +9,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
   
-    <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
-  
+    <link rel="stylesheet" href="../index.css" type="text/css">
     <link rel="stylesheet" href="../stylesheets/about.css" type="text/css">
   
     <script src="https://kit.fontawesome.com/5c1d927aa5.js" crossorigin="anonymous"></script>
   
     <title>About | Marjoree E.F.</title>
   </head>
-
 <body>
-  <div class="container-fluid">
-
-    <!-- navigation -->
-    <nav class="navbar sticky-top navbar-expand-xl">
-      <a class="navbar-brand ml-1" id="logo" href="/"> <img style="width: 25vw;" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/perriwinkle-logo.png"
-          alt="Logo"></a>
+<!-- navigation -->
+  <nav class="navbar">
+      <a class="navbar-brand" id="logo" href="/">
+        <img class="logo-image" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/perriwinkle-logo.png"
+          alt="Marjoree.E.F.">
+        <img class="small-logo" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/small-perriwinkle-logo.png"
+          alt="Marjoree.E.F.">
+      </a>
       <div class="menu-right">
-        <a class="nav-link mr-1" href="./projects.html">Projects</a>
-        <a class="nav-link mr-1" href="./about.html"> About </a>
-        <!-- social links -->
-        <a class="nav-link mr-1" href="https://github.com/mfargas" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="nav-link mr-1" href="https://codepen.io/marjoreejs" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-codepen"></i>
-        </a>
-        <a class="nav-link mr-1" href="https://www.freecodecamp.org/marjoreef" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-free-code-camp"></i>
-        </a>
-        <a class="nav-link mr-1" href="https://www.linkedin.com/in/marjoree-fargas" target="_blank"
-          rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i>
-        </a>
+        <a href="javascript:void(0);" onclick="toggleMenu()" class="icon">&#9776;</a>
+        <ul class="menu" id="menu-toggle">
+          <li><a class="nav-link" href="./projects.html">Projects</a></li>
+          <li><a class="nav-link" href="./about.html">About</a></li>
+          <!-- social links -->
+          <li><a class="nav-link" href="https://github.com/mfargas" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a></li>
+          <li><a class="nav-link" href="https://codepen.io/marjoreejs" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-codepen"></i>
+            </a></li>
+          <li><a class="nav-link" href="https://www.freecodecamp.org/marjoreef" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-free-code-camp"></i>
+            </a></li>
+          <li><a class="nav-link" href="https://www.linkedin.com/in/marjoree-fargas" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+        </ul>
       </div>
-      <!-- circle back and add GitHub and CodePen links -->
-    </nav>
-<div class="jumbo">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="jumbo-top-row">
-      <div class="left-column-jumbo">
-        <h1>Who's that girl? It's Marj!</h1>
-        <p>Welcome to the portfolio of Marjoree Elvira Fargas</p>
-        <p> a web developer and motion graphics designer</p>
-      </div>
-        <img class="about-me-img" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/about-me-image.JPG">
-    </div>
-        <hr class="my-4">
-          <p class="about-p">I am a graduate of the University of California, Santa Barbara, on a journey to excel as a
-            web-developer.
-            As a naturally creative person, I was having trouble finding an area of focus that would utilize both my creativity
-            and technical skills until the wonderful world of coding found me.
-          </p>
+  </nav>
+<section class="about-intro">
+  <div class="top-half">
+    <h1>Who's that girl? It's Marj!</h1>
+      <p>Welcome to the portfolio of Marjoree Elvira Fargas</p>
+      <p> a web developer and motion graphics designer</p>
+    <img class="about-me-img" src="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/about-me-image.JPG">
   </div>
-</div>
-  <!-- content -->
-  <article class="content">
-    <!-- intro -->
-  <h3 class="content-header">What skills can I offer</h3>
-
+    <hr>
+    <p>I am a graduate of the University of California, Santa Barbara, on a journey to excel as a
+      web-developer. As a naturally creative person, I was having trouble finding an area of focus 
+      that would utilize both my creativity and technical skills until the wonderful world of coding 
+      found me.
+    </p>
+</section>
+<!-- content -->
+<article class="content">
+<!-- intro -->
+  <h3>What skills can I offer</h3>
   <p class="about-p">
     My skills include creating graphics, cartoons/animations, and problem-solving thinking. I am a natural problem-solver with an endless supply
     of creativity and curiosity. I started my minor in Art and Technology while pursuing a Mathematical Sciences degree, and that is when I first learned
     HTML, CSS and JavaScript. With a primary focus on creative applications of the fundamentals, our projects demanded constant "out-of-the-box" thinking.
-    I then switched into the Film and Media Studies program from Mathematics after reaching 3-Dimensional Calculus. I wanted to apply my interests and 
+    I then switched into th e Film and Media Studies program from Mathematics after reaching 3-Dimensional Calculus. I wanted to apply my interests and 
     learnings into a creative outlet, and discovered the very versatile language, JavaScript.
   </p>
   <p class="about-p">
     Fun Fact: I am also an Optician! While pursuing my degree, I worked as an on-campus optician to support and have done work in the greater Los Angeles
     area to support myself. I am the type of person willing to go above and beyond for my clients and my team.
   </p>
-  </article>
-
-
-  <!-- footer -->
-    <footer class="footer">
-      <div class="bottom-left">
-        <h3>Marjoree.E.F.</h3>
-        <h3>resume</h3>
-      </div>
-      <div class="bottom-right">
-        <h3>Contact me!</h3>
-        <h5>
-          <bold>email:</bold><a href="mailto:marjoree.e.f@gmail.com">marjoree.e.f@gmail.com</a>
-        </h5>
-      </div>
-    </footer>
-</div>
-
-    <!-- jQuery and Bootstrap scripts -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-
-  </body>
+</article>
+<!-- footer -->
+<footer class="footer">
+  <div class="bottom-left">
+    <h3>Marjoree.E.F.</h3>
+    <h3>resume</h3>
+  </div>
+  <div class="bottom-right">
+    <h3>Contact me!</h3>
+    <h5><bold>email:</bold><a href="mailto:marjoree.e.f@gmail.com">marjoree.e.f@gmail.com</a></h5>
+  </div>
+</footer>
+  <script type="text/javascript" src="projects.html"></script>
+  <script type="text/javascript" src="../menu-toggle.js"></script>
+</body>
 </html>

@@ -67,6 +67,7 @@ body{
 .small-logo{
   display: none;
 }
+
 /*               */
 /* toggle button */
 /*               */
@@ -117,9 +118,11 @@ body{
   vertical-align: middle;
 }
 
+/*                */
 /* end of navbar */
+/*              */
+/*   intro     */
 /*            */
-/* intro */
 
 .particle-dandelion{
   width: 100%;
@@ -255,7 +258,9 @@ body{
   margin: auto;
 }
 
+/*        */
 /* footer */
+/*        */
 
 .footer{
   display: flex;
@@ -305,7 +310,9 @@ body{
   }
 }
 
+/*         */
 /* iphones */
+/*         */
 
 @media only screen  
   and (max-device-width: 480px)
@@ -475,7 +482,9 @@ body{
   }
 }
 
+/*                     */
 /* ipad minis and airs */
+/*                     */
 
 @media only screen 
   and (min-device-width: 481px) 
@@ -612,7 +621,10 @@ body{
   }
 }
 
+/*           */
 /* Landscape */
+/*           */
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -708,9 +720,11 @@ body{
   }
 }
 
-
-/* ipad 12 in */
+/*                        */
+/*      ipad 12 in        */
 /* Portrait and Landscape */
+/*                        */
+
 @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)

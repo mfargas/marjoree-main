@@ -1,89 +1,135 @@
-body{
-  background-color: white;
-  color: rgb(9, 6, 170);
-  font-family: 'Quattrocento Sans', sans-serif;
-  font-weight: 600;
+/* Color Theme Swatches in Hex 
+.marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light periwinkle from logo
+.marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
+.marjoree-site-theme-march21-3-hex { color: #88A2F2; }    periwinkle from logo
+.marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
+.marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-.container-fluid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vh 80vh 155vh 20vh;
-  grid-template-areas:
-        "head head head"
-        "jumbo jumbo jumbo"
-        "article article article"
-        "footer footer footer";
-  box-shadow: inset 0 0 0 10px violet;
+body{
+  background-color: #F2F2F2;
+  color: #060663;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  box-shadow: inset 0 0 0 1em #CAC9F2;
 }
+
+/*          */
+/*  Nav Bar */
+/*          */
 
 .navbar{
-  color: rgb(0, 0, 100);
-  font-size: 25px;
-  grid-area: head;
-  width: 100%;
-  margin: auto;
+  color: #060663;
+  font-size: 1.5em;
+  width: 95vw;
+  height: max-content;
+  left: 0;
+  margin: 1em;
+  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 10;
+}
+
+/* branding */
+
+.navbar-brand{
+  color: #060663;
+  height: max-content;
+  width: max-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-brand:hover{
+  background-color: #88A2F2;
 }
 
 .logo-image{
-  width: 25vw;
+  color: #060663;
+  width: 15em;
+  margin: auto;
 }
+
+.small-logo{
+  display: none;
+}
+
+/*               */
+/* toggle button */
+/*               */
+
+.icon{
+  display: none;
+}
+
+/*                       */
+/* menu and social links */
+/*                       */
 
 .menu-right{
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  display: flex;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-
-.navbar-brand{
-  color: rgb(0, 0, 100);
-  font-size: 30px;
-  margin: 10px;
+.menu{
+  display: flex;
+  list-style-type: none;
 }
 
-a{
-  color: rgb(0, 0, 100);
-  text-decoration: none;
-}
-
-a:hover{
-  background-color: violet;
-}
-
-.social-link-flex{
-  text-decoration: none;
-}
-
-.jumbo{
-  grid-area: jumbo;
-  width: 100vw;
+.menu li{
   margin: auto;
+  padding-right: 0.5em;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
-.jumbotron{
+.menu-right a{
+  height: max-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #060663;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.menu-right a:hover{
+  background-color: #88A2F2;
+  color: #CAC9F2;
+}
+
+.nav-link{
+  text-decoration: none;
+  padding: 0.5em;
+  height: max-content;
+  vertical-align: middle;
+}
+
+/*                */
+/* end of navbar */
+/*              */
+/*   intro     */
+/*            */
+
+.about-intro{
   width: 85vw;
-  margin: auto;
-}
-
-.jumbo-top-row{
-  display: inline-flex;
-  width: 100%;
-  padding: 30px;
-  margin: auto;
-  justify-content: center;
-}
-
-.left-column-jumbo{
-  width: 50%;
-  margin-top: 5vh;
-}
-
-.left-column-jumbo p{
-  text-align: right;
-  padding: 4px;
-  margin-right: 5vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-me-img{
@@ -93,24 +139,10 @@ a:hover{
   border-width: 5px;
 }
 
-.display-4{
-  width: 90vw;
-}
-
-.lead{
-  width: 80vw;
-  margin: auto;
-}
-
 .content{
-  grid-area: article;
   width: 85vw;
   margin-left: auto;
   margin-right: auto;
-}
-
-.content-header{
-  width: 80vw;
 }
 
 .about-p{
@@ -118,21 +150,280 @@ a:hover{
   margin: auto;
 }
 
+/*        */
+/* footer */
+/*        */
+
 .footer{
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  position: relative;
   width: 100%;
-  margin-bottom: 10px;
-  grid-area: footer;
-  text-align: center;
-  /* background-color: rgb(158, 255, 158); */
+  height: 30vh;
+  z-index: -6;
+  color: #060663;
+  font-weight: 500;
 }
 
-footer.bottom-left{
+.bottom-left{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.bottom-left p{
+  margin: auto;
+}
+
+.bottom-right{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   text-align: center;
 }
 
-footer.bottom-right{
-  margin-right: 20px;
-  align-self: center;
+.bottom-right p{
+  margin: auto;
+}
+
+
+/* iphones */
+
+@media only screen  
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    *{
+      overflow-x: hidden;
+    }
+
+    .navbar{
+      font-size: 1.5em;
+      width: 85vw;
+      height: max-content;
+      left: 0;
+      margin: 1em;
+      justify-self: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: fixed;
+      overflow: visible;
+    }
+
+    .navbar-brand{
+      width: max-content;
+      height: max-content;
+      margin: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .logo-image{
+      display: none;
+    }
+
+    .small-logo{
+      display: block;
+      width: 4em;
+    }
+
+    .menu-right{
+      display: initial;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      background-color: #CAC9F2;
+    }
+
+    .icon{
+      display: block;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      position: absolute;
+    }
+
+    .menu{
+      display: none;
+      width: 100%;
+      height: 100%;
+      padding: 0.5em;
+    }
+
+    .menu li{
+      display: block;
+      text-align: center;
+      padding: 1em;
+    }
+
+    .nav-link{
+      width: 100%;
+    }
+
+    .menuToggle{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      color: #060663;
+      font-weight: 500;
+    }
+
+    .bottom-left{
+      text-align: center;
+    }
+
+    .bottom-right{
+      text-align: center;
+    }
+  }
+
+/*                     */
+/* ipad minis and airs */
+/*                     */
+
+@media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 1024px) 
+  /* and (orientation: portrait)  */
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  *{
+    overflow-x: hidden;
+  }
+.navbar{
+    font-size: 1em;
+    width: 95vw;
+    height: 10vh;
+    left: 0;
+    margin: 1em;
+    justify-self: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: initial;
+    position: fixed;
+  }
+  
+  .logo-image{
+    display: none;
+  }
+
+  .small-logo{
+    display: block;
+    width: 4em;
+  }
+
+  .menu-right{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: #CAC9F2;
+  }
+
+  .menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+  }
+
+  .icon{
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .menuToggle{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro{
+    height: max-content;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    color: #060663;
+    font-weight: 500;
+  }
+}
+
+/*                        */
+/*       ipad 12 in       */
+/* Portrait and Landscape */
+/*                        */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .logo-image{
+    display: block;
+    width: 20em;
+  }
+
+  .small-logo{
+    display: none;
+  }
+
+  .menu-right{
+    display: flex;
+    position: absolute;
+    top: 2em;
+    right: 0;
+  }
+
+  .menu{
+    display: flex;
+    background-color: none;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  .menuToggle{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    color: #060663;
+    font-weight: 500;
+  }
 }
