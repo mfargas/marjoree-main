@@ -128,15 +128,22 @@ body{
 
 .about-intro{
   width: 85vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .about-me-img{
   height: 40vh;
-  border-radius: 25px;
+  border-radius: 50%;
   border-color: yellowgreen;
   border-width: 5px;
+}
+
+.about-me-img:hover{
+  filter: invert(100%);
 }
 
 .content{
@@ -145,7 +152,7 @@ body{
   margin-right: auto;
 }
 
-.about-p{
+.about-intro p{
   width: 75vw;
   margin: auto;
 }
@@ -270,6 +277,10 @@ body{
       flex-direction: column;
     }
 
+    .about-intro{
+      margin-top: 35%;
+    }
+
     .footer{
       display: flex;
       flex-direction: column;
@@ -353,6 +364,10 @@ body{
     display: flex;
     flex-direction: column;
   }
+
+  .about-intro{
+      margin-top: 15%;
+    }
 
   .intro{
     height: max-content;
