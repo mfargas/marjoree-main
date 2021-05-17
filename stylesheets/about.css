@@ -137,14 +137,18 @@ body{
 }
 
 .about-me-img{
-  height: 40vh;
+  height: 60vh;
+  width: 30vw;
+  margin: auto;
+  padding: 2em;
   border-radius: 50%;
-  border-color: yellowgreen;
-  border-width: 5px;
+  background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/about-me-image.JPG');
+  background-size: cover;
+  background-position: center;
 }
 
 .about-me-img:hover{
-  filter: invert(100%);
+  background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/self-portrait.jpeg');
 }
 
 .content{
