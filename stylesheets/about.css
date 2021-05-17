@@ -148,7 +148,7 @@ body{
 }
 
 .about-me-img:hover{
-  background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/self-portrait.jpeg');
+  background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/self-portrait.png');
 }
 
 .content{
@@ -157,9 +157,26 @@ body{
   margin-right: auto;
 }
 
+h3{
+  width: 30em;
+}
+
 .about-p{
   width: 50em;
   margin: auto;
+}
+
+.technologies{
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  font-size: 4em;
+}
+
+.technologies li{
+  padding: 0.5em;
 }
 
 /*        */
