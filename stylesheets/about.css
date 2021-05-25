@@ -303,6 +303,10 @@ h3{
       margin-top: 35%;
     }
 
+    .technologies{
+      flex-direction: column;
+    }
+
     .footer{
       display: flex;
       flex-direction: column;
@@ -389,6 +393,10 @@ h3{
 
   .about-intro{
     margin-top: 15%;
+  }
+
+  .technologies{
+    flex-direction: column;
   }
 
   .intro{

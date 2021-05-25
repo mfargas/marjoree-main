@@ -446,6 +446,10 @@ body{
     height: max-content;
   }
 
+  .technologies{
+    flex-direction: column;
+  }
+
   .featured-projects{
     width: 100%;
     height: calc(max-content + 3em);
@@ -595,6 +599,10 @@ body{
 
   .intro{
     height: max-content;
+  }
+
+  .technologies{
+    flex-direction: column;
   }
 
   .featured-projects{
