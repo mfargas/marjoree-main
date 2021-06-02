@@ -73,8 +73,8 @@ body{
 /*               */
 
 .icon{
-    display: none;
-  }
+  display: none;
+}
 
 /* menu and social links */
 
@@ -250,8 +250,8 @@ body{
   box-shadow: outset 0 0 0 2em rgb(5, 17, 242);
 }
 
-.project-container:hover{
-  background-color: rgb(5, 17, 242, 0.5);
+.feature-link{
+  cursor: pointer;
 }
 
 .container-content{
@@ -259,6 +259,10 @@ body{
   height: 100%;
   margin: auto;
   background-size: cover;
+}
+
+.container-content:hover{
+  background-color: purple;
 }
 
 .one{
