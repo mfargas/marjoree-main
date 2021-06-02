@@ -147,7 +147,7 @@ body{
   background-position: center;
 }
 
-.about-me-img:hover{
+.about-me-img:hover, .about-me-img::after{
   background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/self-portrait.png');
 }
 
@@ -310,6 +310,10 @@ h3{
       flex-direction: column;
     }
 
+    .about-p {
+      width: fit-content;
+    }
+
     .about-intro{
       margin-top: 35%;
       width: 85%;
@@ -342,12 +346,17 @@ h3{
       font-weight: 500;
     }
 
-    .bottom-left{
+    footer h3, h5{
+      width: min-content;
       text-align: center;
     }
 
-    .bottom-right{
-      text-align: center;
+    .bottom-left{
+      align-items: center;
+    }
+
+    .bottom-right {
+      align-items: center;
     }
   }
 
