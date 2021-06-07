@@ -230,7 +230,7 @@ body{
 
 .featured-projects{
   width: 100%;
-  height: calc(max-content + 3em);
+  height: max-content;
   margin: auto;
   z-index: -4;
   background-image: linear-gradient(to bottom,#88A2F2, #F2F2F2);
