@@ -348,7 +348,7 @@ form{
 
 label{
   margin: auto;
-  width: max-content;
+  width: 55%;
 }
 
 input[type=text], input[type=email]{
@@ -391,18 +391,6 @@ input[type='submit']:hover{
 .bottom-left p{
   margin: auto;
 }
-/* 
-.bottom-right{
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-}
-
-.bottom-right p{
-  margin: auto;
-} */
 
 @keyframes drop-down{
   from{
