@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+*:before, *:after {
+  box-sizing: border-box;
+}
+
 body{
   background-color: #F2F2F2;
   color: #060663;
@@ -247,11 +251,16 @@ body{
   width: 300px;
   height: 300px;
   margin: 25px;
-  box-shadow: outset 0 0 0 2em rgb(5, 17, 242);
+  border-radius: 50%;
+  box-shadow: 0 0 1em 0.5em rgb(219, 221, 253);
 }
 
 .feature-link{
   cursor: pointer;
+  z-index: 8;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: auto;
 }
 
 .container-content{
@@ -261,16 +270,33 @@ body{
   background-size: cover;
 }
 
+.project-info{
+  margin: auto;
+  text-align: center;
+  color: azure;
+  text-decoration: none;
+}
+
 .container-content:hover{
-  background-color: purple;
+  background-color: #060663;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2em 0.5em white;
+  background-image: none;
 }
 
 .one{
   background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png');
+  background-position: center;
+}
+
+.two{
+  background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/interactive-price-bar/marjoree-interactive-price-bar.png');
+  background-position: center;
 }
 
 .three{
   background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/ping-preview-square.png');
+  background-position: center;
 }
 
 .five{
@@ -287,11 +313,21 @@ body{
 /*        */
 /* footer */
 /*        */
-
 .footer{
   display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer h2{
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.footer-content{
+  display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:left;
   align-items: center;
   position: relative;
   width: 100%;
@@ -307,18 +343,27 @@ footer a:link{
   text-align: center;
 }
 
-.resume-link, .far{
-  width: 100%;
+.resume-link{
   font-size: 2rem;
   color: #88A2F2;
   margin: auto;
   z-index: 15;
+  display: block;
+  width: max-content;
+}
+
+.fas{
+  width: 100%;
+  font-size: 2rem;
+  color: #88A2F2;
+  margin: auto;
+  z-index: 12;
 }
 
 .resume-link:hover{
   color: #0511F2;
 }
-.far:hover{
+.fas:hover{
   color: #0511F2;
 }
 
@@ -326,11 +371,15 @@ footer a:link{
   color: #CAC9F2;
 }
 
+.fas:active{
+  color: #CAC9F2;
+}
+
 .resume-link:visited{
   color: #0511F2;
 }
 
-.far:visited{
+.fas:visited{
   color: #0511F2;
 }
 
@@ -371,7 +420,10 @@ label{
 
 .form-comment{
   resize: vertical;
-  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
   text-align: left;
   height: 8rem;
   vertical-align: text-top;
@@ -380,6 +432,23 @@ label{
 .form-comment p{
   margin: 0 auto;
   line-height: 2rem;
+}
+
+textarea{
+  margin-top: auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-family: 'Poppins',sans-serif;
+  color: #060663;
+  font-weight: 400;
+  align-items: middle;
+  height: 2rem;
+  width: 95%;
+  border-color: #88A2F2;
+  border-radius: 1rem;
+  border-width: 0.25px;
+  border-style: solid;
+  z-index: 17;
 }
 
 input[type=text], input[type=email]{
@@ -588,6 +657,7 @@ input[type='submit']:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: visible;
   }
 
   .project-container{
@@ -611,7 +681,7 @@ input[type='submit']:hover{
     overflow: hidden;
   }
 
-  .footer{
+  .footer-content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -772,6 +842,7 @@ input[type='submit']:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: visible;
   }
 
   .project-container{
@@ -795,7 +866,7 @@ input[type='submit']:hover{
     overflow: hidden;
   }
 
-  .footer{
+  .footer-content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -957,6 +1028,7 @@ input[type='submit']:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: visible;
   }
 
   .project-container{
@@ -976,7 +1048,7 @@ input[type='submit']:hover{
     overflow: hidden;
   }
 
-  .footer{
+  .footer-content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
