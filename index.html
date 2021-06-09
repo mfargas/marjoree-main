@@ -132,27 +132,31 @@
 
         <!-- footer -->
     <footer class="footer">
-            <form action="" method="POST">
-              <label for="form-name">First Name</label>
-              <input type="text" id="form-name" name="form-name">
-              <label for="form-last-name">Last Name</label>
-              <input type="text" id="form-last-name" name="form-last-name">
-              <label for="form-email">email:</label>
-              <input type="email" id="form-email" name="form-email">
-              <input type="submit" value="OK">
-            </form>
       <div class="bottom-left">
-        <p>Marjoree.E.F.</p>
-        <a href="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/Marjoree+Resume+2021.pdf" target="_blank" rel="noopener noreferrer"><i class="far fa-file-alt">Download my resume</i></a>
+        <a class="resume-link" href="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/Marjoree+Resume+2021.pdf" target="_blank"
+        rel="noopener noreferrer"><i class="far fa-file-alt"></i>resume</a>
       </div>
-      <div class="bottom-right">
-        <p>Contact me!</p>
-        <p><bold>email: </bold><a href="mailto:marjoree.e.f@gmail.com">marjoree.e.f@gmail.com</a></p>
-      </div>
+      <form class="email-form" action="" method="POST">
+        <div class="form-names">
+          <label for="form-name">First Name</label>
+          <input type="text" id="form-name" name="form-name">
+          <label for="form-last-name">Last Name</label>
+          <input type="text" id="form-last-name" name="form-last-name">
+        </div>
+        <div class="email">
+          <label for="form-email">email:</label>
+          <input type="email" id="form-email" name="form-email" class="form-email">
+        </div>
+        <input type="text" id="form-comment" name="form-comment" class="form-comment" style="height: 8rem">
+        <input type="submit" value="Submit" class="submit-button">
+      </form>
     </footer>
-    <!-- jQuery and Bootstrap scripts -->
+    <!--scripts -->
     <script type="text/javascript" src="menu-toggle.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
 </html>
+
+
+<!-- resume -->
+<!-- <a href="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/Marjoree+Resume+2021.pdf" target="_blank"
+  rel="noopener noreferrer"><i class="far fa-file-alt">Download my resume</i></a> -->

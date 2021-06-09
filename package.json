@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/mfargas/marjoree-main/issues"
   },
-  "homepage": "https://github.com/mfargas/marjoree-main#readme"
+  "homepage": "https://github.com/mfargas/marjoree-main#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
 }
