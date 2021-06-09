@@ -1,7 +1,7 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/marjor12/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp index.css $DEPLOYPATH
-    - /bin/cp -R * $DEPLOYPATH
+# ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home/marjor12/public_html/
+#     - /bin/cp index.html $DEPLOYPATH
+#     - /bin/cp index.css $DEPLOYPATH
+#     - /bin/cp -R * $DEPLOYPATH
