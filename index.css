@@ -238,9 +238,12 @@ body{
 
 .container-row{
   height: max-content;
+  width: max-content;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-evenly;
+  margin: auto;
+  z-index: 19;
 }
 
 .project-container{
@@ -252,6 +255,7 @@ body{
 
 .feature-link{
   cursor: pointer;
+  z-index: 21;
 }
 
 .container-content{
@@ -259,6 +263,7 @@ body{
   height: 100%;
   margin: auto;
   background-size: cover;
+  z-index: 22;
 }
 
 .container-content:hover{
@@ -310,6 +315,7 @@ footer a:link{
 .resume-link{
   width: 100%;
   margin: auto;
+  z-index: 15;
 }
 
 .resume-link:hover{
@@ -327,6 +333,7 @@ form{
   margin: auto;
   height: max-content;
   width: max-content;
+  z-index: 16;
 }
 
 .form-names{
@@ -360,6 +367,7 @@ input[type=text], input[type=email]{
   border-radius: 1rem;
   border-width: 0.25px;
   border-style: solid;
+  z-index: 17;
 }
 
 input[type='submit']{
@@ -373,6 +381,7 @@ input[type='submit']{
   height: 2rem;
   margin-right: 2rem;
   margin-left: auto;
+  z-index: 28;
 }
 
 input[type='submit']:hover{
