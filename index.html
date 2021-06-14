@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marjoree E. Fargas is a front end web developer from Los Angeles, CA.">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="icon" href="https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/faveicon-dark-perriwinkle.png">
 
     <script src="https://kit.fontawesome.com/5c1d927aa5.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
@@ -30,16 +32,16 @@
               <li><a class="nav-link" href="/html/projects.html">Projects</a></li>
               <li><a class="nav-link" href="/html/about.html">About</a></li>
               <!-- social links -->
-              <li><a class="nav-link" href="https://github.com/mfargas" target="_blank" rel="noopener noreferrer">
+              <li class="social-icons"><a class="nav-link" href="https://github.com/mfargas" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github" ></i>
               </a></li>
-              <li><a class="nav-link" href="https://codepen.io/marjoreejs" target="_blank" rel="noopener noreferrer"> 
+              <li class="social-icons"><a class="nav-link" href="https://codepen.io/marjoreejs" target="_blank" rel="noopener noreferrer"> 
                 <i class="fab fa-codepen"></i>
               </a></li>
-              <li><a class="nav-link" href="https://www.freecodecamp.org/marjoreef" target="_blank" rel="noopener noreferrer">
+              <li class="social-icons"><a class="nav-link" href="https://www.freecodecamp.org/marjoreef" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-free-code-camp"></i>
               </a></li>
-              <li><a class="nav-link" href="https://www.linkedin.com/in/marjoree-fargas" target="_blank" rel="noopener noreferrer">
+              <li class="social-icons"><a class="nav-link" href="https://www.linkedin.com/in/marjoree-fargas" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin"></i>
               </a></li>
             </ul>
@@ -72,19 +74,23 @@
           <p>Scroll through some of my work and let's link up!</p>
       </div>
       <ul class="technologies">
-        <li>
+        <li class="tech-icons">
           <i class="fab fa-html5"></i>
+          <h5>html</h5>
         </li>
-        <li>
+        <li class="tech-icons">
           <i class="fab fa-css3"></i>
+          <h5>CSS</h5>
         </li>
-        <li>
+        <li class="tech-icons">
           <i class="fab fa-js-square"></i>
+          <h5>JavaScript</h5>
         </li>
-        <li>
+        <li class="tech-icons">
           <i class="fab fa-squarespace"></i>
+          <h5>CMS's</h5>
         </li>
-        <li>
+        <li class="tech-icons">
           <i class="fab fa-wordpress"></i>
         </li>
       </ul>
@@ -94,7 +100,7 @@
 
       <div class="container-row">
         <div class="project-container">
-            <a class="feature-link" target="_blank" href="https://marjoree-blogr-landing-page.netlify.app">
+            <a class="feature-link" target="_blank" href="https://marjoree-blogr-landing-page.netlify.app" rel="noopener" rel="noreferrer">
               <div class="container-content one">
                 <div class="project-info">
                   <p>Blogr Project</p>
@@ -104,7 +110,7 @@
         </div>
 
         <div class="project-container">
-          <a class="feature-link" target="_blank" href="https://marjoree-interactive-price-bar.netlify.app">
+          <a class="feature-link" target="_blank" href="https://marjoree-interactive-price-bar.netlify.app" rel="noopener" rel="noreferrer">
             <div class="container-content two">
               <div class="project-info">
                 <p>Interactive Price Bar</p>
@@ -114,7 +120,7 @@
         </div>
 
         <div class="project-container">
-          <a class="feature-link" target="_blank" href="https://marjoree-ping-coming-soon-page.netlify.app">
+          <a class="feature-link" target="_blank" href="https://marjoree-ping-coming-soon-page.netlify.app" rel="noopener" rel="noreferrer">
           <div class="container-content three">
             <div class="project-info">
               <p>Coming Soon Page</p>
@@ -127,7 +133,7 @@
       <div class="container-row">
         <div class="project-container">
           <div class="container-content four">
-            <iframe src="https://editor.p5js.org/marjoree.e.f/embed/TKieMRRtq"></iframe>
+            <iframe alt="rain-worm" src="https://editor.p5js.org/marjoree.e.f/embed/TKieMRRtq"></iframe>
           </div>
         </div>
 
@@ -136,7 +142,7 @@
           </div>
           <div class="project-container">
             <div class="container-content six">
-              <iframe src="https://editor.p5js.org/marjoree.e.f/embed/TKieMRRtq"></iframe>
+              <iframe alt="rain-worm" src="https://editor.p5js.org/marjoree.e.f/embed/TKieMRRtq"></iframe>
             </div>
           </div>
         </div>
@@ -148,8 +154,9 @@
       <h2>Get in Touch</h2>
       <div class="footer-content">
         <a class="resume-link" href="https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/Marjoree+Resume+2021.pdf" target="_blank"
-        rel="noopener noreferrer"><i class="fas fa-moon"></i>  Resume</a>
-      <form class="email-form" action="" method="POST">
+        rel="noopener noreferrer"><i alt="moon icon" class="fas fa-moon"></i>  Resume</a>
+      
+        <form class="email-form" action="" method="POST">
         <div class="form-names">
           <label for="form-name">First Name</label>
           <input type="text" id="form-name" name="form-name">

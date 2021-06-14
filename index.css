@@ -115,11 +115,31 @@ body{
   color: #CAC9F2;
 }
 
+.social-icons{
+  text-align: center;
+}
+
 .nav-link{
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   padding: 0.5em;
   height: max-content;
   vertical-align: middle;
+  justify-content: center;
+}
+
+.nav-link a{
+  font-size: 0.5rem;
+  text-decoration: none;
+  padding: 0.5em;
+  height: max-content;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.nav-link i{
+  display: flex;
+  flex-direction: column;
 }
 
 /*                */
@@ -212,6 +232,7 @@ body{
 }
 
 .technologies{
+  height: max-content;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -221,6 +242,12 @@ body{
 
 .technologies li{
   padding: 0.5em;
+  height: max-content;
+}
+
+.tech-icons{
+  height: max-content;
+  text-align: center;
 }
 
 .featured-projects h1{
