@@ -158,17 +158,20 @@
       
         <form class="email-form">
         <div class="form-names">
-          <label for="form-name">First Name</label>
-          <input type="text" id="form-name" name="form-name">
-          <label for="form-last-name">Last Name</label>
-          <input type="text" id="form-last-name" name="form-last-name">
+          <label for="name">First Name</label>
+          <input type="text" id="name" name="name">
+          <label for="name">Last Name</label>
+          <input type="text" id="form-last-name" name="name">
         </div>
         <div class="email">
-          <label class="email-label" for="form-email">Email</label>
-          <input type="email" id="form-email" name="form-email" class="form-email">
+          <label class="email-label" for="email">Email</label>
+          <input type="email" id="form-email" name="email" class="form-email">
         </div>
-        <textarea id="form-comment" class="form-comment"></textarea>
+        <textarea name="message" id="form-comment" class="form-comment"></textarea>
         <input type="submit" value="Submit" class="submit-button">
+        <div>
+          <p id="result-text"></p>
+        </div>
       </form>
       </div>
     </footer>
