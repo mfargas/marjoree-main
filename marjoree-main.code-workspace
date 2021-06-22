@@ -4,5 +4,12 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"Blogr",
+			"CMS's",
+			"Marjoree's",
+			"inmotionhosting"
+		]
+	}
 }
