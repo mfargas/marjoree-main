@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {
 
     // Use your API endpoint URL you copied from the previous step
     const endpoint =
-        "https://2do26j66wf.execute-api.us-west-1.amazonaws.com/live/sendContactEmail";
+        "https://2do26j66wf.execute-api.us-west-1.amazonaws.com/live";
     // We use JSON.stringify here so the data can be sent as a string via HTTP
     const body = JSON.stringify({
         senderName: name.value,
