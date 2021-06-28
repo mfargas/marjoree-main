@@ -31,6 +31,6 @@ form.addEventListener("submit", (event) => {
         })
         .catch((error) => {
             document.getElementById("result-text").innerText =
-                ":(";
+                "still doesnt work :(";
         });
 });
