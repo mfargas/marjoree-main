@@ -3,6 +3,7 @@ const form = document.querySelector(".email-form");
 form.addEventListener("submit", (event) => {
     // prevent the form submit from refreshing the page
     event.preventDefault();
+    console.log(event);
 
     const { name, email, message } = event.target;
 
