@@ -5,7 +5,7 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     console.log(event);
 
-    const { name, email, message } = event.target;
+    const { name, email, message } = JSON.parse(event.body);
 
     // Use your API endpoint URL you copied from the previous step
     const endpoint ="https://2do26j66wf.execute-api.us-west-1.amazonaws.com/prod/sendContactEmail";
