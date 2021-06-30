@@ -7,14 +7,15 @@ form.addEventListener("submit", (event) => {
     const { name, email, message } = event.target;
 
     // Use your API endpoint URL you copied from the previous step
-    const endpoint =
-        "https://2do26j66wf.execute-api.us-west-1.amazonaws.com/prod/sendContactEmail";
+    const endpoint ="https://2do26j66wf.execute-api.us-west-1.amazonaws.com/prod/sendContactEmail";
+
     // We use JSON.stringify here so the data can be sent as a string via HTTP
     const body = JSON.stringify({
         senderName: name.value,
         senderEmail: email.value,
         message: message.value
     });
+
     const requestOptions = {
         method: "POST",
         body
@@ -31,6 +32,6 @@ form.addEventListener("submit", (event) => {
         })
         .catch((error) => {
             document.getElementById("result-text").innerText =
-                "still doesnt work :(";
+                "still doesn't work :(";
         });
 });
