@@ -11,8 +11,8 @@ form.addEventListener("submit", (event) => {
 
     // We use JSON.stringify here so the data can be sent as a string via HTTP
     const body = JSON.stringify({
-        senderName: name.value,
-        senderEmail: email.value,
+        name: name.value,
+        email: email.value,
         message: message.value
     });
 
