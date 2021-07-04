@@ -29,10 +29,10 @@ form.addEventListener("submit", (event) => {
         })
         .then((response) => {
             document.getElementById("result-text").innerText =
-                "Success";
+                "Your message was sent!";
         })
         .catch((error) => {
             document.getElementById("result-text").innerText =
-                "still doesn't work :(";
+                "Your message was not sent, please email marjoree.e.f@gmail.com";
         });
 });
