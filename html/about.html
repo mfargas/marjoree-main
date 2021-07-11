@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
   
-    <link rel="stylesheet" href="../index.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../index.css" type="text/css"> -->
     <link rel="stylesheet" href="../stylesheets/about.css" type="text/css">
   
     <script src="https://kit.fontawesome.com/5c1d927aa5.js" crossorigin="anonymous"></script>
@@ -90,18 +90,33 @@
     </li>
   </ul>
 </article>
-<!-- footer -->
-<footer class="footer">
-  <div class="bottom-left">
-    <h3>Marjoree.E.F.</h3>
-    <h3>resume</h3>
-  </div>
-  <div class="bottom-right">
-    <h3>Contact me!</h3>
-    <h5><bold>email:</bold><a href="mailto:marjoree.e.f@gmail.com">marjoree.e.f@gmail.com</a></h5>
-  </div>
-</footer>
-  <script type="text/javascript" src="projects.html"></script>
-  <script type="text/javascript" src="../menu-toggle.js"></script>
+    <!-- footer -->
+    <footer class="footer">
+      <h2>Get in Touch</h2>
+        <div class="footer-content">
+          <a class="resume-link" href="https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/Marjoree+Resume+July+2021.pdf"
+            target="_blank" rel="noopener noreferrer"><i alt="moon icon" class="fas fa-moon"></i> Resume</a>
+        <form class="email-form" method="POST">
+          <div class="form-names">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name">
+          </div>
+          <div class="email">
+            <label class="email-label" for="email">Email</label>
+            <input type="email" id="form-email" name="email" class="form-email">
+          </div>
+          <textarea name="message" id="form-comment" class="form-comment"></textarea>
+          <input type="submit" value="Submit" class="submit-button">
+          <div>
+            <p id="result-text"></p>
+          </div>
+        </form>
+        </div>
+      </footer>
+<script type="text/javascript" src="../js/menu-toggle.js"></script>
+<script type="text/javascript" src="../js/emailForm.js"></script>
+<script>
+  res.redirect('/projects');
+</script>
 </body>
 </html>
