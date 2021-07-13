@@ -1,7 +1,6 @@
 const express = require('express');
+const app = express();
 
-var app = express();
-
-app.get('./html/about.html', function(req, res){
-    res.redirect('https://www.marjoree.com/about');
+app.get('/html/about.html', function(req, res){
+    res.redirect('/about');
 });
