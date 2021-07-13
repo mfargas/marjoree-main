@@ -113,10 +113,18 @@ body{
 .menu-right a:hover{
   background-color: #88A2F2;
   color: #CAC9F2;
+  height: max-content;
 }
 
 .social-icons{
   text-align: center;
+  height: max-content;
+}
+
+.social-icons a{
+  height: max-content;
+  padding: 0;
+  align-content: center;
 }
 
 .nav-link{
@@ -423,14 +431,14 @@ form{
   flex-direction: column;
   margin: auto;
   height: max-content;
-  width: max-content;
+  width: 35%;
   z-index: 16;
 }
 
 .form-names{
   display: flex;
   flex-direction: row;
-  width: max-content;
+  width: 100%;
 }
 
 .email{
@@ -439,23 +447,22 @@ form{
 }
 
 .form-email{
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: 2rem;
 }
 
 label{
   margin: auto;
-  width: 55%;
+  width: 60%;
 }
 
 .email-label{
-  width: 10%;
+  width: 60%;
 }
 
 .form-comment{
   resize: vertical;
-  margin-top: auto;
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
@@ -478,7 +485,7 @@ textarea{
   font-weight: 400;
   align-items: middle;
   height: 2rem;
-  width: 95%;
+  width: 100%;
   border-color: #88A2F2;
   border-radius: 1rem;
   border-width: 0.25px;
@@ -491,7 +498,7 @@ input[type=text], input[type=email]{
   padding: 1rem;
   align-items: middle;
   height: 2rem;
-  width: 90%;
+  width: 100%;
   border-color: #88A2F2;
   border-radius: 1rem;
   border-width: 0.25px;
@@ -639,6 +646,12 @@ input[type='submit']:hover{
     width: 100%;
   }
 
+  .social-icons a{
+    height: max-content;
+    padding: 0;
+    align-content: center;
+  }
+
   .menuToggle{
     display: flex;
     flex-direction: column;
@@ -729,7 +742,7 @@ input[type='submit']:hover{
   }
 
   form{
-    width: 90vw;
+    width: 90%;
     text-align: center;
   }
 
@@ -742,7 +755,15 @@ input[type='submit']:hover{
     flex-direction: column;
   }
 
+  input[type=text], input[type=email] {
+    width: 80%;
+    margin: auto;
+  }
 
+  textarea{
+    width: 80%;
+    margin-top: 1rem;
+  }
 
   input[type='submit']{
     margin-right: auto;
@@ -827,6 +848,12 @@ input[type='submit']:hover{
     display: block;
     text-align: center;
     padding: 1em;
+  }
+
+  .social-icons a{
+    height: max-content;
+    padding: 0;
+    align-content: center;
   }
 
   .nav-link{
@@ -931,11 +958,9 @@ input[type='submit']:hover{
     width: 90%;
   }
 
-  input[type='text']{
-    width: 90%;
-  }
-  input[type='email']{
-    width: 90%;
+  input[type=text], input[type=email] {
+    width: 80%;
+    margin: auto;
   }
 
   input[type='submit']{
