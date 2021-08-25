@@ -66,6 +66,16 @@ body .navbar .navbar-brand:hover {
   background-color: #88A2F2;
 }
 
+body .navbar .navbar-brand picture {
+  max-width: 40vw;
+}
+
+body .navbar .navbar-brand picture img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 35vw;
+}
+
 body .navbar .menu-right {
   margin-left: auto;
   margin-top: auto;
@@ -385,6 +395,12 @@ body .content-wrapper .featured-projects .container-row .project-container .feat
   background-position: center;
 }
 
+body .content-wrapper .featured-projects .container-row .project-container .feature-link .four {
+  background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png");
+  background-position: top;
+  background-size: 150%;
+}
+
 body .content-wrapper .featured-projects .container-row .project-container .feature-link .five {
   background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png");
 }
@@ -516,6 +532,40 @@ body .footer .footer-content form .email .form-email {
   height: 2rem;
 }
 
+body .footer .footer-content form textarea {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-family: 'Poppins',sans-serif;
+  color: #060663;
+  font-weight: 400;
+  -webkit-box-align: middle;
+      -ms-flex-align: middle;
+          align-items: middle;
+  height: 2rem;
+  width: 100%;
+  border-color: #88A2F2;
+  border-radius: 1rem;
+  border-width: 0.25px;
+  border-style: solid;
+  z-index: 17;
+}
+
+body .footer .footer-content form input[type=text], body .footer .footer-content form input[type=email] {
+  margin: 1rem;
+  padding: 1rem;
+  -webkit-box-align: middle;
+      -ms-flex-align: middle;
+          align-items: middle;
+  height: 2rem;
+  width: 100%;
+  border-color: #88A2F2;
+  border-radius: 1rem;
+  border-width: 0.25px;
+  border-style: solid;
+  z-index: 17;
+}
+
 body .footer .footer-content form input[type=text] {
   margin: auto;
   padding: 1rem;
@@ -577,7 +627,7 @@ body .footer .footer-content form input[type='submit']:hover {
   color: #CAC9F2;
 }
 
-body .footer .footer-content form textarea.form-comment {
+body .footer .footer-content form .form-comment {
   resize: vertical;
   margin-bottom: 1rem;
   margin-right: auto;

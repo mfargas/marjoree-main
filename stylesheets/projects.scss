@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/* Color Theme Swatches in Hex 
+.marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light periwinkle from logo
+.marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
+.marjoree-site-theme-march21-3-hex { color: #88A2F2; }    periwinkle from logo
+.marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
+.marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
+
+$action: #0511F2;
+$logo-prwnkl: #88A2F2;
+$pastel-prwknl: #CAC9F2;
+$off-white: #F2F2F2;
+$dark-blue: #060663;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    .navbar{
+        color: $dark-blue;
+        font-size: 1.5em;
+        width: 95vw;
+        height: max-content;
+        left: 0;
+        margin: 1em;
+        justify-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        position: fixed;
+        z-index: 10;
+        .navbar-brand{
+            color: $dark-blue;
+            height: max-content;
+            width: max-content;
+            margin-top: auto;
+            margin-bottom: auto;
+            &:hover{
+                background-color: $logo-prwnkl;
+            }
+            picture{
+                max-width: 40vw;
+                img{
+                    object-fit: contain;
+                    max-width: 35vw;
+                }
+            }
+        }
+        .menu-right{
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            a{
+                height: max-content;
+                padding-left: 5px;
+                padding-right: 5px;
+                color: $dark-blue;
+                text-decoration: none;
+                vertical-align: middle;
+                &:hover{
+                    background-color: $logo-prwnkl;
+                    color: $pastel-prwknl;
+                    height: max-content;
+                }
+            }
+            .icon{
+                display: none;
+            }
+            .menu{
+                display: flex;
+                list-style-type: none;
+                li{
+                    margin: auto;
+                    padding-right: 0.5em;
+                    vertical-align: middle;
+                    overflow: hidden;
+                }
+                .social-icons{
+                    text-align: center;
+                    height: max-content;
+                    a.nav-link{
+                        font-family: 'Poppins', sans-serif;
+                        text-decoration: none;
+                        padding: 0.5em;
+                        height: max-content;
+                        vertical-align: middle;
+                        justify-content: center;
+                        align-content: center;
+                        i{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    article.content{
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10em;
+        .container{
+            width: 80vw;
+            margin: auto;
+        }
+    }
+}
+
+/*         */
+/* iphones */
+/*         */
+@media only screen  
+    and (max-device-width: 376px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        background-color: #F2F2F2;
+        color: #060663;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        box-shadow: inset 0 0 0 1em #CAC9F2;
+        .navbar{
+            font-size: 1.5em;
+            width: 85vw;
+            height: max-content;
+            left: 0;
+            margin: 1em;
+            justify-self: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: fixed;
+            overflow: visible;
+            .navbar-brand{
+                width: max-content;
+                height: max-content;
+                margin: 0;
+                top: 0;
+                left: 0;
+                .logo-image{
+                    display: none;
+                }
+                .small-logo{
+                    display: block;
+                    width: 4em;
+                }
+            }
+            .menu-right{
+                display: initial;
+                margin: auto;
+                text-align: center;
+                width: 100%;
+                background-color: #CAC9F2;
+                .icon{
+                    display: block;
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
+                    position: absolute;
+                }
+                .menu{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0.5em;
+                    li{
+                        display: block;
+                        text-align: center;
+                        padding: 1em;
+                        .nav-link{
+                            width: 100%;
+                        }
+                    }
+                    .social-icons{
+                        a{
+                            height: max-content;
+                            padding: 0;
+                            align-content: center;
+                        }
+                    }
+                }
+                .menuToggle{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

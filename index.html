@@ -23,13 +23,16 @@
     <!-- navigation -->
       <nav class="navbar">
         <a class="navbar-brand" id="logo" href="/">
-          <img 
-            src="assets/small-perriwinkle-logo.svg"
-            srcset="assets/perriwinkle-logo.svg 325w, assets/small-perriwinkle-logo.svg 75w" 
-            sizes="(min-width: 775px) 325px, 75px" 
-            alt="logo">
-          <!-- <img class="logo-image" src="./assets/perriwinkle-logo.svg" alt="Marjoree.E.F.">
-          <img class="small-logo" src="./assets/small-perriwinkle-logo.svg" alt="Marjoree.E.F."> -->
+          <picture>
+            <source 
+                srcset="assets/perriwinkle-logo.svg 325w" 
+                media="(min-width: 1000px)" />
+            <source 
+                srcset="assets/small-perriwinkle-logo.svg"
+                media="(max-width: 500px)" />
+            <img 
+                src="assets/small-perriwinkle-logo.svg" alt="Logo" />
+          </picture>
         </a>
           <div class="menu-right">
             <a href="javascript:void(0);" onclick="toggleMenu()" class="icon">&#9776;</a>
@@ -132,11 +135,11 @@
       </div>
       <div class="container-row">
         <div class="project-container">
-          <a class="feature-link" target="_blank" href="https://editor.p5js.org/marjoree.e.f/full/VJpbTZO4C" rel="noopener"
+          <a class="feature-link" target="_blank" href="https://sunnyside-agency-sample.netlify.app/" rel="noopener"
             rel="noreferrer">
             <div class="container-content four">
               <div class="project-info">
-                <p>Particle Dandelion</p>
+                <p>Sunnyside Agency</p>
               </div>
             </div>
           </a>

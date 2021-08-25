@@ -55,6 +55,13 @@ body{
             &:hover{
                 background-color: $logo-prwnkl;
             }
+            picture{
+                max-width: 40vw;
+                img{
+                    object-fit: contain;
+                    max-width: 35vw;
+                }
+            }
         }
         .menu-right{
             margin-left: auto;
@@ -258,6 +265,11 @@ body{
                             background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/ping-preview-square.png');
                             background-position: center;
                         }
+                        .four{
+                            background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png');
+                            background-position: top;
+                            background-size: 150%;
+                        }
                         .five{
                             background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png');
                         }
@@ -342,6 +354,34 @@ body{
                         height: 2rem;
                     }
                 }
+                textarea{
+                    margin-top: auto;
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+                    font-family: 'Poppins',sans-serif;
+                    color: #060663;
+                    font-weight: 400;
+                    align-items: middle;
+                    height: 2rem;
+                    width: 100%;
+                    border-color: #88A2F2;
+                    border-radius: 1rem;
+                    border-width: 0.25px;
+                    border-style: solid;
+                    z-index: 17;
+                }
+                input[type=text], input[type=email]{
+                    margin: 1rem;
+                    padding: 1rem;
+                    align-items: middle;
+                    height: 2rem;
+                    width: 100%;
+                    border-color: #88A2F2;
+                    border-radius: 1rem;
+                    border-width: 0.25px;
+                    border-style: solid;
+                    z-index: 17;
+                }
                 input[type=text]{
                     margin: auto;
                     padding: 1rem;
@@ -393,7 +433,7 @@ body{
                         color: #CAC9F2;
                     }
                 }
-                textarea.form-comment{
+                .form-comment{
                     resize: vertical;
                     margin-bottom: 1rem;
                     margin-right: auto;
