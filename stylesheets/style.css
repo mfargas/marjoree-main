@@ -27,8 +27,8 @@ body {
   height: 100%;
   padding: 0;
   position: relative;
-  -webkit-box-shadow: inset 0 0 0 1vw #CAC9F2;
-          box-shadow: inset 0 0 0 1vw #CAC9F2;
+  -webkit-box-shadow: #CAC9F2 0 0 0 1rem inset;
+          box-shadow: #CAC9F2 0 0 0 1rem inset;
 }
 
 body .navbar {
@@ -223,11 +223,9 @@ body .particle-dandelion .header-statement .opening-statement-2 .h2-bottom {
 }
 
 body .content-wrapper {
-  width: 98vw;
+  width: calc(100% - 2rem);
   padding: 0px;
   margin: auto;
-  -webkit-box-shadow: inset 1rem 1rem 0 0 #CAC9F2;
-          box-shadow: inset 1rem 1rem 0 0 #CAC9F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
