@@ -186,11 +186,10 @@ body article section.about-intro .text p {
 }
 
 body article section.about-intro img {
-  height: 24rem;
+  height: 22rem;
   width: auto;
   margin: auto auto auto -10rem;
-  -webkit-box-shadow: #CAC9F2 0 0 0 1rem outset;
-          box-shadow: #CAC9F2 0 0 0 1rem outset;
+  border: 1rem solid #CAC9F2;
 }
 
 body article section.biography h3 {
