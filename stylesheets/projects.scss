@@ -33,7 +33,7 @@ body{
     height: 100%;
     padding: 0;
     position: relative;
-    box-shadow: inset 1rem 1rem 0 0 1rem 1rem 0 0 $pastel-prwknl;
+    box-shadow: $pastel-prwknl 0 0 0 1rem inset;
     .navbar{
         color: $dark-blue;
         font-size: 1.5em;
@@ -115,7 +115,7 @@ body{
         }
     }
     article{
-        width: 100%;
+        width: calc(100% - 2rem);
         margin: auto;
         section.intro-proj{
             width: 100%;

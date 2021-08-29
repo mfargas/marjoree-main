@@ -27,8 +27,8 @@ body {
   height: 100%;
   padding: 0;
   position: relative;
-  -webkit-box-shadow: inset 1rem 1rem 0 0 1rem 1rem 0 0 #CAC9F2;
-          box-shadow: inset 1rem 1rem 0 0 1rem 1rem 0 0 #CAC9F2;
+  -webkit-box-shadow: #CAC9F2 0 0 0 1rem inset;
+          box-shadow: #CAC9F2 0 0 0 1rem inset;
 }
 
 body .navbar {
@@ -155,7 +155,7 @@ body .navbar .menu-right .menu .social-icons a.nav-link i {
 }
 
 body article {
-  width: 100%;
+  width: calc(100% - 2rem);
   margin: auto;
 }
 
