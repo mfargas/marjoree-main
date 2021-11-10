@@ -137,7 +137,28 @@ body{
         }
         section.project-types{
             width: 100%;
-
+            h3{
+                min-width: 25rem;
+                line-height: 3rem;
+            }
+            figure.project{
+                display: flex;
+                margin: auto;
+                padding: 2rem;
+                justify-content: space-evenly;
+                img{
+                    width: 25vw;
+                    border-radius: 50%;
+                }
+            }
+        }
+        section.art{
+            h2{
+                width: 50rem;
+                margin: auto;
+                line-height: 2rem;
+                text-align: right;
+            }
         }
     }
     .footer{

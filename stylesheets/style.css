@@ -436,47 +436,10 @@ body .footer .footer-content {
           align-items: center;
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 45vh;
   z-index: 0;
   color: #060663;
   font-weight: 500;
-}
-
-body .footer .footer-content a.resume-link {
-  font-size: 2rem;
-  color: #88A2F2;
-  margin: auto;
-  z-index: 15;
-  display: block;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-body .footer .footer-content a.resume-link:link {
-  color: initial;
-  text-decoration: none;
-  text-align: center;
-}
-
-body .footer .footer-content a.resume-link:hover {
-  color: #0511F2;
-}
-
-body .footer .footer-content a.resume-link:active {
-  color: #CAC9F2;
-}
-
-body .footer .footer-content a.resume-link:visited {
-  color: #CAC9F2;
-}
-
-body .footer .footer-content a.resume-link .fas {
-  width: 100%;
-  font-size: 2rem;
-  color: #88A2F2;
-  margin: auto;
-  z-index: 12;
 }
 
 body .footer .footer-content form {
@@ -500,7 +463,7 @@ body .footer .footer-content form label {
   width: 60%;
 }
 
-body .footer .footer-content form .form-names {
+body .footer .footer-content form .form-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,6 +472,7 @@ body .footer .footer-content form .form-names {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  margin: 0.5rem auto;
 }
 
 body .footer .footer-content form .email {
@@ -519,6 +483,8 @@ body .footer .footer-content form .email {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0.5rem auto;
+  width: 100%;
 }
 
 body .footer .footer-content form .email .email-label {
@@ -559,20 +525,15 @@ body .footer .footer-content form input[type=text], body .footer .footer-content
   height: 2rem;
   width: 100%;
   border-color: #88A2F2;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border-width: 0.25px;
   border-style: solid;
   z-index: 17;
 }
 
 body .footer .footer-content form input[type=text] {
-  margin: auto;
-  padding: 1rem;
-  -webkit-box-align: middle;
-      -ms-flex-align: middle;
-          align-items: middle;
   height: 2rem;
-  width: 95%;
+  width: 100%;
   border-color: #88A2F2;
   border-radius: 1rem;
   border-width: 0.25px;
@@ -582,16 +543,10 @@ body .footer .footer-content form input[type=text] {
 
 body .footer .footer-content form input[type=text]:focus {
   outline-style: auto;
-  outline-offset: 0.5em;
-  outline-color: #CAC9F2;
+  outline-color: #0511F2;
 }
 
 body .footer .footer-content form input[type=email] {
-  margin: 1rem;
-  padding: 1rem;
-  -webkit-box-align: middle;
-      -ms-flex-align: middle;
-          align-items: middle;
   height: 2rem;
   width: 100%;
   border-color: #88A2F2;
@@ -603,7 +558,6 @@ body .footer .footer-content form input[type=email] {
 
 body .footer .footer-content form input[type=email]:focus {
   outline-style: auto;
-  outline-offset: 0.5em;
   outline-color: #CAC9F2;
 }
 
@@ -626,16 +580,19 @@ body .footer .footer-content form input[type='submit']:hover {
   color: #CAC9F2;
 }
 
+body .footer .footer-content form .comment-label {
+  text-align: left;
+  width: 100%;
+  margin: 0.5rem auto;
+}
+
 body .footer .footer-content form .form-comment {
   resize: vertical;
-  margin-bottom: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0.5rem auto;
   text-align: left;
-  height: 8rem;
+  height: 20rem;
   vertical-align: text-top;
-  margin-top: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   font-family: 'Poppins',sans-serif;
   color: #060663;
   font-weight: 400;
@@ -882,20 +839,21 @@ body .footer .footer-content form .form-comment {
             align-items: center;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     color: #060663;
     font-weight: 500;
   }
   body .footer .footer-content form {
-    width: 90%;
+    width: 80%;
     text-align: center;
   }
-  body .footer .footer-content form .form-names {
+  body .footer .footer-content form .form-name {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 98%;
+    width: 100%;
+    margin: 1rem auto;
   }
   body .footer .footer-content form .email {
     -webkit-box-orient: vertical;
@@ -905,7 +863,10 @@ body .footer .footer-content form .form-comment {
   }
   body .footer .footer-content form textarea {
     width: 80%;
-    margin-top: 1rem;
+    margin: 1rem auto;
+  }
+  body .footer .footer-content form .form-comment {
+    height: 6rem;
   }
 }
 

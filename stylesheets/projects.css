@@ -189,6 +189,34 @@ body article section.project-types {
   width: 100%;
 }
 
+body article section.project-types h3 {
+  min-width: 25rem;
+  line-height: 3rem;
+}
+
+body article section.project-types figure.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body article section.project-types figure.project img {
+  width: 25vw;
+  border-radius: 50%;
+}
+
+body article section.art h2 {
+  width: 50rem;
+  margin: auto;
+  line-height: 2rem;
+  text-align: right;
+}
+
 body .footer {
   display: -webkit-box;
   display: -ms-flexbox;

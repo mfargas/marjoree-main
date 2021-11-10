@@ -295,39 +295,10 @@ body{
             align-items: center;
             position: relative;
             width: 100%;
-            height: 60vh;
+            height: 45vh;
             z-index: 0;
             color: $dark-blue;
             font-weight: 500;
-            a.resume-link{
-                font-size: 2rem;
-                color: #88A2F2;
-                margin: auto;
-                z-index: 15;
-                display: block;
-                width: max-content;
-                &:link{
-                    color: initial;
-                    text-decoration: none;
-                    text-align: center;
-                }
-                &:hover{
-                    color: $action;
-                }
-                &:active{
-                    color: $pastel-prwknl;
-                }
-                &:visited{
-                    color: $pastel-prwknl;
-                }
-                .fas{
-                    width: 100%;
-                    font-size: 2rem;
-                    color: $logo-prwnkl;
-                    margin: auto;
-                    z-index: 12;
-                }
-            }
             form{
                 display: flex;
                 flex-direction: column;
@@ -339,14 +310,17 @@ body{
                     margin: auto;
                     width: 60%;
                 }
-                .form-names{
+                .form-name{
                     display: flex;
                     flex-direction: row;
                     width: 100%;
+                    margin: 0.5rem auto;
                 }
                 .email{
                     display: flex;
                     flex-direction: row;
+                    margin: 0.5rem auto;
+                    width: 100%;
                     .email-label{
                         width: 60%;
                     }
@@ -379,32 +353,12 @@ body{
                     height: 2rem;
                     width: 100%;
                     border-color: #88A2F2;
-                    border-radius: 1rem;
+                    border-radius: 2rem;
                     border-width: 0.25px;
                     border-style: solid;
                     z-index: 17;
                 }
                 input[type=text]{
-                    margin: auto;
-                    padding: 1rem;
-                    align-items: middle;
-                    height: 2rem;
-                    width: 95%;
-                    border-color: #88A2F2;
-                    border-radius: 1rem;
-                    border-width: 0.25px;
-                    border-style: solid;
-                    z-index: 17;
-                    &:focus{
-                        outline-style: auto;
-                        outline-offset: 0.5em;
-                        outline-color: #CAC9F2;
-                    }
-                }
-                input[type=email]{
-                    margin: 1rem;
-                    padding: 1rem;
-                    align-items: middle;
                     height: 2rem;
                     width: 100%;
                     border-color: #88A2F2;
@@ -414,7 +368,19 @@ body{
                     z-index: 17;
                     &:focus{
                         outline-style: auto;
-                        outline-offset: 0.5em;
+                        outline-color: $action;
+                    }
+                }
+                input[type=email]{
+                    height: 2rem;
+                    width: 100%;
+                    border-color: #88A2F2;
+                    border-radius: 1rem;
+                    border-width: 0.25px;
+                    border-style: solid;
+                    z-index: 17;
+                    &:focus{
+                        outline-style: auto;
                         outline-color: #CAC9F2;
                     }
                 }
@@ -435,16 +401,18 @@ body{
                         color: #CAC9F2;
                     }
                 }
+                .comment-label{
+                    text-align: left;
+                    width: 100%;
+                    margin: 0.5rem auto;
+                }
                 .form-comment{
                     resize: vertical;
-                    margin-bottom: 1rem;
-                    margin-right: auto;
-                    margin-left: auto;
+                    margin: 0.5rem auto;
                     text-align: left;
-                    height: 8rem;
+                    height: 20rem;
                     vertical-align: text-top;
-                    margin-top: auto;
-                    padding: 1rem;
+                    padding: 0.5rem;
                     font-family: 'Poppins',sans-serif;
                     color: #060663;
                     font-weight: 400;
@@ -639,22 +607,26 @@ body{
                 align-items: center;
                 position: relative;
                 width: 100%;
-                height: 100vh;
+                height: 50vh;
                 color: #060663;
                 font-weight: 500;
                 form{
-                    width: 90%;
+                    width: 80%;
                     text-align: center;
-                    .form-names{
+                    .form-name{
                         flex-direction: column;
-                        width: 98%;
+                        width: 100%;
+                        margin: 1rem auto;
                     }
                     .email{
                         flex-direction: column;
                     }
                     textarea{
                         width: 80%;
-                        margin-top: 1rem;
+                        margin: 1rem auto;
+                    }
+                    .form-comment{
+                        height: 6rem;
                     }
                 }
             }
