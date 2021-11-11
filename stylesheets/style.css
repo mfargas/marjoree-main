@@ -59,8 +59,7 @@ body .navbar .navbar-brand {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto auto auto 1rem;
 }
 
 body .navbar .navbar-brand:hover {
@@ -75,23 +74,18 @@ body .navbar .navbar-brand picture img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 35vw;
+  margin: auto;
 }
 
 body .navbar .menu-right {
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 1rem auto auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 body .navbar .menu-right a {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
   color: #060663;
   text-decoration: none;
   vertical-align: middle;
@@ -100,9 +94,6 @@ body .navbar .menu-right a {
 body .navbar .menu-right a:hover {
   background-color: #88A2F2;
   color: #CAC9F2;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 body .navbar .menu-right .icon {
@@ -125,24 +116,12 @@ body .navbar .menu-right .menu li {
 
 body .navbar .menu-right .menu .social-icons {
   text-align: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 body .navbar .menu-right .menu .social-icons a.nav-link {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   padding: 0.5em;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  vertical-align: middle;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 body .navbar .menu-right .menu .social-icons a.nav-link i {
@@ -153,6 +132,7 @@ body .navbar .menu-right .menu .social-icons a.nav-link i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 body .particle-dandelion {
@@ -239,11 +219,8 @@ body .content-wrapper {
 }
 
 body .content-wrapper .intro {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 98vw;
-  margin: auto;
+  height: 60vh;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -261,14 +238,17 @@ body .content-wrapper .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 1px;
+  line-height: 1rem;
 }
 
 body .content-wrapper .intro .intro-statement {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  line-height: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  max-width: 60rem;
+  margin: auto;
 }
 
 body .content-wrapper .intro .technologies {
@@ -332,7 +312,7 @@ body .content-wrapper .featured-projects .container-row {
 body .content-wrapper .featured-projects .container-row .project-container {
   width: 300px;
   height: 300px;
-  margin: 25px;
+  margin: 3rem;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 1em 0.5em #dbddfd;
           box-shadow: 0 0 1em 0.5em #dbddfd;
@@ -498,8 +478,8 @@ body .footer .footer-content form .email .form-email {
 }
 
 body .footer .footer-content form textarea {
-  margin-top: auto;
-  margin-bottom: 1rem;
+  margin: auto auto 1rem auto;
+  height: 40rem;
   padding: 1rem;
   font-family: 'Poppins',sans-serif;
   color: #060663;
@@ -543,7 +523,7 @@ body .footer .footer-content form input[type=text] {
 
 body .footer .footer-content form input[type=text]:focus {
   outline-style: auto;
-  outline-color: #0511F2;
+  outline-color: #060663;
 }
 
 body .footer .footer-content form input[type=email] {
@@ -558,7 +538,7 @@ body .footer .footer-content form input[type=email] {
 
 body .footer .footer-content form input[type=email]:focus {
   outline-style: auto;
-  outline-color: #CAC9F2;
+  outline-color: #060663;
 }
 
 body .footer .footer-content form input[type='submit'] {
@@ -567,17 +547,17 @@ body .footer .footer-content form input[type='submit'] {
   border-radius: 50px;
   border-color: #0511F2;
   border-style: solid;
-  color: #0511F2;
+  color: #060663;
   width: 5rem;
   height: 2rem;
-  margin-right: 2rem;
-  margin-left: auto;
+  margin: auto 2rem auto auto;
+  font-weight: 400;
   z-index: 28;
 }
 
 body .footer .footer-content form input[type='submit']:hover {
-  background-color: #0511F2;
-  color: #CAC9F2;
+  background-color: #060663;
+  color: #F2F2F2;
 }
 
 body .footer .footer-content form .comment-label {
@@ -590,7 +570,7 @@ body .footer .footer-content form .form-comment {
   resize: vertical;
   margin: 0.5rem auto;
   text-align: left;
-  height: 20rem;
+  height: 4rem;
   vertical-align: text-top;
   padding: 0.5rem;
   font-family: 'Poppins',sans-serif;
@@ -599,13 +579,16 @@ body .footer .footer-content form .form-comment {
   -webkit-box-align: middle;
       -ms-flex-align: middle;
           align-items: middle;
-  height: 2rem;
   width: 100%;
   border-color: #88A2F2;
   border-radius: 1rem;
   border-width: 0.25px;
   border-style: solid;
   z-index: 17;
+}
+
+body .footer .footer-content form .form-comment:focus {
+  outline-color: #060663;
 }
 
 @-webkit-keyframes drop-down {

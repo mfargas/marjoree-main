@@ -52,8 +52,7 @@ body{
             color: $dark-blue;
             height: max-content;
             width: max-content;
-            margin-top: auto;
-            margin-bottom: auto;
+            margin: auto auto auto 1rem;
             &:hover{
                 background-color: $logo-prwnkl;
             }
@@ -62,25 +61,21 @@ body{
                 img{
                     object-fit: contain;
                     max-width: 35vw;
+                    margin: auto;
                 }
             }
         }
         .menu-right{
-            margin-left: auto;
-            margin-top: auto;
-            margin-bottom: auto;
+            margin: auto 1rem auto auto;
             display: flex;
             a{
-                height: max-content;
-                padding-left: 5px;
-                padding-right: 5px;
+                padding: 0 5px;
                 color: $dark-blue;
                 text-decoration: none;
                 vertical-align: middle;
                 &:hover{
                     background-color: $logo-prwnkl;
                     color: $pastel-prwknl;
-                    height: max-content;
                 }
             }
             .icon{
@@ -97,18 +92,14 @@ body{
                 }
                 .social-icons{
                     text-align: center;
-                    height: max-content;
                     a.nav-link{
                         font-family: 'Poppins', sans-serif;
                         text-decoration: none;
                         padding: 0.5em;
-                        height: max-content;
-                        vertical-align: middle;
-                        justify-content: center;
-                        align-content: center;
                         i{
                             display: flex;
                             flex-direction: column;
+                            height: 100%;
                         }
                     }
                 }
@@ -169,9 +160,8 @@ body{
         z-index: 0;
         position: relative;
         .intro{
-            height: max-content;
-            width: 98vw;
-            margin: auto;
+            height: 60vh;
+            width: 100%;
             justify-content: center;
             align-content: center;
             position: relative;
@@ -180,10 +170,13 @@ body{
             text-align: center;
             flex-direction: column;
             display: flex;
-            line-height: 1px;
+            line-height: 1rem;
             .intro-statement{
                 height: max-content;
-                line-height: 1rem;
+                line-height: 1.5rem;
+                font-weight: 300;
+                max-width: 60rem;
+                margin: auto;
             }
             .technologies{
                 height: max-content;
@@ -221,7 +214,7 @@ body{
                 .project-container{
                     width: 300px;
                     height: 300px;
-                    margin: 25px;
+                    margin: 3rem;
                     border-radius: 50%;
                     box-shadow: 0 0 1em 0.5em rgb(219, 221, 253);
                     .feature-link{
@@ -331,8 +324,8 @@ body{
                     }
                 }
                 textarea{
-                    margin-top: auto;
-                    margin-bottom: 1rem;
+                    margin: auto auto 1rem auto;
+                    height: 40rem;
                     padding: 1rem;
                     font-family: 'Poppins',sans-serif;
                     color: #060663;
@@ -368,7 +361,7 @@ body{
                     z-index: 17;
                     &:focus{
                         outline-style: auto;
-                        outline-color: $action;
+                        outline-color: $dark-blue;
                     }
                 }
                 input[type=email]{
@@ -381,24 +374,24 @@ body{
                     z-index: 17;
                     &:focus{
                         outline-style: auto;
-                        outline-color: #CAC9F2;
+                        outline-color: $dark-blue;
                     }
                 }
                 input[type='submit']{
                     cursor: pointer;
                     border-width: 0.25px;
                     border-radius: 50px;
-                    border-color: #0511F2;
+                    border-color: $action;
                     border-style: solid;
-                    color: #0511F2;
+                    color: $dark-blue;
                     width: 5rem;
                     height: 2rem;
-                    margin-right: 2rem;
-                    margin-left: auto;
+                    margin: auto 2rem auto auto;
+                    font-weight: 400;
                     z-index: 28;
                     &:hover{
-                        background-color: #0511F2;
-                        color: #CAC9F2;
+                        background-color: $dark-blue;
+                        color: $off-white;
                     }
                 }
                 .comment-label{
@@ -410,20 +403,22 @@ body{
                     resize: vertical;
                     margin: 0.5rem auto;
                     text-align: left;
-                    height: 20rem;
+                    height: 4rem;
                     vertical-align: text-top;
                     padding: 0.5rem;
                     font-family: 'Poppins',sans-serif;
-                    color: #060663;
+                    color: $dark-blue;
                     font-weight: 400;
                     align-items: middle;
-                    height: 2rem;
                     width: 100%;
                     border-color: $logo-prwnkl;
                     border-radius: 1rem;
                     border-width: 0.25px;
                     border-style: solid;
                     z-index: 17;
+                    &:focus{
+                        outline-color: $dark-blue;
+                    }
                 }
             }
         }

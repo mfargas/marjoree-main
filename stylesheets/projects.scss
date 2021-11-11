@@ -115,7 +115,7 @@ body{
         }
     }
     article{
-        width: calc(100% - 2rem);
+        width: 100%;
         margin: auto;
         section.intro-proj{
             width: 100%;
@@ -128,6 +128,7 @@ body{
                 z-index: 4;
                 font-weight: 700;
                 font-size: 2.5rem;
+                border: $logo-prwnkl;
             }
             img{
                 height: 50%;
@@ -149,6 +150,27 @@ body{
                 img{
                     width: 25vw;
                     border-radius: 50%;
+                    &:hover{
+                        filter: blur(75%) ;
+                    }
+                }
+                figcaption{
+                    font-weight: 300;
+                    ul{
+                        li{
+                            text-align: right;
+                            font-size: 1.25rem;
+                            font-weight: 600;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        &:link{
+                            color: rgb(177, 46, 68);
+                        }
+                    }
                 }
             }
         }
@@ -212,8 +234,8 @@ body{
                     }
                 }
                 textarea{
-                    margin-top: auto;
-                    margin-bottom: 1rem;
+                    margin: auto auto 1rem auto;
+                    height: 40rem;
                     padding: 1rem;
                     font-family: 'Poppins',sans-serif;
                     color: #060663;
@@ -249,7 +271,7 @@ body{
                     z-index: 17;
                     &:focus{
                         outline-style: auto;
-                        outline-color: $action;
+                        outline-color: $dark-blue;
                     }
                 }
                 input[type=email]{
@@ -262,24 +284,24 @@ body{
                     z-index: 17;
                     &:focus{
                         outline-style: auto;
-                        outline-color: #CAC9F2;
+                        outline-color: $dark-blue;
                     }
                 }
                 input[type='submit']{
                     cursor: pointer;
                     border-width: 0.25px;
                     border-radius: 50px;
-                    border-color: #0511F2;
+                    border-color: $action;
                     border-style: solid;
-                    color: #0511F2;
+                    color: $dark-blue;
                     width: 5rem;
                     height: 2rem;
-                    margin-right: 2rem;
-                    margin-left: auto;
+                    margin: auto 2rem auto auto;
+                    font-weight: 400;
                     z-index: 28;
                     &:hover{
-                        background-color: #0511F2;
-                        color: #CAC9F2;
+                        background-color: $dark-blue;
+                        color: $off-white;
                     }
                 }
                 .comment-label{
@@ -291,20 +313,22 @@ body{
                     resize: vertical;
                     margin: 0.5rem auto;
                     text-align: left;
-                    height: 20rem;
+                    height: 4rem;
                     vertical-align: text-top;
                     padding: 0.5rem;
                     font-family: 'Poppins',sans-serif;
-                    color: #060663;
+                    color: $dark-blue;
                     font-weight: 400;
                     align-items: middle;
-                    height: 2rem;
                     width: 100%;
                     border-color: $logo-prwnkl;
                     border-radius: 1rem;
                     border-width: 0.25px;
                     border-style: solid;
                     z-index: 17;
+                    &:focus{
+                        outline-color: $dark-blue;
+                    }
                 }
             }
         }
@@ -392,6 +416,28 @@ body{
                 }
                 .menuToggle{
                     display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        article{
+            section.intro-proj{
+                flex-direction: column;
+                h2{
+                    position: absolute;
+                    margin: 15rem auto auto auto;
+                    color: $off-white;
+                    max-width: 95vw;
+                    text-align: right;
+                }
+                img{
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+            .project-types{
+                figure.project{
+                    margin: auto;
                     flex-direction: column;
                 }
             }
