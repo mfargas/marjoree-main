@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../stylesheets/index.css" type="text/css">
+    <link rel="stylesheet" href="../../stylesheets/project-singular.css" type="text/css">
+
+    <script src="https://kit.fontawesome.com/5c1d927aa5.js" crossorigin="anonymous"></script>
+
+    <title>Projects | Marjoree E.F.</title>
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar">
+        <a class="navbar-brand" id="logo" href="/">
+            <picture>
+                <source srcset="../../assets/Logo-MarG.svg" media="(min-width: 1000px)" />
+                <source srcset="../../assets/Logo_MRG.svg" media="(max-width: 500px)" />
+                <img src="../../assets/Logo_MRG.svg" alt="Logo" />
+            </picture>
+        </a>
+        <div class="menu-right">
+            <a href="javascript:void(0);" onclick="toggleMenu()" class="icon">&#9776;</a>
+            <ul class="menu" id="menu-toggle">
+                <li><a class="nav-link" href="../about.html">Projects</a></li>
+                <li><a class="nav-link" href="../about.html">About</a></li>
+                <!-- social links -->
+                <li class="social-icons"><a class="nav-link" href="https://github.com/mfargas" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a></li>
+                <li class="social-icons"><a class="nav-link" href="https://www.linkedin.com/in/marjoree-fargas"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- content -->
+
+    <!-- intro -->
+    <article>
+        <h1 class="project-name">Computer Vision Robot</h1>
+            <figure class="project">
+                <img src="../../assets/project-previews/blogr-preview-square.png" alt="blogr-preview">
+                <figcaption>technologies used:
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </figcaption>
+                <figcaption>
+                    <a href="https://github.com/mfargas/blogr">Repository</a>
+                </figcaption>
+            </figure>
+    </article>
+    <!-- footer -->
+    <footer class="footer">
+        <h2>Get in Touch</h2>
+        <div class="footer-content">
+            <form class="email-form" method="POST">
+                <div class="form-name">
+                    <label for="name">Your Full Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="email">
+                    <label class="email-label" for="email">Email</label>
+                    <input type="email" id="form-email" name="email" class="form-email">
+                </div>
+                <label for="message" class="comment-label">Reason for Reaching Out:</label>
+                <textarea name="message" id="form-comment" class="form-comment"
+                    placeholder="I am reaching out because..."></textarea>
+                <input type="submit" value="Submit" class="submit-button">
+                <div>
+                    <p id="result-text"></p>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <!--scripts -->
+    <script type="text/javascript" src="../../js/menu-toggle.js"></script>
+    <script type="text/javascript" src="../../js/emailForm.js"></script>
+</body>
+
+</html>

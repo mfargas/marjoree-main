@@ -1,112 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
 @import url("https://use.typekit.net/sqa2xzt.css");
 
-/* Color Theme Swatches in Hex 
-.marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light periwinkle from logo
-.marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
-.marjoree-site-theme-march21-3-hex { color: #88A2F2; }    periwinkle from logo
-.marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
-.marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
-
 $action: #0511F2;
 $logo-prwnkl: #88A2F2;
 $pastel-prwknl: #CAC9F2;
 $off-white: #F2F2F2;
 $dark-blue: #060663;
 
-*{
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-*:before, *:after {
-    box-sizing: border-box;
-}
-
 body{
-    background-color: $off-white;
-    color: $dark-blue;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    position: relative;
-    box-shadow: $pastel-prwknl 0 0 0 1rem inset;
-    // box-shadow: inset 1rem 1rem 0 0 $pastel-prwknl, inset 1rem 1rem 0 0 $pastel-prwknl;
-    .navbar{
-        color: $dark-blue;
-        font-size: 1.5em;
-        width: 95vw;
-        height: max-content;
-        left: 0;
-        margin: 1em;
-        justify-self: center;
-        display: flex;
-        flex-wrap: wrap;
-        position: fixed;
-        z-index: 10;
-        .navbar-brand{
-            color: $dark-blue;
-            height: max-content;
-            width: max-content;
-            margin: auto auto auto 1rem;
-            &:hover{
-                background-color: $logo-prwnkl;
-            }
-            picture{
-                max-width: 40vw;
-                img{
-                    object-fit: contain;
-                    max-width: 35vw;
-                    margin: auto;
-                }
-            }
-        }
-        .menu-right{
-            margin: auto 1rem auto auto;
-            display: flex;
-            a{
-                padding: 0 5px;
-                color: $dark-blue;
-                text-decoration: none;
-                vertical-align: middle;
-                &:hover{
-                    background-color: $logo-prwnkl;
-                    color: $pastel-prwknl;
-                }
-            }
-            .icon{
-                display: none;
-            }
-            .menu{
-                display: flex;
-                list-style-type: none;
-                li{
-                    margin: auto;
-                    padding-right: 0.5em;
-                    vertical-align: middle;
-                    overflow: hidden;
-                }
-                .social-icons{
-                    text-align: center;
-                    a.nav-link{
-                        font-family: 'Poppins', sans-serif;
-                        text-decoration: none;
-                        padding: 0.5em;
-                        i{
-                            display: flex;
-                            flex-direction: column;
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
     .particle-dandelion{
         width: 100%;
         height: 100vh;
@@ -154,7 +55,6 @@ body{
         width: calc(100% - 2rem);
         padding: 0px;
         margin: auto;
-        
         display: flex;
         flex-direction: column;
         z-index: 0;
@@ -192,23 +92,20 @@ body{
                 }
             }
         }
-        .featured-projects{
+        .project-displays{
             width: 100%;
             height: max-content;
             margin: auto;
-            background-image: linear-gradient(to bottom,#88A2F2, #F2F2F2);
-            h1{
-                margin: 1em;
-                color: $off-white;
+            h2{
+                margin: 5rem auto;
                 text-align: center;
-                font-size: 1.5em;
-                text-decoration: underline;
+                font-size: 2rem;
             }
             .container-row{
                 height: max-content;
                 width: max-content;
-                display: grid;
-                grid-auto-flow: column;
+                display: flex;
+                flex-direction: row;
                 justify-content: space-evenly;
                 margin: auto;
                 .project-container{
@@ -228,201 +125,96 @@ body{
                             height: 100%;
                             margin: auto;
                             background-size: cover;
-                            .project-info{
-                                height: 100%;
-                                display: flex;
-                                align-content: center;
-                                p{
-                                    margin: auto;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    color: $dark-blue;
-                                    text-decoration: none;
-                                    font-weight: 600;
+                                .project-info{
+                                    height: 100%;
+                                    display: flex;
+                                    align-content: center;
+                                    p{
+                                        margin: auto;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                        color: $dark-blue;
+                                        text-decoration: none;
+                                        font-weight: 600;
+                                    }
+                                }
+                                &:hover{
+                                    background-color: $off-white;
+                                    border-radius: 50%;
+                                    box-shadow: inset 0 0 5em 0.5em #88A2F2;
+                                    background-image: none;
                                 }
                             }
-                            &:hover{
-                                background-color: $off-white;
-                                border-radius: 50%;
-                                box-shadow: inset 0 0 5em 0.5em #88A2F2;
-                                background-image: none;
+                    }
+                }
+            }
+
+            &.featured-projects{
+                background-image: linear-gradient(to bottom,#88A2F2, #F2F2F2);
+                h2{
+                    color: $off-white;
+                }
+                .container-row{
+                    .project-container{
+                        .feature-link{
+                            .one{
+                                background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png');
+                                background-position: center;
+                            }
+                            .two{
+                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/interactive-price-bar/marjoree-interactive-price-bar.png');
+                                background-position: center;
+                            }
+                            .three{
+                                background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/ping-preview-square.png');
+                                background-position: center;
+                            }
+                            .four{
+                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png');
+                                background-position: top;
+                                background-size: 150%;
+                            }
+                            .five{
+                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png');
                             }
                         }
-                        .one{
-                            background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png');
-                            background-position: center;
-                        }
-                        .two{
-                            background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/interactive-price-bar/marjoree-interactive-price-bar.png');
-                            background-position: center;
-                        }
-                        .three{
-                            background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/ping-preview-square.png');
-                            background-position: center;
-                        }
-                        .four{
-                            background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png');
-                            background-position: top;
-                            background-size: 150%;
-                        }
-                        .five{
-                            background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png');
+                    }
+                }
+            }
+            &.featured-projects-2{
+                background-color:  $off-white;
+                h2{
+                    margin: 5rem auto;
+                    color: $dark-blue;
+                }
+                .container-row{
+                    .project-container{
+                        .feature-link{
+                            .one{
+                                background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png');
+                                background-position: center;
+                            }
+                            .two{
+                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/interactive-price-bar/marjoree-interactive-price-bar.png');
+                                background-position: center;
+                            }
+                            .three{
+                                background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/ping-preview-square.png');
+                                background-position: center;
+                            }
+                            .four{
+                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png');
+                                background-position: top;
+                                background-size: 150%;
+                            }
+                            .five{
+                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png');
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        h2{
-            margin: auto;
-            padding-top: 2rem;
-        }
-        .footer-content{
-            display: flex;
-            flex-direction: row;
-            justify-content:left;
-            align-items: center;
-            position: relative;
-            width: 100%;
-            height: 45vh;
-            z-index: 0;
-            color: $dark-blue;
-            font-weight: 500;
-            form{
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                height: max-content;
-                width: 35%;
-                z-index: 16;
-                label{
-                    margin: auto;
-                    width: 60%;
-                }
-                .form-name{
-                    display: flex;
-                    flex-direction: row;
-                    width: 100%;
-                    margin: 0.5rem auto;
-                }
-                .email{
-                    display: flex;
-                    flex-direction: row;
-                    margin: 0.5rem auto;
-                    width: 100%;
-                    .email-label{
-                        width: 60%;
-                    }
-                    .form-email{
-                        width: 100%;
-                        margin: auto;
-                        height: 2rem;
-                    }
-                }
-                textarea{
-                    margin: auto auto 1rem auto;
-                    height: 40rem;
-                    padding: 1rem;
-                    font-family: 'Poppins',sans-serif;
-                    color: #060663;
-                    font-weight: 400;
-                    align-items: middle;
-                    height: 2rem;
-                    width: 100%;
-                    border-color: #88A2F2;
-                    border-radius: 1rem;
-                    border-width: 0.25px;
-                    border-style: solid;
-                    z-index: 17;
-                }
-                input[type=text], input[type=email]{
-                    margin: 1rem;
-                    padding: 1rem;
-                    align-items: middle;
-                    height: 2rem;
-                    width: 100%;
-                    border-color: #88A2F2;
-                    border-radius: 2rem;
-                    border-width: 0.25px;
-                    border-style: solid;
-                    z-index: 17;
-                }
-                input[type=text]{
-                    height: 2rem;
-                    width: 100%;
-                    border-color: #88A2F2;
-                    border-radius: 1rem;
-                    border-width: 0.25px;
-                    border-style: solid;
-                    z-index: 17;
-                    &:focus{
-                        outline-style: auto;
-                        outline-color: $dark-blue;
-                    }
-                }
-                input[type=email]{
-                    height: 2rem;
-                    width: 100%;
-                    border-color: #88A2F2;
-                    border-radius: 1rem;
-                    border-width: 0.25px;
-                    border-style: solid;
-                    z-index: 17;
-                    &:focus{
-                        outline-style: auto;
-                        outline-color: $dark-blue;
-                    }
-                }
-                input[type='submit']{
-                    cursor: pointer;
-                    border-width: 0.25px;
-                    border-radius: 50px;
-                    border-color: $action;
-                    border-style: solid;
-                    color: $dark-blue;
-                    width: 5rem;
-                    height: 2rem;
-                    margin: auto 2rem auto auto;
-                    font-weight: 400;
-                    z-index: 28;
-                    &:hover{
-                        background-color: $dark-blue;
-                        color: $off-white;
-                    }
-                }
-                .comment-label{
-                    text-align: left;
-                    width: 100%;
-                    margin: 0.5rem auto;
-                }
-                .form-comment{
-                    resize: vertical;
-                    margin: 0.5rem auto;
-                    text-align: left;
-                    height: 4rem;
-                    vertical-align: text-top;
-                    padding: 0.5rem;
-                    font-family: 'Poppins',sans-serif;
-                    color: $dark-blue;
-                    font-weight: 400;
-                    align-items: middle;
-                    width: 100%;
-                    border-color: $logo-prwnkl;
-                    border-radius: 1rem;
-                    border-width: 0.25px;
-                    border-style: solid;
-                    z-index: 17;
-                    &:focus{
-                        outline-color: $dark-blue;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @keyframes drop-down{
@@ -435,92 +227,16 @@ body{
         transform: translateY(0);
     }
 }
+}
 
 /*         */
 /* iphones */
 /*         */
-@media only screen  
-    and (max-device-width: 376px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-
-    *{
-        overflow-x: hidden;
-    }
+@media only screen
+    and (min-device-width: 350px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2){
     body{
-        background-color: #F2F2F2;
-        color: #060663;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        box-shadow: inset 0 0 0 1em #CAC9F2;
-        .navbar{
-            font-size: 1.5em;
-            width: 85vw;
-            height: max-content;
-            left: 0;
-            margin: 1em;
-            justify-self: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            position: fixed;
-            overflow: visible;
-            .navbar-brand{
-                width: max-content;
-                height: max-content;
-                margin: 0;
-                top: 0;
-                left: 0;
-                .logo-image{
-                    display: none;
-                }
-                .small-logo{
-                    display: block;
-                    width: 4em;
-                }
-            }
-            .menu-right{
-                display: initial;
-                margin: auto;
-                text-align: center;
-                width: 100%;
-                background-color: #CAC9F2;
-                .icon{
-                    display: block;
-                    top: 0;
-                    right: 0;
-                    z-index: 1;
-                    position: absolute;
-                }
-                .menu{
-                    display: none;
-                    width: 100%;
-                    height: 100%;
-                    padding: 0.5em;
-                    li{
-                        display: block;
-                        text-align: center;
-                        padding: 1em;
-                        .nav-link{
-                            width: 100%;
-                        }
-                    }
-                    .social-icons{
-                        a{
-                            height: max-content;
-                            padding: 0;
-                            align-content: center;
-                        }
-                    }
-                }
-                .menuToggle{
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-        }
         .particle-dandelion{
             .header-statement{
                 .opening-statement{
@@ -550,9 +266,8 @@ body{
                     text-align: center;
                     max-width: 32rem;
                     p{
-                        max-width: 33rem;
+                        max-width: 18rem;
                         max-height: 100%;
-                        height: 100%;
                         text-align: center;
                         line-height: 1.5rem;
                         margin: auto;
@@ -562,11 +277,10 @@ body{
                     flex-direction: column;
                 }
             }
-            .featured-projects{
+            .project-displays{
                 width: 92vw;
                 height: calc(max-content + 3em);
                 margin: auto;
-                background-image: linear-gradient(to bottom,$logo-prwnkl, $off-white);
                 .container-row{
                     height: max-content;
                     display: flex;
@@ -574,220 +288,14 @@ body{
                     justify-content: space-evenly;
                     overflow: visible;
                     .project-container{
-                        width: 200px;
-                        height: 200px;
-                        margin: 25px;
-                        margin-right: auto;
-                        margin-left: auto;
-                        box-shadow: outset 0 0 0 2em $action;
-                        &:hover{
-                            background-color: $action;
-                        }
-                        .container-content{
-                            width: 100%;
-                            height: 100%;
-                            margin: auto;
-                            background-color: #F2F2F2;
-                            overflow: hidden;
-                        }
+                        margin: 5rem auto;
                     }
                 }
-            }
-        }
-        .footer{
-            .footer-content{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                position: relative;
-                width: 100%;
-                height: 50vh;
-                color: #060663;
-                font-weight: 500;
-                form{
-                    width: 80%;
-                    text-align: center;
-                    .form-name{
-                        flex-direction: column;
-                        width: 100%;
-                        margin: 1rem auto;
-                    }
-                    .email{
-                        flex-direction: column;
-                    }
-                    textarea{
-                        width: 80%;
-                        margin: 1rem auto;
-                    }
-                    .form-comment{
-                        height: 6rem;
-                    }
+                &.featured-projects{
+                    background-image: linear-gradient(to bottom,$logo-prwnkl, $off-white);
                 }
-            }
-        }
-    }
-}
-
-@media only screen  
-    and (min-device-width: 377px)
-    and (max-device-width: 480px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-    
-    *{
-        overflow-x: hidden;
-    }
-
-    body{
-        background-color: #F2F2F2;
-        color: #060663;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        box-shadow: inset 0 0 0 1em #CAC9F2;
-        .navbar{
-            font-size: 1.5em;
-            width: 85vw;
-            height: max-content;
-            left: 0;
-            margin: 1em;
-            justify-self: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            position: fixed;
-            overflow: visible;
-            .navbar-brand{
-                width: max-content;
-                height: max-content;
-                margin: 0;
-                top: 0;
-                left: 0;
-                .logo-image{
-                    display: none;
-                }
-                .small-logo{
-                    display: block;
-                    width: 4em;
-                }
-            }
-            .menu-right{
-                display: initial;
-                margin: auto;
-                text-align: center;
-                width: 100%;
-                background-color: #CAC9F2;
-                .icon{
-                    display: block;
-                    top: 0;
-                    right: 0;
-                    z-index: 1;
-                    position: absolute;
-                }
-                .menu{
-                    display: none;
-                    width: 100%;
-                    height: 100%;
-                    padding: 0.5em;
-                    li{
-                        display: block;
-                        text-align: center;
-                        padding: 1em;
-                    }
-                    .social-icons{
-                        height: max-content;
-                        padding: 0;
-                        align-content: center;
-                    }
-                }
-                .menuToggle{
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-        }
-        .particle-dandelion{
-            .opening-statement{
-                margin-left: 25vw;
-                margin-top: 35vh;
-            }
-            .opening-statement-2{
-                margin-left: 20vw;
-                text-align: center;
-                .h2-top{
-                    margin-right: 20vw;
-                }
-                .h2-bottom{
-                    width: 40vw;
-                }
-            }
-        }
-        .content-wrapper{
-            .intro{
-                width: 93vw;
-                height: max-content;
-                .technologies{
-                    flex-direction: column;
-                }
-            }
-            .featured-projects{
-                width: 92.5vw;
-                height: calc(max-content + 3em);
-                margin: auto;
-                background-image: linear-gradient(to bottom,#88A2F2, #F2F2F2);
-                .container-row{
-                    height: max-content;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    overflow: visible;
-                    .project-container{
-                        width: 200px;
-                        height: 200px;
-                        margin: 25px;
-                        margin-right: auto;
-                        margin-left: auto;
-                        box-shadow: outset 0 0 0 2em $action;
-                        &:hover{
-                            background-color: $action;
-                        }
-                        .container-content{
-                            width: 100%;
-                            height: 100%;
-                            margin: auto;
-                            background-color: $off-white;
-                            overflow: hidden;
-                        }
-                    }
-                }
-            }
-        }
-        .footer{
-            .footer-content{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                position: relative;
-                width: 100%;
-                height: 100vh;
-                color: $dark-blue;
-                font-weight: 500;
-                form{
-                    width: 90vw;
-                    text-align: center;
-                    .form-names{
-                        flex-direction: column;
-                        width: 100%;
-                    }
-                    .email{
-                        flex-direction: column;
-                        .email-label{
-                            width: 90%;
-                        }
-                    }
+                &.featured-projects-2{
+                    background-color: $off-white;
                 }
             }
         }
@@ -803,63 +311,7 @@ body{
     and (max-device-width: 1024px) 
     /* and (orientation: portrait)  */
     and (-webkit-min-device-pixel-ratio: 2) {
-    
-    *{
-        overflow-x: hidden;
-    }
-
     body{
-        background-color: #F2F2F2;
-        color: $dark-blue;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        box-shadow: inset 0 0 0 1em #CAC9F2;
-        .navbar{
-            font-size: 1em;
-            width: 95vw;
-            height: 10vh;
-            left: 0;
-            margin: 1em;
-            justify-self: center;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow: initial;
-            position: fixed;
-            .logo-image{
-                display: none;
-            }
-            .small-logo{
-                display: block;
-                width: 4em;
-            }
-            .menu-right{
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                background-color: #CAC9F2;
-                .icon{
-                    display: block;
-                    top: 0;
-                    right: 0;
-                    z-index: 1;
-                    position: absolute;
-                }
-                .menu{
-                    display: none;
-                    width: 100%;
-                    height: 100%;
-                    padding: 0.5em;
-                }
-            }
-            .menuToggle{
-                display: flex;
-                flex-direction: column;
-            }
-        }
         .particle-dandelion{
             .header-statement{
                 .opening-statement{
@@ -914,19 +366,6 @@ body{
                 }
             }
         }
-        .footer{
-            .footer-content{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                position: relative;
-                width: 100%;
-                height: 80vh;
-                color: $dark-blue;
-                font-weight: 500;
-            }
-        }
     }
 }
 
@@ -940,53 +379,7 @@ body{
     and (orientation: landscape) 
     and (-webkit-min-device-pixel-ratio: 2) {
 
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
     body{
-        background-color: #F2F2F2;
-        color: $dark-blue;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        box-shadow: inset 0 0 0 1em #CAC9F2;
-        .navbar{
-            font-size: 1em;
-            width: 95vw;
-            height: 10vh;
-            left: 0;
-            margin: 1em;
-            justify-self: center;
-            display: flex;
-            flex-wrap: wrap;
-            position: fixed;
-            .logo-image{
-                display: none;
-            }
-            .small-logo{
-                display: block;
-                width: 4em;
-            }
-            .menu-right{
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                text-align: center;
-                .menu{
-                    display: none;
-                }
-                .icon{
-                    display: block;
-                    position: relative;
-                    top: 0;
-                    right: 0;
-                    z-index: 1;
-                }
-            }
-        }
         .particle-dandelion{
             .header-statement{
                 .opening-statement{
@@ -1008,19 +401,7 @@ body{
             flex-flow: row;
             justify-content: space-evenly;
         }
-        .footer{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            position: relative;
-            width: 100%;
-            height: max-content;
-            color: #060663;
-            font-weight: 500;
-        }
     }
-
 }
 
 /*                        */
@@ -1032,42 +413,7 @@ body{
     and (min-device-width: 1024px) 
     and (max-device-width: 1366px)
     and (-webkit-min-device-pixel-ratio: 2) {
-
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
     body{
-        background-color: #F2F2F2;
-        color: #060663;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        box-shadow: inset 0 0 0 1em #CAC9F2;
-        .navbar{
-            .logo-image{
-                display: block;
-                width: 20em;
-            }
-            .small-logo{
-                display: none;
-            }
-            .menu-right{
-                display: flex;
-                position: absolute;
-                top: 2em;
-                right: 0;
-                .icon{
-                    display: none;
-                }
-                .menu{
-                    display: flex;
-                    background-color: none;
-                }
-            }
-        }
         .particle-dandelion{
             .header-statement{
                 .opening-statement{
@@ -1115,17 +461,6 @@ body{
                     }
                 }
             }
-        }
-        .footer{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            position: relative;
-            width: 100%;
-            height: max-content;
-            color: #060663;
-            font-weight: 500;
         }
     }
 }
