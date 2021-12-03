@@ -468,6 +468,9 @@ body .footer .footer-content form .form-comment:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  body .footer .footer-content form input[type=text] {
+    margin: auto;
+  }
   body .footer .footer-content form textarea {
     width: 80%;
     margin: 1rem auto;

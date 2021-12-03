@@ -357,6 +357,9 @@ body{
                     .email{
                         flex-direction: column;
                     }
+                    input[type=text]{
+                        margin: auto;
+                    }
                     textarea{
                         width: 80%;
                         margin: 1rem auto;

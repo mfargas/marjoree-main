@@ -36,27 +36,34 @@ body{
                 margin: auto;
             }
         }
-        section.project-types{
+        .project-types{
             width: 100%;
             h3{
                 min-width: 25rem;
                 line-height: 3rem;
             }
             figure.project{
-                display: flex;
+                display: grid;
+                grid-auto-flow: column;
+                width: 100%;
                 margin: auto;
                 padding: 2rem;
-                justify-content: space-evenly;
-                img{
-                    width: 25vw;
-                    border-radius: 50%;
-                    &:hover{
-                        filter: blur(75%) ;
+                a{
+                    grid-template-columns: 25%;
+                    img{
+                        width: 25vw;
+                        border-radius: 50%;
+                        &:hover{
+                            filter: blur(75%) ;
+                        }
                     }
                 }
                 figcaption{
+                    grid-template-columns: 25%;
                     font-weight: 300;
+                    align-self: center;
                     ul{
+                        grid-template-columns: 25%;
                         li{
                             text-align: right;
                             font-size: 1.25rem;
@@ -64,13 +71,18 @@ body{
                         }
                     }
                     a{
+                        grid-template-columns: 25%;
                         text-decoration: none;
                         font-weight: 700;
                         font-size: 1.5rem;
                         &:link{
-                            color: rgb(177, 46, 68);
+                            color: hotpink;
+                            text-align: right;
                         }
                     }
+                }
+                figcaption:last-child{
+                    text-align: right;
                 }
             }
         }
@@ -107,10 +119,31 @@ body{
                     z-index: -1;
                 }
             }
-            .project-types{
+            section.project-types{
                 figure.project{
                     margin: auto;
-                    flex-direction: column;
+                    grid-auto-flow: row;
+                    text-align: center;
+                    a{
+                        text-align: center;
+                        img{
+                            width: 75%;
+                        }
+                    }
+                    figcaption{
+                        text-align: center;
+                        a{
+                            text-align: center;
+                        }
+                        ul{
+                            li{
+                                text-align: center;
+                            }
+                        }
+                    }
+                    figcaption:last-child{
+                        text-align: center;
+                    }
                 }
             }
         }

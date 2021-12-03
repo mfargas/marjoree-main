@@ -50,7 +50,7 @@ body{
             }
             p{
                 margin: auto;
-                max-width: 40rem;
+                max-width: 50rem;
                 text-align: left;
             }
             ul.technologies{
@@ -96,10 +96,13 @@ body{
             }
             section.biography{
                 p{
-                    width: 85%;
+                    width: 80%;
                 }
                 ul.technologies{
-                    flex-direction: column;
+                    justify-content: center;
+                    li{
+                        margin: auto 2rem;
+                    }
                 }
             }
         }

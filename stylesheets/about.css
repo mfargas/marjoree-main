@@ -52,7 +52,7 @@ body article section.biography h3 {
 
 body article section.biography p {
   margin: auto;
-  max-width: 40rem;
+  max-width: 50rem;
   text-align: left;
 }
 
@@ -94,13 +94,15 @@ body article section.biography ul.technologies li {
     height: auto;
   }
   body article section.biography p {
-    width: 85%;
+    width: 80%;
   }
   body article section.biography ul.technologies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body article section.biography ul.technologies li {
+    margin: auto 2rem;
   }
 }
 /*# sourceMappingURL=about.css.map */

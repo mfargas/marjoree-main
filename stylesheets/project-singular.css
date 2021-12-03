@@ -6,15 +6,16 @@ body article {
 }
 
 body article .project-name {
-  margin: 15rem auto auto auto;
+  margin: 10rem auto 5rem auto;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 body article figure.project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15rem auto auto auto;
+  margin: auto;
   padding: 2rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -33,6 +34,9 @@ body article figure.project img:hover {
 
 body article figure.project figcaption {
   font-weight: 300;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 body article figure.project figcaption ul li {
@@ -48,26 +52,54 @@ body article figure.project figcaption a {
 }
 
 body article figure.project figcaption a:link {
-  color: #b12e44;
+  color: hotpink;
 }
 
-body article section.art h2 {
-  width: 50rem;
+body article section.process {
+  margin: 3rem auto;
+}
+
+body article section.process h2 {
   margin: auto;
-  line-height: 2rem;
-  text-align: right;
+  text-align: center;
+}
+
+body article section.process p {
+  max-width: 50rem;
+  margin: auto;
 }
 
 /*         */
 /* iphones */
 /*         */
 @media only screen and (max-device-width: 376px) and (-webkit-min-device-pixel-ratio: 2) {
+  body article .project-name {
+    font-size: 2rem;
+  }
   body article figure.project {
     margin: 5rem auto auto auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body article figure.project img {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body article figure.project figcaption {
+    text-align: center;
+  }
+  body article figure.project figcaption ul li {
+    text-align: center;
+  }
+  body article section.process h2 {
+    margin: 5rem auto;
+  }
+  body article section.process p {
+    max-width: 80%;
   }
 }
 /*# sourceMappingURL=project-singular.css.map */
