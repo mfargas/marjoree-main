@@ -239,22 +239,12 @@ body .content-wrapper .project-displays.featured-projects .container-row .projec
 }
 
 body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .two {
-  background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/interactive-price-bar/marjoree-interactive-price-bar.png");
-  background-position: center;
-}
-
-body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .three {
-  background-image: url("https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/ping-preview-square.png");
-  background-position: center;
-}
-
-body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .four {
   background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png");
   background-position: top;
   background-size: 150%;
 }
 
-body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .five {
+body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .three {
   background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png");
 }
 
@@ -267,29 +257,15 @@ body .content-wrapper .project-displays.featured-projects-2 h2 {
   color: #060663;
 }
 
-body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .one {
+body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .seven {
   background-image: url("https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png");
   background-position: center;
 }
 
-body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .two {
-  background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/interactive-price-bar/marjoree-interactive-price-bar.png");
-  background-position: center;
-}
-
-body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .three {
-  background-image: url("https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/ping-preview-square.png");
-  background-position: center;
-}
-
-body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .four {
+body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .eight {
   background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png");
   background-position: top;
   background-size: 150%;
-}
-
-body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .five {
-  background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png");
 }
 
 @-webkit-keyframes drop-down {
