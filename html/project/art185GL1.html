@@ -30,7 +30,7 @@
         <div class="menu-right">
             <a href="javascript:void(0);" onclick="toggleMenu()" class="icon">&#9776;</a>
             <ul class="menu" id="menu-toggle">
-                <li><a class="nav-link" href="../about.html">Projects</a></li>
+                <li><a class="nav-link" href="../projects.html">Projects</a></li>
                 <li><a class="nav-link" href="../about.html">About</a></li>
                 <!-- social links -->
                 <li class="social-icons"><a class="nav-link" href="https://github.com/mfargas" target="_blank"
@@ -50,7 +50,7 @@
     <article>
         <h1 class="project-name">Computer Vision Robot</h1>
             <figure class="project">
-                <img src="../../assets/project-previews/blogr-preview-square.png" alt="blogr-preview">
+                <img src="../../assets/project-previews/arduino-machine-learning.png" alt="blogr-preview">
                 <figcaption>technologies used:
                     <ul>
                         <li>Arduino</li>
@@ -68,6 +68,38 @@
             <p>This project was developed throughout the course of Art 185GL Spring 2018. Our Arduino Machine Learning project
                 demonstrated a scavenger hunt simulated by a robot and the process for a machine to recognize items using
                 Object Detection.
+            </p>
+            <br>
+            <h2>Process</h2>
+            <p>
+                We intended on having our arduino unit recognize an object, move towards it and take a picture to “collect” it as a
+                completed task on the scavenger hunt. In order to complete the hunt, the robot must be able to recognize each object
+                from different angles as it moves around the room. We created a list of objects for it to seek and complete to
+                demonstrate an understanding of its task and ability to execute it.
+            </p>
+            <br>
+            <p>
+                We intended on teaching the Raspberry Pi how to detect the objects through a machine learning tutorial and collaborate
+                with the Arduino’s robotic movement code to create a system of moving, searching, and identifying. This is to mimic
+                mannerisms of a child learning to identify an object and actively seek them out as though it were a scavenger hunt. We
+                additionally aimed to design a set and costume for the robot to enhance this effect.
+            </p>
+            <br>
+            <p>
+                Machine Learning is an interesting topic of technology we are happy to have experimented with. While, from the start of
+                the rise of computers, the concept of an artificial intelligence takeover has remained prevailant within our society.
+                It's shown in TV and movies, constantly depicting the rise of robots or our technology turning against us. To personally
+                see the rate of growth with machine learning, Kara and I understand the lengths deep learning would need to take in
+                order to go against its own programmer. 
+            </p>
+            <br>
+            <p>                
+                To teach our Arduino unit how to detect an orange, we needed to reinforce the
+                visual learnings through an intense amount of images for the Arduino to collect. After studying and comparing images,
+                the robot learns to associate that object with these images using the Nanonets API in communication with the PiCamera.
+                For future experiments, it would be interesting to incorporate the use of touch, smell, taste, and perhaps sound. This
+                experiment primarily forcused on the robots ability to visually detect an object after creating learning models based on
+                collections of images of these objects.
             </p>
         </section>
     </article>
