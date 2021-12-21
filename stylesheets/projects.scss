@@ -17,12 +17,12 @@ body{
         width: calc(100% - 2rem);
         margin: auto;
         section.intro-proj{
-            width: 100%;
+            width: calc(100% - 2rem);
             height: 15rem;
             display: flex;
             margin: auto;
             h2{
-                margin: auto auto 0 auto;
+                margin: auto;
                 z-index: 4;
                 font-weight: 700;
                 font-size: 2.5rem;
@@ -126,6 +126,7 @@ body{
 /* iphones */
 /*         */
 @media only screen  
+    and (min-device-width: 326px)
     and (max-device-width: 476px)
     and (-webkit-min-device-pixel-ratio: 2) {
     body{
@@ -136,7 +137,7 @@ body{
                 flex-direction: column;
                 h2{
                     position: absolute;
-                    margin: 15rem auto;
+                    margin: 15rem auto auto auto;
                     max-width: 95vw;
                     text-align: right;
                 }
@@ -144,7 +145,7 @@ body{
             section.project-gallery{
                 .gallery{
                     grid-template-columns: 100%;
-                    grid-template-rows: repeat(18, 20rem);
+                    grid-template-rows: repeat(9, 20rem);
                 }
             }
         }

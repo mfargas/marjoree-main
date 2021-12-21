@@ -346,9 +346,7 @@ body .content-wrapper .project-displays.featured-projects-2 .container-row .proj
   }
   body .content-wrapper .intro .intro-statement {
     width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: 100%;
     margin: auto;
     text-align: center;
     max-width: 32rem;
@@ -360,11 +358,16 @@ body .content-wrapper .project-displays.featured-projects-2 .container-row .proj
     line-height: 1.5rem;
     margin: auto;
   }
-  body .content-wrapper .intro .technologies {
+  body .content-wrapper .intro .experience-with .technologies {
+    margin: 1rem auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body .content-wrapper .intro .experience-with .technologies i {
+    margin: 1rem;
+    font-size: 3rem;
   }
   body .content-wrapper .project-displays {
     width: 100%;
