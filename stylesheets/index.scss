@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
 @import url("https://use.typekit.net/sqa2xzt.css");
 
 /* Color Theme Swatches in Hex 
@@ -8,7 +7,7 @@
 .marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
 .marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
 
-$action: #f205de;
+$action: #c039b5;
 $logo-prwnkl: #88A2F2;
 $pastel-prwknl: #CAC9F2;
 $off-white: #F2F2F2;
@@ -53,6 +52,7 @@ body{
             height: max-content;
             width: max-content;
             margin: auto auto auto 1rem;
+            &:focus,
             &:hover{
                 background-color: $logo-prwnkl;
             }
@@ -120,7 +120,7 @@ body{
         text-align: center;
         justify-items: space-around;
         margin: auto;
-        width: 100%;
+        width: calc(100% - 2rem);
         h2{
             margin: auto 3rem auto auto;
             font-size: 2rem;
@@ -351,6 +351,9 @@ body{
         }
     .footer{
         flex-direction: column;
+        h2{
+            margin: auto;
+        }
             .footer-content{
                 display: flex;
                 flex-direction: column;
@@ -359,10 +362,11 @@ body{
                 position: relative;
                 width: 100%;
                 height: 50vh;
-                color: #060663;
+                color: $dark-blue;
                 font-weight: 500;
                 form{
                     width: 80%;
+                    margin: auto;
                     text-align: center;
                     .form-name{
                         flex-direction: column;
@@ -469,6 +473,9 @@ body{
         }
         .footer{
             flex-direction: column;
+            h2{
+                margin: auto;
+            }
             .footer-content{
                 display: flex;
                 flex-direction: column;
@@ -481,6 +488,7 @@ body{
                 font-weight: 500;
                 form{
                     width: 90vw;
+                    margin: auto;
                     text-align: center;
                     .form-names{
                         flex-direction: column;

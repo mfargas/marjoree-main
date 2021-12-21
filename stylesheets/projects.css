@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://use.typekit.net/sqa2xzt.css");
 /* Color Theme Swatches in Hex 
 .marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light periwinkle from logo
 .marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
@@ -35,8 +35,8 @@ body article section.project-gallery .gallery {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: (20rem)[6];
-      grid-template-rows: repeat(6, 20rem);
+  -ms-grid-rows: (20rem)[3];
+      grid-template-rows: repeat(3, 20rem);
 }
 
 body article section.project-gallery .gallery .box {
@@ -59,11 +59,14 @@ body article section.project-gallery .gallery .box .front {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 3;
   height: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 
 body article section.project-gallery .gallery .box .front h1 {
-  margin: auto;
+  margin: auto auto 0rem auto;
   font-family: jeanne-moderno-geometrique,sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -75,18 +78,31 @@ body article section.project-gallery .gallery .box .front ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin: auto;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: #0511F2;
+  color: #c039b5;
   font-weight: 400;
 }
 
 body article section.project-gallery .gallery .box .back {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: -2;
   height: 100%;
   background-color: #060663;
   color: #F2F2F2;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 body article section.project-gallery .gallery .box .back a {
@@ -103,90 +119,26 @@ body article section.project-gallery .gallery .box .back .summary {
   max-width: 24rem;
 }
 
-body article section.project-gallery .gallery .box:hover .front,
-body article section.project-gallery .gallery .box:focus .front {
+body article section.project-gallery .gallery .box:hover .front, body article section.project-gallery .gallery .box:focus .front {
   display: none;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
 }
 
-body article section.project-gallery .gallery .box:hover .back,
-body article section.project-gallery .gallery .box:focus .back {
+body article section.project-gallery .gallery .box:hover .back, body article section.project-gallery .gallery .box:focus .back {
+  visibility: visible;
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  z-index: 3;
 }
 
-body article .project-types {
-  width: 100%;
-}
-
-body article .project-types h3 {
-  min-width: 25rem;
-  line-height: 3rem;
-}
-
-body article .project-types figure.project {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  width: 100%;
-  margin: auto;
-  padding: 2rem;
-}
-
-body article .project-types figure.project a {
-  -ms-grid-columns: 25%;
-      grid-template-columns: 25%;
-}
-
-body article .project-types figure.project a img {
-  width: 25vw;
-  border-radius: 50%;
-}
-
-body article .project-types figure.project a img:hover {
-  -webkit-filter: blur(75%);
-          filter: blur(75%);
-}
-
-body article .project-types figure.project figcaption {
-  -ms-grid-columns: 25%;
-      grid-template-columns: 25%;
-  font-weight: 300;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-body article .project-types figure.project figcaption ul {
-  -ms-grid-columns: 25%;
-      grid-template-columns: 25%;
-}
-
-body article .project-types figure.project figcaption ul li {
-  text-align: right;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-body article .project-types figure.project figcaption a {
-  -ms-grid-columns: 25%;
-      grid-template-columns: 25%;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-body article .project-types figure.project figcaption a:link {
-  color: hotpink;
-  text-align: right;
-}
-
-body article .project-types figure.project figcaption:last-child {
-  text-align: right;
+body article section.project-gallery .gallery .box:active .back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body article section.art h2 {

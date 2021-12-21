@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
-
+@import url("https://use.typekit.net/sqa2xzt.css");
 /* Color Theme Swatches in Hex 
 .marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light periwinkle from logo
 .marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
@@ -7,7 +6,7 @@
 .marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
 .marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
 
-$action: #0511F2;
+$action: #c039b5;
 $logo-prwnkl: #88A2F2;
 $pastel-prwknl: #CAC9F2;
 $off-white: #F2F2F2;
@@ -37,7 +36,7 @@ body{
                 margin: 2rem auto;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: repeat(6, 20rem);
+                grid-template-rows: repeat(3, 20rem);
                 .box{
                     display: flex;
                     flex-direction: column;
@@ -46,9 +45,12 @@ body{
                     .front{
                         display: flex;
                         flex-direction: column;
+                        z-index: 3;
                         height: 100%;
+                        visibility: visible;
+                        opacity: 1;
                         h1{
-                            margin: auto;
+                            margin: auto auto 0rem auto;
                             font-family: jeanne-moderno-geometrique,sans-serif;
                             font-weight: 600;
                             font-style: normal;
@@ -57,16 +59,23 @@ body{
                         ul{
                             display: flex;
                             width: 100%;
+                            margin: auto;
                             justify-content: space-evenly;
                             color: $action;
                             font-weight: 400;
                         }
                     }
                     .back{
-                        display: none;
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        z-index: -2;
                         height: 100%;
                         background-color: $dark-blue;
                         color: $off-white;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: opacity 0.5s, visibility 0.5s;
                         a{
                             margin: auto;
                             img{
@@ -79,66 +88,26 @@ body{
                             max-width: 24rem;
                         }
                     }
-                }
-                .box:hover,
-                .box:focus{
-                    .front{
-                        display: none;
-                    }
-                    .back{
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-            }
-        }
-        .project-types{
-            width: 100%;
-            h3{
-                min-width: 25rem;
-                line-height: 3rem;
-            }
-            figure.project{
-                display: grid;
-                grid-auto-flow: column;
-                width: 100%;
-                margin: auto;
-                padding: 2rem;
-                a{
-                    grid-template-columns: 25%;
-                    img{
-                        width: 25vw;
-                        border-radius: 50%;
-                        &:hover{
-                            filter: blur(75%) ;
+                    &:hover,
+                    &:focus{
+                        .front{
+                            display: none;
+                            visibility: hidden;
+                            opacity: 0;
+                            z-index: -1;
+                        }
+                        .back{
+                            visibility: visible;
+                            opacity: 1;
+                            display: flex;
+                            z-index: 3;
                         }
                     }
-                }
-                figcaption{
-                    grid-template-columns: 25%;
-                    font-weight: 300;
-                    align-self: center;
-                    ul{
-                        grid-template-columns: 25%;
-                        li{
-                            text-align: right;
-                            font-size: 1.25rem;
-                            font-weight: 600;
+                    &:active{
+                        .back{
+                            display: flex;
                         }
                     }
-                    a{
-                        grid-template-columns: 25%;
-                        text-decoration: none;
-                        font-weight: 700;
-                        font-size: 1.5rem;
-                        &:link{
-                            color: hotpink;
-                            text-align: right;
-                        }
-                    }
-                }
-                figcaption:last-child{
-                    text-align: right;
                 }
             }
         }

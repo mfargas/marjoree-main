@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://use.typekit.net/sqa2xzt.css");
 /* Color Theme Swatches in Hex 
 .marjoree-site-theme-march21-1-hex { color: #CAC9F2; }    light periwinkle from logo
 .marjoree-site-theme-march21-2-hex { color: #0511F2; }    action
@@ -6,7 +6,7 @@
 .marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
 .marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
 body article {
-  width: 100%;
+  width: calc(100% - 2rem);
   margin: auto;
 }
 
@@ -39,8 +39,10 @@ body article section.about-intro .text p {
 body article section.about-intro img {
   height: 22rem;
   width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: auto auto auto -10rem;
-  border: 1rem solid #CAC9F2;
+  border: 1rem solid #c039b5;
 }
 
 body article section.biography h3 {
@@ -80,6 +82,10 @@ body article section.biography .education i ::before {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
 }
 
 body article section.biography .education i .details h3 {
@@ -102,7 +108,7 @@ body article section.biography .education a {
 }
 
 body article section.biography .education a:active, body article section.biography .education a:hover, body article section.biography .education a:visited {
-  color: #f205de;
+  color: #c039b5;
   text-decoration: none;
 }
 
@@ -142,28 +148,60 @@ body article section.biography .experience-with .technologies i {
     height: auto;
   }
   body article section.about-intro .text h1 {
-    font-size: 2rem;
+    font-size: 25px;
   }
   body article section.about-intro .text p {
     margin: auto;
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 20px;
   }
   body article section.about-intro img {
     margin: auto;
-    width: 80vw;
+    width: 80%;
     height: auto;
+    border: 5px solid #c039b5;
+  }
+  body article section.biography h3,
+  body article section.biography h4 {
+    font-size: 25px;
   }
   body article section.biography p {
     width: 80%;
   }
-  body article section.biography ul.technologies {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  body article section.biography .education i {
+    font-size: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: auto 0 auto auto;
   }
-  body article section.biography ul.technologies li {
-    margin: auto 2rem;
+  body article section.biography .education i ::before {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body article section.biography .education i .details h3,
+  body article section.biography .education i .details h4 {
+    font-size: 15px;
+  }
+  body article section.biography .experience-with {
+    margin: 2rem auto;
+  }
+  body article section.biography .experience-with h3 {
+    font-size: 1rem;
+  }
+  body article section.biography .experience-with .technologies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body article section.biography .experience-with .technologies i {
+    font-size: 3rem;
+    margin: 1rem;
   }
 }
 /*# sourceMappingURL=about.css.map */
