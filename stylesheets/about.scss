@@ -7,7 +7,7 @@
 .marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
 .marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
 
-$action: #0511F2;
+$action: #f205de;
 $logo-prwnkl: #88A2F2;
 $pastel-prwknl: #CAC9F2;
 $off-white: #F2F2F2;
@@ -29,9 +29,9 @@ body{
                 font-size: 2.5rem;
                 p{
                     text-align: center;
+                    font-size: 1.5rem;
                     color: $logo-prwnkl;
                     margin: auto auto auto 5rem;
-                    font-weight: 600;
                 }
             }
             img{
@@ -44,22 +44,66 @@ body{
         section.biography{
             h3{
                 margin: auto;
-                max-width: 48rem;
+                max-width: 52rem;
                 font-size: 2rem;
                 padding: 1rem;
             }
             p{
                 margin: auto;
-                max-width: 50rem;
+                max-width: 48rem;
                 text-align: left;
             }
-            ul.technologies{
-                display: flex;
-                font-size: 3rem;
+            .education{
+                width: 100%;
                 margin: 5rem auto;
-                li{
-                    margin: auto;
+                display: flex;
+                flex-direction: column;
+                i{
+                    margin: 2rem auto;
+                    font-size: 2.5rem;
+                    display: flex;
+                    ::before{
+                        align-self: center;
+                    }
+                    .details{
+                        h3{
+                            font-size: 1.5rem;
+                            text-align: center;
+                        }
+                        h4{
+                            font-size: 1.5rem;
+                            line-height: 2.5rem;
+                            text-align: center;
+                            font-family: quasimoda,sans-serif;
+                        }
+                    }
                 }
+                a{
+                    margin: auto;
+                    text-decoration: none;
+                    align-content: center;
+                    &:active,
+                    &:hover,
+                    &:visited{
+                        color: $action;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .experience-with{
+                text-align: center;
+                h3{
+                    font-size: 2rem;
+                    margin: 2rem auto;
+                }
+                .technologies{
+                    display: flex;
+                    justify-content: center;
+                i{
+                    margin: auto 2rem;
+                    font-size: 3rem;
+                }
+            }
             }
         }
     }

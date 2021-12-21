@@ -31,9 +31,9 @@ body article section.about-intro .text {
 
 body article section.about-intro .text p {
   text-align: center;
+  font-size: 1.5rem;
   color: #88A2F2;
   margin: auto auto auto 5rem;
-  font-weight: 600;
 }
 
 body article section.about-intro img {
@@ -45,27 +45,88 @@ body article section.about-intro img {
 
 body article section.biography h3 {
   margin: auto;
-  max-width: 48rem;
+  max-width: 52rem;
   font-size: 2rem;
   padding: 1rem;
 }
 
 body article section.biography p {
   margin: auto;
-  max-width: 50rem;
+  max-width: 48rem;
   text-align: left;
 }
 
-body article section.biography ul.technologies {
+body article section.biography .education {
+  width: 100%;
+  margin: 5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 3rem;
-  margin: 5rem auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body article section.biography ul.technologies li {
+body article section.biography .education i {
+  margin: 2rem auto;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body article section.biography .education i ::before {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body article section.biography .education i .details h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body article section.biography .education i .details h4 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-family: quasimoda,sans-serif;
+}
+
+body article section.biography .education a {
   margin: auto;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body article section.biography .education a:active, body article section.biography .education a:hover, body article section.biography .education a:visited {
+  color: #f205de;
+  text-decoration: none;
+}
+
+body article section.biography .experience-with {
+  text-align: center;
+}
+
+body article section.biography .experience-with h3 {
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+body article section.biography .experience-with .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body article section.biography .experience-with .technologies i {
+  margin: auto 2rem;
+  font-size: 3rem;
 }
 
 /*         */

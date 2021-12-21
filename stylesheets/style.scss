@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
 @import url("https://use.typekit.net/sqa2xzt.css");
 
-$action: #0511F2;
+$action: #f205de;
 $logo-prwnkl: #88A2F2;
 $pastel-prwknl: #CAC9F2;
 $off-white: #F2F2F2;
@@ -24,6 +24,10 @@ body{
             flex-direction: column;
             margin: auto;
             z-index: 5;
+            font-family: jeanne-moderno,serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5rem;
             color: $action;
             .opening-statement{
                 margin: auto;
@@ -70,25 +74,29 @@ body{
             text-align: center;
             flex-direction: column;
             display: flex;
-            line-height: 1rem;
+            line-height: 2rem;
+            font-size: 1.25rem;
             .intro-statement{
                 height: max-content;
-                line-height: 1.5rem;
-                font-weight: 300;
-                max-width: 60rem;
+                font-weight: 400;
+                max-width: 55rem;
                 margin: auto;
             }
-            .technologies{
-                height: max-content;
-                list-style-type: none;
-                display: flex;
-                flex-direction: row;
-                margin: auto;
-                font-size: 4em;
-                li.tech-icons{
-                    padding: 0.5em;
-                    height: max-content;
-                    text-align: center;
+            .experience-with{
+                text-align: center;
+                margin: 2rem auto;
+                h3{
+                    font-size: 2rem;
+                    margin: 2rem auto;
+                    color: $off-white;
+                }
+                .technologies{
+                    display: flex;
+                    justify-content: center;
+                    i{
+                        margin: auto 2rem;
+                        font-size: 3rem;
+                    }
                 }
             }
         }
@@ -112,7 +120,7 @@ body{
                     width: 300px;
                     height: 300px;
                     margin: 3rem;
-                    border-radius: 50%;
+                    border-radius: 25%;
                     box-shadow: 0 0 1em 0.5em rgb(219, 221, 253);
                     .feature-link{
                         cursor: pointer;
@@ -125,26 +133,30 @@ body{
                             height: 100%;
                             margin: auto;
                             background-size: cover;
+                            background-blend-mode: screen;
                                 .project-info{
                                     height: 100%;
                                     display: flex;
                                     align-content: center;
                                     p{
                                         margin: auto;
+                                        font-family: jeanne-moderno-ultra,serif;
                                         text-align: center;
                                         vertical-align: middle;
                                         color: $dark-blue;
+                                        font-style: italic;
                                         text-decoration: none;
                                         font-weight: 600;
                                     }
                                 }
-                                &:hover{
-                                    background-color: $off-white;
-                                    border-radius: 50%;
-                                    box-shadow: inset 0 0 5em 0.5em #88A2F2;
-                                    background-image: none;
-                                }
                             }
+                    }
+                    &:focus,
+                    &:hover{
+                        background-color: $off-white;
+                        border-radius: 25%;
+                        box-shadow: 0 0 2em 0.25em $action;
+                        background-image: none;
                     }
                 }
             }
@@ -158,16 +170,31 @@ body{
                     .project-container{
                         .feature-link{
                             .one{
-                                background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png');
+                                background-image: none;
                                 background-position: center;
+                                &:hover,
+                                &:focus{
+                                    background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png');
+                                }
+                                
                             }
                             .two{
-                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png');
-                                background-position: top;
-                                background-size: 150%;
+                                background-image: none;
+                                background-image: none;
+                                background-position: center;
+                                &:hover,
+                                &:focus{
+                                    background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png');
+                                    background-position: top;
+                                    background-size: 150%;
+                                }
                             }
                             .three{
-                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png');
+                                background-image: none;
+                                &:hover,
+                                &:focus{
+                                    background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png');
+                                }
                             }
                         }
                     }
@@ -183,13 +210,19 @@ body{
                     .project-container{
                         .feature-link{
                             .seven{
-                                background-image: url('https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png');
+                                background-image: none;
                                 background-position: center;
+                                &:hover,
+                                &:focus{
+                                    background-image: url(../assets/project-previews/weather-app-preview.png);
+                                }
                             }
                             .eight{
-                                background-image: url('https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png');
-                                background-position: top;
-                                background-size: 150%;
+                                background-image: none;
+                                &:hover,
+                                &:focus{
+                                    background-image: url(../assets/project-previews/weather-app-preview.png);
+                                }
                             }
                         }
                     }
@@ -221,8 +254,7 @@ body{
         .particle-dandelion{
             .header-statement{
                 .opening-statement{
-                    margin-left: 25vw;
-                    margin-top: 35vh;
+                    margin: auto;
                 }
                 .opening-statement-2{
                     margin-left: 20vw;

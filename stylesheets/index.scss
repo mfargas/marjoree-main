@@ -8,7 +8,7 @@
 .marjoree-site-theme-march21-4-hex { color: #F2F2F2; }    neutral white
 .marjoree-site-theme-march21-5-hex { color: #060663; }    neutral black    */
 
-$action: #0511F2;
+$action: #f205de;
 $logo-prwnkl: #88A2F2;
 $pastel-prwknl: #CAC9F2;
 $off-white: #F2F2F2;
@@ -28,8 +28,9 @@ $dark-blue: #060663;
 body{
     background-color: $off-white;
     color: $dark-blue;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-family: quasimoda,sans-serif;
+    font-weight: 300;
+    font-style: normal;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -67,11 +68,15 @@ body{
         .menu-right{
             margin: auto 1rem auto auto;
             display: flex;
+            font-family: jeanne-moderno-ultra, serif;
+            font-style: italic;
+            font-weight: 600;
             a{
                 padding: 0 5px;
                 color: $dark-blue;
                 text-decoration: none;
                 vertical-align: middle;
+                &:focus,
                 &:hover{
                     background-color: $logo-prwnkl;
                     color: $pastel-prwknl;
@@ -92,22 +97,33 @@ body{
                 .social-icons{
                     text-align: center;
                     a.nav-link{
-                        font-family: 'Poppins', sans-serif;
                         text-decoration: none;
                         margin: auto;
+                        i{
+                            ::before{
+                                align-self: center;
+                            }
+                        }
                     }
                 }
             }
-
         }
+    }
+    h1, h2, h3{
+        font-family: jeanne-moderno-ultra, serif;
+        font-style: italic;
+        font-weight: 800;
     }
     .footer{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
+        justify-items: space-around;
+        margin: auto;
+        width: 100%;
         h2{
-            margin: auto;
-            padding-top: 2rem;
+            margin: auto 3rem auto auto;
+            font-size: 2rem;
         }
         .footer-content{
             display: flex;
@@ -115,17 +131,16 @@ body{
             justify-content:left;
             align-items: center;
             position: relative;
-            width: 100%;
+            width: 60%;
             height: 45vh;
             z-index: 0;
             color: $dark-blue;
-            font-weight: 500;
             form{
                 display: flex;
                 flex-direction: column;
-                margin: auto;
+                margin: auto auto auto 3rem;
                 height: max-content;
-                width: 35%;
+                width: 70%;
                 z-index: 16;
                 label{
                     margin: auto;
@@ -217,6 +232,7 @@ body{
                     margin: auto 2rem auto auto;
                     font-weight: 400;
                     z-index: 28;
+                    &:focus,
                     &:hover{
                         background-color: $dark-blue;
                         color: $off-white;
@@ -234,9 +250,7 @@ body{
                     height: 4rem;
                     vertical-align: text-top;
                     padding: 0.5rem;
-                    font-family: 'Poppins',sans-serif;
                     color: $dark-blue;
-                    font-weight: 400;
                     align-items: middle;
                     width: 100%;
                     border-color: $logo-prwnkl;
@@ -336,6 +350,7 @@ body{
             }
         }
     .footer{
+        flex-direction: column;
             .footer-content{
                 display: flex;
                 flex-direction: column;
@@ -453,6 +468,7 @@ body{
             }
         }
         .footer{
+            flex-direction: column;
             .footer-content{
                 display: flex;
                 flex-direction: column;
@@ -581,8 +597,6 @@ body{
     body{
         background-color: #F2F2F2;
         color: $dark-blue;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
         width: 100%;
         height: 100%;
         padding: 0;

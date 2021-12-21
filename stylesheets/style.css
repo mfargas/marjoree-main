@@ -26,7 +26,11 @@ body .particle-dandelion .header-statement {
           flex-direction: column;
   margin: auto;
   z-index: 5;
-  color: #0511F2;
+  font-family: jeanne-moderno,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #f205de;
 }
 
 body .particle-dandelion .header-statement .opening-statement {
@@ -103,41 +107,42 @@ body .content-wrapper .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 1rem;
+  line-height: 2rem;
+  font-size: 1.25rem;
 }
 
 body .content-wrapper .intro .intro-statement {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  line-height: 1.5rem;
-  font-weight: 300;
-  max-width: 60rem;
+  font-weight: 400;
+  max-width: 55rem;
   margin: auto;
 }
 
-body .content-wrapper .intro .technologies {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  list-style-type: none;
+body .content-wrapper .intro .experience-with {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+body .content-wrapper .intro .experience-with h3 {
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: #F2F2F2;
+}
+
+body .content-wrapper .intro .experience-with .technologies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: auto;
-  font-size: 4em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body .content-wrapper .intro .technologies li.tech-icons {
-  padding: 0.5em;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  text-align: center;
+body .content-wrapper .intro .experience-with .technologies i {
+  margin: auto 2rem;
+  font-size: 3rem;
 }
 
 body .content-wrapper .project-displays {
@@ -178,7 +183,7 @@ body .content-wrapper .project-displays .container-row .project-container {
   width: 300px;
   height: 300px;
   margin: 3rem;
-  border-radius: 50%;
+  border-radius: 25%;
   -webkit-box-shadow: 0 0 1em 0.5em #dbddfd;
           box-shadow: 0 0 1em 0.5em #dbddfd;
 }
@@ -196,6 +201,7 @@ body .content-wrapper .project-displays .container-row .project-container .featu
   height: 100%;
   margin: auto;
   background-size: cover;
+  background-blend-mode: screen;
 }
 
 body .content-wrapper .project-displays .container-row .project-container .feature-link .container-content .project-info {
@@ -209,18 +215,20 @@ body .content-wrapper .project-displays .container-row .project-container .featu
 
 body .content-wrapper .project-displays .container-row .project-container .feature-link .container-content .project-info p {
   margin: auto;
+  font-family: jeanne-moderno-ultra,serif;
   text-align: center;
   vertical-align: middle;
   color: #060663;
+  font-style: italic;
   text-decoration: none;
   font-weight: 600;
 }
 
-body .content-wrapper .project-displays .container-row .project-container .feature-link .container-content:hover {
+body .content-wrapper .project-displays .container-row .project-container:focus, body .content-wrapper .project-displays .container-row .project-container:hover {
   background-color: #F2F2F2;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 0 0 5em 0.5em #88A2F2;
-          box-shadow: inset 0 0 5em 0.5em #88A2F2;
+  border-radius: 25%;
+  -webkit-box-shadow: 0 0 2em 0.25em #f205de;
+          box-shadow: 0 0 2em 0.25em #f205de;
   background-image: none;
 }
 
@@ -234,17 +242,31 @@ body .content-wrapper .project-displays.featured-projects h2 {
 }
 
 body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .one {
-  background-image: url("https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png");
+  background-image: none;
   background-position: center;
 }
 
+body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .one:hover, body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .one:focus {
+  background-image: url("https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png");
+}
+
 body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .two {
+  background-image: none;
+  background-image: none;
+  background-position: center;
+}
+
+body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .two:hover, body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .two:focus {
   background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png");
   background-position: top;
   background-size: 150%;
 }
 
 body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .three {
+  background-image: none;
+}
+
+body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .three:hover, body .content-wrapper .project-displays.featured-projects .container-row .project-container .feature-link .three:focus {
   background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/insure-landing-page/insure-landing-page-preview-square.png");
 }
 
@@ -258,14 +280,20 @@ body .content-wrapper .project-displays.featured-projects-2 h2 {
 }
 
 body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .seven {
-  background-image: url("https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ux-ui-samples/preview-squares/blogr-preview-square.png");
+  background-image: none;
   background-position: center;
 }
 
+body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .seven:hover, body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .seven:focus {
+  background-image: url(../assets/project-previews/weather-app-preview.png);
+}
+
 body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .eight {
-  background-image: url("https://s3.us-west-1.amazonaws.com/marjoree.e.f-images/projects/sunnyside-agency/sunnyside-preview.png");
-  background-position: top;
-  background-size: 150%;
+  background-image: none;
+}
+
+body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .eight:hover, body .content-wrapper .project-displays.featured-projects-2 .container-row .project-container .feature-link .eight:focus {
+  background-image: url(../assets/project-previews/weather-app-preview.png);
 }
 
 @-webkit-keyframes drop-down {
@@ -299,8 +327,7 @@ body .content-wrapper .project-displays.featured-projects-2 .container-row .proj
 /*         */
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   body .particle-dandelion .header-statement .opening-statement {
-    margin-left: 25vw;
-    margin-top: 35vh;
+    margin: auto;
   }
   body .particle-dandelion .header-statement .opening-statement-2 {
     margin-left: 20vw;
@@ -435,8 +462,8 @@ body .content-wrapper .project-displays.featured-projects-2 .container-row .proj
     margin: 25px;
     margin-right: auto;
     margin-left: auto;
-    -webkit-box-shadow: outset 0 0 0 2em #0511F2;
-            box-shadow: outset 0 0 0 2em #0511F2;
+    -webkit-box-shadow: outset 0 0 0 2em #f205de;
+            box-shadow: outset 0 0 0 2em #f205de;
   }
   body .content-wrapper .featured-projects .container-row .project-container .container-content {
     width: 100%;

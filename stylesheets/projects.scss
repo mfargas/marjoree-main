@@ -15,25 +15,81 @@ $dark-blue: #060663;
 
 body{
     article{
-        width: 100%;
+        width: calc(100% - 2rem);
         margin: auto;
         section.intro-proj{
             width: 100%;
-            height: 75vh;
+            height: 15rem;
             display: flex;
-            flex-direction: row;
             margin: auto;
             h2{
-                margin: auto -15rem auto auto;
+                margin: auto auto 0 auto;
                 z-index: 4;
                 font-weight: 700;
                 font-size: 2.5rem;
                 border: $logo-prwnkl;
             }
-            img{
-                height: 50%;
-                width: 50%;
-                margin: auto;
+        }
+        section.project-gallery{
+            .gallery{
+                width: calc(100% - 2rem);
+                border: 1px solid $dark-blue;
+                margin: 2rem auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: repeat(6, 20rem);
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $pastel-prwknl;
+                    border: 2px solid $dark-blue;
+                    .front{
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        h1{
+                            margin: auto;
+                            font-family: jeanne-moderno-geometrique,sans-serif;
+                            font-weight: 600;
+                            font-style: normal;
+                            font-size: 2.5rem;
+                        }
+                        ul{
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-evenly;
+                            color: $action;
+                            font-weight: 400;
+                        }
+                    }
+                    .back{
+                        display: none;
+                        height: 100%;
+                        background-color: $dark-blue;
+                        color: $off-white;
+                        a{
+                            margin: auto;
+                            img{
+                                margin: auto;
+                                width: 10rem;
+                            }
+                        }
+                        .summary{
+                            margin: auto;
+                            max-width: 24rem;
+                        }
+                    }
+                }
+                .box:hover,
+                .box:focus{
+                    .front{
+                        display: none;
+                    }
+                    .back{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
             }
         }
         .project-types{
@@ -101,49 +157,25 @@ body{
 /* iphones */
 /*         */
 @media only screen  
-    and (max-device-width: 376px)
+    and (max-device-width: 476px)
     and (-webkit-min-device-pixel-ratio: 2) {
     body{
         article{
             section.intro-proj{
+                height: 24rem;
+                margin: auto;
                 flex-direction: column;
                 h2{
                     position: absolute;
-                    margin: 15rem auto auto auto;
-                    color: $off-white;
+                    margin: 15rem auto;
                     max-width: 95vw;
                     text-align: right;
                 }
-                img{
-                    width: 100%;
-                    z-index: -1;
-                }
             }
-            section.project-types{
-                figure.project{
-                    margin: auto;
-                    grid-auto-flow: row;
-                    text-align: center;
-                    a{
-                        text-align: center;
-                        img{
-                            width: 75%;
-                        }
-                    }
-                    figcaption{
-                        text-align: center;
-                        a{
-                            text-align: center;
-                        }
-                        ul{
-                            li{
-                                text-align: center;
-                            }
-                        }
-                    }
-                    figcaption:last-child{
-                        text-align: center;
-                    }
+            section.project-gallery{
+                .gallery{
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(18, 20rem);
                 }
             }
         }

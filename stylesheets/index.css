@@ -22,8 +22,9 @@
 body {
   background-color: #F2F2F2;
   color: #060663;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-family: quasimoda,sans-serif;
+  font-weight: 300;
+  font-style: normal;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -82,6 +83,9 @@ body .navbar .menu-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: jeanne-moderno-ultra, serif;
+  font-style: italic;
+  font-weight: 600;
 }
 
 body .navbar .menu-right a {
@@ -91,7 +95,7 @@ body .navbar .menu-right a {
   vertical-align: middle;
 }
 
-body .navbar .menu-right a:hover {
+body .navbar .menu-right a:focus, body .navbar .menu-right a:hover {
   background-color: #88A2F2;
   color: #CAC9F2;
 }
@@ -119,25 +123,39 @@ body .navbar .menu-right .menu .social-icons {
 }
 
 body .navbar .menu-right .menu .social-icons a.nav-link {
-  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   margin: auto;
+}
+
+body .navbar .menu-right .menu .social-icons a.nav-link i ::before {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body h1, body h2, body h3 {
+  font-family: jeanne-moderno-ultra, serif;
+  font-style: italic;
+  font-weight: 800;
 }
 
 body .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   text-align: center;
+  justify-items: space-around;
+  margin: auto;
+  width: 100%;
 }
 
 body .footer h2 {
-  margin: auto;
-  padding-top: 2rem;
+  margin: auto 3rem auto auto;
+  font-size: 2rem;
 }
 
 body .footer .footer-content {
@@ -155,11 +173,10 @@ body .footer .footer-content {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 45vh;
   z-index: 0;
   color: #060663;
-  font-weight: 500;
 }
 
 body .footer .footer-content form {
@@ -170,11 +187,11 @@ body .footer .footer-content form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto;
+  margin: auto auto auto 3rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: 35%;
+  width: 70%;
   z-index: 16;
 }
 
@@ -285,7 +302,7 @@ body .footer .footer-content form input[type='submit'] {
   cursor: pointer;
   border-width: 0.25px;
   border-radius: 50px;
-  border-color: #0511F2;
+  border-color: #f205de;
   border-style: solid;
   color: #060663;
   width: 5rem;
@@ -295,7 +312,7 @@ body .footer .footer-content form input[type='submit'] {
   z-index: 28;
 }
 
-body .footer .footer-content form input[type='submit']:hover {
+body .footer .footer-content form input[type='submit']:focus, body .footer .footer-content form input[type='submit']:hover {
   background-color: #060663;
   color: #F2F2F2;
 }
@@ -313,9 +330,7 @@ body .footer .footer-content form .form-comment {
   height: 4rem;
   vertical-align: text-top;
   padding: 0.5rem;
-  font-family: 'Poppins',sans-serif;
   color: #060663;
-  font-weight: 400;
   -webkit-box-align: middle;
       -ms-flex-align: middle;
           align-items: middle;
@@ -425,6 +440,12 @@ body .footer .footer-content form .form-comment:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -571,6 +592,12 @@ body .footer .footer-content form .form-comment:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -725,8 +752,6 @@ body .footer .footer-content form .form-comment:focus {
   body {
     background-color: #F2F2F2;
     color: #060663;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
     width: 100%;
     height: 100%;
     padding: 0;
